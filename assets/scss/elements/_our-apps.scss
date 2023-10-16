@@ -160,6 +160,16 @@
                 font-size: 10vw;
             }
         }
+        .apps_list {
+            .app_cart {
+                .content{
+                    margin-bottom: 7.3vw;
+                    p {
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width: 390px) {

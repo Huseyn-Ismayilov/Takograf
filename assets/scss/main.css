@@ -879,13 +879,17 @@ button.swiper-pagination-bullet {
   margin-top: -5px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 390px) {
   .toggle {
     width: 20px;
     height: 20px;
   }
   .toggle .bar {
-    margin: 3.3px 0;
+    width: 20px;
+    margin: 3px 0;
+  }
+  .toggle .bar::before {
+    height: 2.4px;
   }
   .toggle.opened .bar:nth-child(1) {
     margin-bottom: -8px;
@@ -1138,7 +1142,7 @@ button.swiper-pagination-bullet {
     top: -82px;
   }
   .site_header .site_logo img {
-    width: 183px;
+    width: 37.8vw;
   }
   .site_header .site_logo .dark_logo {
     display: block;
@@ -1650,6 +1654,9 @@ button.swiper-pagination-bullet {
   .hero .googleRating span {
     font-size: 15px;
   }
+  .hero h1 {
+    margin-bottom: 14px;
+  }
   .hero_bottom {
     padding: 18px 0;
   }
@@ -1900,6 +1907,12 @@ button.swiper-pagination-bullet {
   .our_apps .sec_title h1 {
     font-size: 10vw;
   }
+  .our_apps .apps_list .app_cart .content {
+    margin-bottom: 7.3vw;
+  }
+  .our_apps .apps_list .app_cart .content p {
+    line-height: 1.3;
+  }
 }
 @media (max-width: 390px) {
   .our_apps .sec_title {
@@ -2028,6 +2041,10 @@ button.swiper-pagination-bullet {
   .what_is_takograf .image {
     max-width: 140px;
     padding-right: 0;
+  }
+  .what_is_takograf .play_btn svg {
+    width: 42px;
+    height: auto;
   }
 }
 .our_product {
@@ -2668,7 +2685,7 @@ button.swiper-pagination-bullet {
     line-height: 1.1;
   }
   .product_features .sec_title p {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
     margin-bottom: 28px;
   }
   .product_features .sec_title p br {
@@ -2789,7 +2806,7 @@ button.swiper-pagination-bullet {
   }
   .product_features .feature_items .item.item4 .content {
     padding-top: 0;
-    margin-bottom: 77px;
+    margin-bottom: 16.3vw;
   }
   .product_features .feature_items .item.item5, .product_features .feature_items .item.item7 {
     justify-content: center;
@@ -2982,8 +2999,8 @@ button.swiper-pagination-bullet {
     max-width: 65%;
   }
   .product_features .feature_items .item.item5 .icon {
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
   }
   .product_features .feature_items .item.item6 {
     padding-bottom: 30px;
@@ -3165,7 +3182,7 @@ button.swiper-pagination-bullet {
     margin: 0;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .access_points .content {
     padding: 0;
   }
