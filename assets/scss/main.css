@@ -3397,6 +3397,9 @@ button.swiper-pagination-bullet {
     margin: 0 auto;
     margin-bottom: 50px;
   }
+  .our_plans .sec_title h1 {
+    font-size: 9.1vw;
+  }
   .our_plans .plans_list {
     gap: 22px;
   }
@@ -3416,9 +3419,6 @@ button.swiper-pagination-bullet {
 @media (max-width: 390px) {
   .our_plans .sec_title {
     margin-bottom: 32px !important;
-  }
-  .our_plans .sec_title h1 {
-    font-size: 29px;
   }
   .our_plans .plans_list .plan_item {
     height: 326px;

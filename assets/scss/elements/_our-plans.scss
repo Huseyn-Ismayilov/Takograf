@@ -152,6 +152,9 @@
             max-width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
+            h1{
+                font-size: 9.1vw;
+            }
         }
         .plans_list {
             gap: 22px;
@@ -176,9 +179,6 @@
     .our_plans {
         .sec_title {
             margin-bottom: 32px !important;
-            h1 {
-                font-size: 29px;
-            }
         }
         .plans_list {
             .plan_item {
