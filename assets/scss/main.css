@@ -2164,6 +2164,12 @@ button.swiper-pagination-bullet {
     width: fit-content;
     margin: 0 auto;
   }
+  .our_product .features_items li .icon img {
+    height: 90px;
+  }
+  .our_product .features_items li p {
+    max-width: 72%;
+  }
   .our_product .features_list li {
     width: 100%;
     font-size: 8.3vw;
