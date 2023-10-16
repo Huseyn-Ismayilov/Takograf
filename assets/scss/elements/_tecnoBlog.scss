@@ -1,0 +1,128 @@
+.tecnoBlog {
+    padding-bottom: 100px;
+    padding-left: 20px;
+
+    .sec_title {
+        text-align: left;
+        margin-bottom: 44px;
+        h1 {
+            font-size: 40.814px;
+            font-weight: 700;
+        }
+    }
+    .accardion_item {
+        background: #f5f5f7;
+        border-radius: 32px;
+        width: fit-content;
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 11.5px 29px;
+            width: fit-content;
+            gap: 24px;
+            cursor: pointer;
+            &.opened {
+                color: #5a0056;
+                &::after {
+                    transform: rotate(-90deg);
+                    margin-left: 130px;
+                }
+            }
+            span {
+                font-size: 23.069px;
+                font-weight: 600;
+            }
+            &::after {
+                content: "";
+                width: 18px;
+                height: 32px;
+                background-image: url(../images/arrow-right0.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                flex-shrink: 0;
+                margin-right: 6px;
+                transform: rotate(90deg);
+                transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+                filter: brightness(0) saturate(100%) invert(88%) sepia(0%) saturate(5090%) hue-rotate(358deg)
+                    brightness(93%) contrast(77%);
+            }
+        }
+        .body {
+            padding: 20px 28px;
+            padding-top: 23px;
+            padding-bottom: 1px;
+            display: none;
+            p {
+                font-size: 23.069px;
+                font-weight: 400;
+                letter-spacing: -0.461px;
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+                strong {
+                    font-weight: 600;
+                }
+                span {
+                    color: #0050c9;
+                }
+                a {
+                    color: #0050c9;
+                    &:hover {
+                        color: #033c92;
+                    }
+                }
+            }
+            .list {
+                margin-bottom: 34px;
+                p {
+                    margin-bottom: 0;
+                }
+                ul {
+                    padding-left: 34px;
+                    li {
+                        font-size: 23.069px;
+                        list-style: disc;
+                        letter-spacing: -0.461px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .tecnoBlog {
+        padding-left: 0;
+        .container {
+            padding: 0 14px;
+        }
+        .accardion_item {
+            .head {
+                padding: 12px 18px;
+                span {
+                    font-size: 21.385px;
+                }
+                &::after {
+                    width: 18px;
+                    height: 19px;
+                }
+                &.opened {
+                    &::after {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .body {
+                padding: 10px 18px;
+                p {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}

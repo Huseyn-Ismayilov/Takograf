@@ -1,0 +1,174 @@
+.our_product {
+    background-color: black;
+    padding: 150px 0 152px;
+    .product {
+        text-align: center;
+        margin-bottom: 41px;
+        .image {
+            width: 100%;
+            max-width: 650px;
+            display: inline-block;
+            margin-bottom: -30%;
+            position: relative;
+            z-index: 1;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+        .text {
+            width: 100%;
+            max-width: 944px;
+            display: inline-block;
+            transition: 3s;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .features_list {
+        text-align: center;
+        margin-bottom: 90px;
+
+        li {
+            font-size: 53.33px;
+            font-weight: 600;
+            letter-spacing: -1.067px;
+            &:not(:last-child) {
+                margin-bottom: 26px;
+            }
+            &:first-child {
+                color: #727272;
+                transition: 1s;
+            }
+            &:nth-child(2) {
+                color: #adadad;
+                transition: 1.5s;
+            }
+            &:nth-child(3) {
+                color: white;
+                transition: 2s;
+            }
+            &.check {
+                padding-left: 47px;
+                &::after {
+                    content: "";
+                    width: 37px;
+                    height: 38px;
+                    background-image: url(../images/check-icon.png);
+                    background-position: center;
+                    background-size: contain;
+                    display: inline-block;
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+    .features_items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: white;
+        max-width: 1003px;
+        margin: 0 auto;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90px;
+            text-align: center;
+            .icon {
+                margin-bottom: 16px;
+                img {
+                    max-height: 90px;
+                    object-fit: contain;
+                }
+            }
+            p {
+                font-size: 19.56px;
+                font-weight: 500;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .our_product {
+        padding: 150px 0 180px;
+        .product {
+            margin-bottom: 50px;
+            .image {
+                margin-bottom: -47%;
+            }
+        }
+        .features_items {
+            row-gap: 60px;
+            li {
+                width: 30%;
+                p {
+                    max-width: 104px;
+                }
+            }
+        }
+        .features_list {
+            li {
+                font-size: 40px;
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .our_product {
+        .features_items {
+            row-gap: 60px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 290px;
+            margin: 0 auto;
+            li {
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+        .features_list {
+            li {
+                width: 100%;
+                font-size: 8.3vw;
+                p {
+                    max-width: 104px;
+                }
+                &.check {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:390px) {
+    .our_product {
+        padding: 74px 0 120px;
+        .product {
+            margin-bottom: 30px;
+        }
+        .features_list {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+        .features_items{
+            li {
+                .icon {
+                    img {
+                        max-height: 62px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

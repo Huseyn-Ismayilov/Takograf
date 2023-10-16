@@ -1,0 +1,114 @@
+.access_points {
+    padding-top: 35px;
+    .wrapper {
+        align-items: center;
+    }
+    .col_4 {
+        width: 45%;
+    }
+    .col_5 {
+        width: 55%;
+    }
+    .content {
+        padding-left: 14px;
+        margin-top: -8px;
+        h4 {
+            color: #535d6c;
+            font-size: 26.667px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 106.667px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: -5px;
+        }
+        h3 {
+            font-size: 41.778px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            span {
+                color: #ad0718;
+            }
+        }
+        #select_country {
+            background: transparent;
+            background-image: url(../images/select-arrow.svg);
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: 18px;
+            appearance: none;
+            width: 100%;
+            max-width: 390px;
+            height: 60px;
+            padding: 5px 15px;
+            border-radius: 8px;
+            color: #8e8e91;
+            border: 2.667px solid #d57a83;
+            font-size: 25.778px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+    }
+    .image {
+        margin-left: 41px;
+        margin-right: -40px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .access_points {
+        .col {
+            width: 100% !important;
+            &:first-child {
+                margin-bottom: 42px;
+            }
+        }
+        .content {
+            padding: 0 15px;
+            margin: 0;
+            h1 {
+                font-size: 88.909px;
+            }
+            h3 {
+                font-size: 34.823px;
+                margin-bottom: 24px;
+            }
+            #select_country {
+                height: 50px;
+                max-width: 324px;
+                background-position-y: 13px;
+                color: var(--gray-dark);
+            }
+        }
+        .image {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 390px) {
+    .access_points {
+        .content {
+            padding: 0;
+            h4 {
+                font-size: 14.648px;
+            }
+            h1 {
+                font-size: 58.593px;
+            }
+            h3 {
+                font-size: 22.949px;
+            }
+            #select_country {
+                max-width: 221px;
+                height: 33px;
+                font-size: 15.157px;
+                background-size: 8px;
+                background-position-y: 8px;
+            }
+        }
+    }
+}

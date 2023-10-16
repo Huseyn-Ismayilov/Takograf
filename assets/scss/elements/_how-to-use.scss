@@ -1,0 +1,125 @@
+.howToUse {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -40px;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 30px;
+        width: 90%;
+        aspect-ratio: 1141/313;
+        display: block;
+        background-image: url(../images/line-arrow.svg);
+        background-position: center;
+        background-size: contain;
+        z-index: -1;
+    }
+    .sec_title {
+        margin: 90px auto 130px;
+        width: fit-content;
+        h2 {
+            font-size: 48.799px;
+            font-weight: 600;
+            letter-spacing: -1.464px;
+            margin-bottom: 46px;
+        }
+        h1 {
+            width: 100%;
+            max-width: 770px;
+        }
+    }
+    .items_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        padding-bottom: 40px;
+        li {
+            width: 33.333%;
+            padding: 0 20px;
+            .inner {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                height: 487px;
+                border-radius: 21.294px;
+                box-shadow: 0px 3.54903px 17.74513px 0px rgba(0, 0, 0, 0.15);
+                padding: 40px 20px 32px;
+                cursor: pointer;
+                transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                &:hover {
+                    box-shadow: 0px 3.54903px 30px 0px rgba(0, 0, 0, 0.15);
+                    transform: scale(1.03);
+                }
+            }
+            .image {
+                height: 246px;
+                margin-bottom: 30px;
+                img {
+                    height: 100%;
+                    margin: 0 auto;
+                }
+            }
+            .details {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                text-align: center;
+                h3 {
+                    font-size: 19.52px;
+                    font-weight: 500;
+                    max-width: 232px;
+                    line-height: 1.4;
+                    margin: 0 auto;
+                }
+                .link {
+                    margin-top: auto;
+                    font-size: 19.52px;
+                    font-weight: 400;
+                    color: var(--blue);
+                    &:hover {
+                        color: #0152a3;
+                    }
+                }
+            }
+            &:first-child {
+                h3 {
+                    max-width: 217px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .howToUse {
+        .items_list {
+            row-gap: 30px;
+            li {
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .howToUse {
+        .sec_title {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+        .items_list {
+            row-gap: 66px;
+            li {
+                width: 100%;
+                max-width: 330px;
+                margin: 0 auto;
+                .details {
+                    h3 {
+                        font-size: 22.461px;
+                    }
+                }
+            }
+        }
+    }
+}

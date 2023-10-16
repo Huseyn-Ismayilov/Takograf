@@ -1,0 +1,21 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15.11px;
+    font-weight: 500;
+    padding: 8px 23px;
+    border-radius: 999px;
+    &.blue {
+        background-color: var(--blue);
+        color: white;
+        &:hover {
+            background-color: var(--blue-dark);
+        }
+    }
+}
+@media (max-width:768px) {
+    .btn{
+        font-size: 23px;
+        padding: 10px 39px;
+    }
+}

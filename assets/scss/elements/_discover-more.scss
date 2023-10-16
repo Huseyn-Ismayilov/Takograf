@@ -1,0 +1,109 @@
+.discover_more {
+    padding: 126px 0 86px;
+    padding-left: 26px;
+    .sec_title {
+        text-align: left;
+        margin-bottom: 90px;
+        h1 {
+            font-size: 68.444px;
+            line-height: 118.023%;
+            font-weight: 600;
+            letter-spacing: -2.053px;
+        }
+    }
+    .items_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 60px;
+        padding-left: 4px;
+        li {
+            .icon {
+                margin-bottom: 26px;
+                img {
+                    width: 78px;
+                }
+            }
+            .content {
+                max-width: 409px;
+                p {
+                    font-size: 20.444px;
+                    font-weight: 600;
+                    line-height: 1.25;
+                    color: #67676b;
+                    span {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 991px) {
+    .discover_more {
+        padding-left: 0;
+        .items_list {
+            li {
+                &:nth-child(even) {
+                    max-width: 350px;
+                    margin-left: 8%;
+                }
+                &:last-child {
+                    margin-top: -26px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .discover_more {
+        padding: 95px 16px 86px;
+        .sec_title {
+            max-width: 208px;
+            margin-bottom: 58px;
+            h1 {
+                font-size: 44px;
+                line-height: 1.1;
+                letter-spacing: -1.32px;
+            }
+        }
+        .items_list {
+            grid-template-columns: 1fr;
+            li {
+                margin: 0 !important;
+                .content {
+                    p {
+                        font-size: 20px;
+                        max-width: 360px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:390px) {
+    .discover_more {
+        padding: 95px 5px 86px;
+        .sec_title {
+            margin-bottom: 38px;
+            h1 {
+                font-size: 28.997px;
+            }
+        }
+        .items_list {
+            gap: 32px;
+            li {
+                .icon {
+                    margin-bottom: 12px;
+                    img {
+                        width: 55px;
+                    }
+                }
+                .content {
+                    p {
+                        font-size: 13.18px;
+                    }
+                }
+            }
+        }
+    }
+}

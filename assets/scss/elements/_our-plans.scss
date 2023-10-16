@@ -1,0 +1,210 @@
+.our_plans {
+    padding: 28px 0 57px;
+    .sec_title {
+        margin-bottom: 65px;
+        h1 {
+            font-size: 54.902px;
+            font-weight: 600;
+            letter-spacing: -1.647px;
+        }
+    }
+    .plans_list {
+        width: 100%;
+        max-width: 864px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 43.5px;
+        .plan_item {
+            padding: 45px 40px 37px;
+            height: 464px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 21.176px;
+            background: #fff;
+            text-align: center;
+            transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 8px 11.55556px 31.11111px 0px rgba(192, 192, 199, 0.45);
+
+            .type {
+                width: 170px;
+                height: 60px;
+                font-size: 29.02px;
+                font-weight: 600;
+                line-height: 1.18;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 33.7px;
+            }
+            .price {
+                font-size: 39.216px;
+                font-weight: 600;
+                line-height: 118.023%;
+                margin-bottom: 24px;
+                span {
+                    font-size: 25.882px;
+                }
+            }
+            .btn {
+                margin-top: auto;
+                font-size: 20.444px;
+                width: 100%;
+                justify-content: center;
+                padding: 16.5px 17px;
+                &.gray {
+                    background-color: #2a2a2a;
+                    color: white;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+            ul {
+                margin-left: -24px;
+                li {
+                    padding: 3px 0;
+                    font-size: 20.444px;
+                    font-weight: 600;
+                    line-height: 118.023%;
+                    &::before {
+                        content: "";
+                        background-image: url(../images/check-icon.png);
+                        background-position: center;
+                        background-size: contain;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        flex-shrink: 0;
+                        margin-right: 6px;
+                        filter: brightness(0) saturate(100%) invert(44%) sepia(89%) saturate(952%) hue-rotate(90deg)
+                            brightness(103%) contrast(109%);
+                    }
+                }
+            }
+            .line {
+                display: inline-block;
+                margin: 17px auto;
+                width: 20.392px;
+                height: 2.5px;
+                border-radius: 9px;
+                background-color: #8d8d8d;
+            }
+            &.individual {
+                .type {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcxIiBoZWlnaHQ9IjYxIiB2aWV3Qm94PSIwIDAgMTcxIDYxIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBpZD0iUmVjdGFuZ2xlIDM1IiBkPSJNMC43MDUxMzggOC4yNTcxN0MwLjUxODYwNyA0LjE1MzUgMy44NjE5NiAwLjc1Nzk4OSA3Ljk2ODAyIDAuODgwOTgxTDE2My4yNjMgNS41MzI2OUMxNjcuMjUxIDUuNjUyMTQgMTcwLjM0OCA5LjA1MDM0IDE3MC4wOTcgMTMuMDMyMUwxNjcuODIxIDQ5LjE1OEMxNjcuNTkzIDUyLjc4NjMgMTY0LjY0NiA1NS42NDc3IDE2MS4wMTIgNTUuNzY5MUwxMC4wNzUyIDYwLjgxMjNDNi4yMTE5NSA2MC45NDE0IDIuOTYzNDIgNTcuOTM5NCAyLjc4NzkgNTQuMDc4TDAuNzA1MTM4IDguMjU3MTdaIiBmaWxsPSIjRkZDQzczIi8+Cjwvc3ZnPgo=);
+                }
+            }
+            &.corporate {
+                .type {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjYxIiB2aWV3Qm94PSIwIDAgMTcwIDYxIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBpZD0iUmVjdGFuZ2xlIDM5IiBkPSJNMy42NzI4NyAxMC4yMDA3QzMuOTI0NiA2LjU1MDY3IDYuOTIzNDcgMy42OTc5NiAxMC41ODE1IDMuNjI4NzhMMTYyLjQ4MSAwLjc1NTk3OEMxNjYuNTU0IDAuNjc4OTM4IDE2OS44NDcgNC4wNTY3NiAxNjkuNjY2IDguMTI2OTZMMTY3LjkzNCA0Ny4wODg0QzE2Ny43NzIgNTAuNzQ2OCAxNjQuODM5IDUzLjY3MzMgMTYxLjE4IDUzLjgyNzZMOC4wNzgzIDYwLjI4MTVDMy44NzM5NiA2MC40NTg3IDAuNDQ5Mzc1IDU2Ljk0MTQgMC43Mzg4OTkgNTIuNzQzM0wzLjY3Mjg3IDEwLjIwMDdaIiBmaWxsPSIjRTlFRUVGIi8+Cjwvc3ZnPgo=);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 991px) {
+    .our_plans {
+        .plans_list {
+            .plan_item {
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .our_plans {
+        .sec_title {
+            text-align: left;
+            h1 {
+                font-size: 44px;
+                letter-spacing: -1.32px;
+            }
+        }
+        .plans_list {
+            grid-template-columns: 1fr;
+            .plan_item {
+                box-shadow: unset;
+                padding: 36px;
+                &.individual {
+                    border: 4.973px solid #0095e8;
+                }
+                &.corporate {
+                    border: 4.973px solid #e9eeef;
+                }
+                &:active {
+                    transform: scale(1.03);
+                }
+                .btn {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .our_plans {
+        .sec_title {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .plans_list {
+            gap: 22px;
+            .plan_item {
+                width: 100%;
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width:390px) {
+    .our_plans {
+        
+        .sec_title {
+            margin-bottom: 32px;
+            h1 {
+                font-size: 29px;
+            }
+        }
+        .plans_list {
+            .plan_item {
+                height: 326px;
+
+                padding: 27px;
+                .type {
+                    font-size: 20.211px;
+                    width: 119.76px;
+                    height: 42.496px;
+                    background-size: contain;
+                    margin-bottom: 23px;
+                    flex-shrink: 0;
+                }
+                .price {
+                    font-size: 27.312px;
+                    margin-bottom: 16px;
+                    span {
+                        font-size: 18.026px;
+                    }
+                }
+                ul{
+                    li {
+                        font-size: 14.202px;
+                        padding: 0;
+                    }
+                }
+                .line {
+                    margin: 9px 0;
+                }
+                .btn{
+                    font-size: 15.157px;
+                    padding: 11px;
+                }
+            }
+        }
+    }
+}
