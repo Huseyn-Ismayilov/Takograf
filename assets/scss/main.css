@@ -853,7 +853,7 @@ button.swiper-pagination-bullet {
 .toggle .bar {
   display: inline-block;
   width: 100%;
-  width: 30px;
+  width: 24px;
   height: 3px;
   margin: 5px 0;
   transform: none;
@@ -1539,7 +1539,7 @@ button.swiper-pagination-bullet {
     text-align: left;
   }
   .hero h1 {
-    font-size: 12vw;
+    font-size: 56px;
     margin-bottom: 27px;
     letter-spacing: 0;
   }
