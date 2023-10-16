@@ -86,7 +86,7 @@
 @media (min-width: 991px) {
     .download_app {
         .image {
-        margin-left: 20px;
+            margin-left: 20px;
             .mobile {
                 display: none;
             }
@@ -137,7 +137,7 @@
         }
     }
 }
-@media (max-width:390px) {
+@media (max-width: 420px) {
     .download_app {
         padding: 64px 20px 0;
         .sec_title {
@@ -146,10 +146,10 @@
                 font-size: 36.24px;
             }
         }
-        .content{
+        .content {
             p {
                 font-size: 18.157px;
             }
         }
     }
-} 
+}

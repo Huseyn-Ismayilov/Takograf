@@ -145,7 +145,7 @@
         }
     }
 }
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .our_plans {
         .sec_title {
             width: 100%;
@@ -160,9 +160,9 @@
                 max-width: 90%;
                 margin: 0 auto;
                 ul {
-                    li{
+                    li {
                         padding: 2px 0;
-                        &::before{
+                        &::before {
                             width: 14px;
                             height: 14px;
                         }
@@ -172,9 +172,8 @@
         }
     }
 }
-@media (max-width:390px) {
+@media (max-width: 420px) {
     .our_plans {
-        
         .sec_title {
             margin-bottom: 32px !important;
             h1 {
@@ -201,7 +200,7 @@
                         font-size: 18.026px;
                     }
                 }
-                ul{
+                ul {
                     li {
                         font-size: 14.202px;
                     }
@@ -209,7 +208,7 @@
                 .line {
                     margin: 9px 0;
                 }
-                .btn{
+                .btn {
                     font-size: 15.157px;
                     padding: 11px;
                 }

@@ -60,7 +60,7 @@
     background-size: cover;
     position: relative;
 
-    >* {
+    > * {
         z-index: 1;
         position: relative;
     }
@@ -270,16 +270,15 @@
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .hero {
         h1 {
             font-size: 11.6vw;
             margin-bottom: 17px;
-
         }
     }
 }
-@media (max-width:390px) {
+@media (max-width: 420px) {
     .hero {
         padding-top: 80px;
         margin-top: -54px;
@@ -314,7 +313,6 @@
                 font-size: 33px;
                 margin-right: 0;
             }
-
         }
     }
 }
