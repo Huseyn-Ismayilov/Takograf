@@ -1632,16 +1632,16 @@ button.swiper-pagination-bullet {
   .hero h1 {
     font-size: 11.6vw;
   }
+  .hero .try_free_btn {
+    font-size: 4.8vw;
+    padding: 3.6% 9.3%;
+    margin-bottom: 37px;
+  }
 }
 @media (max-width: 390px) {
   .hero {
     padding-top: 80px;
     margin-top: -54px;
-  }
-  .hero .try_free_btn {
-    font-size: 15px;
-    padding: 11px 29px;
-    margin-bottom: 37px;
   }
   .hero .googleRating svg {
     width: 125px;
