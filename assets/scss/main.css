@@ -1638,9 +1638,6 @@ button.swiper-pagination-bullet {
     padding-top: 80px;
     margin-top: -54px;
   }
-  .hero p {
-    font-size: 21px;
-  }
   .hero .try_free_btn {
     font-size: 15px;
     padding: 11px 29px;
@@ -2313,13 +2310,15 @@ button.swiper-pagination-bullet {
   transform: scale(1);
 }
 .product_features .feature_items .item.item1 {
-  border-radius: 34.667px;
   background: #f0fbff;
   align-items: center;
 }
 .product_features .feature_items .item.item1 .content {
   margin-top: -8px;
   max-width: 250px;
+}
+.product_features .feature_items .item.item1 h3 {
+  color: #002868;
 }
 .product_features .feature_items .item.item1 h3 span {
   color: var(--blue);
@@ -2391,7 +2390,6 @@ button.swiper-pagination-bullet {
 .product_features .feature_items .item.item4 {
   height: 613.5px;
   background: #e4f2eb;
-  border-radius: 32px;
   flex-direction: column;
 }
 .product_features .feature_items .item.item4 h3 span {
@@ -2438,7 +2436,6 @@ button.swiper-pagination-bullet {
 .product_features .feature_items .item.item5 {
   height: 613.5px;
   align-items: center;
-  border-radius: 32px;
   background: linear-gradient(141deg, #1c80f3 17.41%, #1ab7f9 86.28%);
 }
 .product_features .feature_items .item.item5 .plus_btn {
@@ -2453,9 +2450,10 @@ button.swiper-pagination-bullet {
 }
 .product_features .feature_items .item.item5 .icon {
   position: relative;
-  width: 73px;
-  height: 68px;
+  width: 64px;
+  height: 54px;
   overflow: hidden;
+  margin-bottom: 7px;
 }
 .product_features .feature_items .item.item5 .icon > * {
   display: block !important;
@@ -2474,6 +2472,9 @@ button.swiper-pagination-bullet {
 }
 .product_features .feature_items .item.item5 .icon img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .product_features .feature_items .item.item5 .chng_text {
   color: black;
@@ -2643,6 +2644,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 991px) {
+  .product_features .sec_title h1 br.dNone {
+    display: none;
+  }
   .product_features .feature_items .item .image .mobile {
     display: none;
   }
@@ -2894,6 +2898,9 @@ button.swiper-pagination-bullet {
     width: 100%;
     max-width: 65%;
   }
+  .product_features .feature_items .item.item5 .chng_text {
+    height: 65px;
+  }
   .product_features .feature_items .item.item5 .icon {
     width: 60px;
     height: 60px;
@@ -2928,6 +2935,15 @@ button.swiper-pagination-bullet {
   }
   .product_features .feature_items .item {
     border-radius: 20px;
+  }
+  .product_features .feature_items .item .hidden_content {
+    padding: 26px 20px;
+  }
+  .product_features .feature_items .item .hidden_content h3 {
+    font-size: 26px !important;
+  }
+  .product_features .feature_items .item .hidden_content p {
+    font-size: 16px !important;
   }
   .product_features .feature_items .item .plus_btn img {
     width: 25px;
