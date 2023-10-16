@@ -137,6 +137,15 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .download_app {
+        .sec_title {
+            h1 {
+                
+            }
+        }
+    }
+}
 @media (max-width: 390px) {
     .download_app {
         padding: 64px 20px 0;

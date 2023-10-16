@@ -221,6 +221,19 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .googlePlayApp {
+        .wrapper {
+            padding: 10% 6%;
+        }
+        h1 {
+            font-size: 6.1vw;
+        }
+        .link {
+            padding: 9px 31px;
+        }
+    }
+}
 @media (max-width: 420px) {
     .site_footer {
         .logo {
@@ -249,12 +262,6 @@
         }
     }
     .googlePlayApp {
-        .wrapper {
-            padding: 23px 20px;
-        }
-        h1 {
-            font-size: 17.793px;
-        }
         .link {
             max-width: 145px;
             border-radius: 5.931px;
