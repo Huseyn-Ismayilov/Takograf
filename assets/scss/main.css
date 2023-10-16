@@ -1894,8 +1894,8 @@ button.swiper-pagination-bullet {
     padding-top: 71px;
   }
   .our_apps .bottom_text p {
-    font-size: 6.5vw;
-    max-width: 89%;
+    font-size: 7.3vw;
+    max-width: 93%;
     margin: 0;
   }
 }
@@ -1916,9 +1916,6 @@ button.swiper-pagination-bullet {
   }
   .our_apps .apps_list .app_cart .content p {
     font-size: 18px;
-  }
-  .our_apps .bottom_text p {
-    font-size: 7vw;
   }
 }
 .what_is_takograf {
@@ -2698,7 +2695,7 @@ button.swiper-pagination-bullet {
     width: 37px;
   }
   .product_features .feature_items .item .content h3 {
-    font-size: 8vw;
+    font-size: 7.92vw;
   }
   .product_features .feature_items .item .hidden_content {
     padding: 35px 25px;
@@ -2815,8 +2812,7 @@ button.swiper-pagination-bullet {
     gap: 0 !important;
   }
   .product_features .feature_items .item.item6 .content {
-    max-width: 100% !important;
-    padding-right: 24px;
+    max-width: 90% !important;
     margin-bottom: 40px;
   }
   .product_features .feature_items .item.item6 .content h3 {
@@ -3425,6 +3421,9 @@ button.swiper-pagination-bullet {
     width: 14px;
     height: 14px;
   }
+  .our_plans .plans_list .plan_item .btn {
+    font-size: 5vw;
+  }
 }
 @media (max-width: 390px) {
   .our_plans .sec_title {
@@ -3456,7 +3455,6 @@ button.swiper-pagination-bullet {
     margin: 9px 0;
   }
   .our_plans .plans_list .plan_item .btn {
-    font-size: 15.157px;
     padding: 11px;
   }
 }
@@ -3643,6 +3641,11 @@ button.swiper-pagination-bullet {
     display: none;
   }
 }
+@media (max-width: 576px) {
+  .download_app .sec_title h1 {
+    font-size: 11.4vw;
+  }
+}
 @media (max-width: 390px) {
   .download_app {
     padding: 64px 20px 0;
@@ -3651,7 +3654,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 17px;
   }
   .download_app .sec_title h1 {
-    font-size: 36.24px;
+    font-size: 12vw;
   }
   .download_app .content p {
     font-size: 18.157px;
