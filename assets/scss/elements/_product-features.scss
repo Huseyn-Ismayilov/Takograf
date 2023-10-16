@@ -918,7 +918,7 @@
                         }
                     }
                     .chng_text {
-                        height: 65px;
+                        height: 79px;
                     }
                     .icon {
                         width: 60px;
@@ -971,6 +971,9 @@
         .feature_items {
             .item {
                 border-radius: 20px;
+                .content {
+                    padding-left: 20px !important;
+                }
                 .hidden_content {
                     padding: 26px 20px;
                     h3 {
@@ -990,6 +993,11 @@
                 &.item4,
                 &.item6 {
                     padding-top: 44px;
+                }
+                &.item5 {
+                    .chng_text {
+                        height: 66px;
+                    }
                 }
                 &.item8 {
                     padding-top: 34px;
