@@ -119,6 +119,7 @@
 @media (max-width: 576px) {
     .our_product {
         .features_items {
+            column-gap: 60px;
             row-gap: 60px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -159,6 +160,8 @@
             }
         }
         .features_items{
+            column-gap: 0;
+            row-gap: 30px;
             li {
                 .icon {
                     img {

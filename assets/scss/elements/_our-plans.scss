@@ -151,6 +151,7 @@
             width: 100%;
             max-width: 90%;
             margin: 0 auto;
+            margin-bottom: 50px;
         }
         .plans_list {
             gap: 22px;
@@ -158,6 +159,15 @@
                 width: 100%;
                 max-width: 90%;
                 margin: 0 auto;
+                ul {
+                    li{
+                        padding: 2px 0;
+                        &::before{
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -166,7 +176,7 @@
     .our_plans {
         
         .sec_title {
-            margin-bottom: 32px;
+            margin-bottom: 32px !important;
             h1 {
                 font-size: 29px;
             }
@@ -194,7 +204,6 @@
                 ul{
                     li {
                         font-size: 14.202px;
-                        padding: 0;
                     }
                 }
                 .line {

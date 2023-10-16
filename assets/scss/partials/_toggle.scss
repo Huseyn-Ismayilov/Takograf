@@ -19,9 +19,9 @@
     .bar {
         display: inline-block;
         width: 100%;
-        width: 24px;
+        width: 30px;
         height: 3px;
-        margin: 5px 0;
+        margin: 4px 0;
         transform: none;
         transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -43,7 +43,7 @@
 
             &:nth-child(1) {
                 transform: rotate(48deg);
-                margin-bottom: -11px;
+                margin-bottom: -9px;
             }
 
             &:nth-child(3) {

@@ -46,8 +46,19 @@
         .image {
             padding: 0;
             margin-right: 0;
-            margin: 0 -12px;
+            margin: 0 -4px;
             margin-bottom: 32px;
+        }
+    }
+}
+@media (max-width:576px) {
+    .app_dashboard {
+        .sec_title {
+            max-width: 82%;
+            margin: 0 auto 33px;
+            h1{
+                font-size: 7.8vw;
+            }
         }
     }
 }
@@ -56,8 +67,6 @@
         .sec_title {
             h1 {
                 font-size: 25px;
-                max-width: 250px;
-                margin: 0 auto;
             }
         }
         .image {
