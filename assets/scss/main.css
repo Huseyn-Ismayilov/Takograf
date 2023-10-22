@@ -1904,28 +1904,24 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
-  .our_apps .sec_title h1 {
-    font-size: 10vw;
-  }
-  .our_apps .apps_list .app_cart .content {
-    margin-bottom: 7.3vw;
-  }
-  .our_apps .apps_list .app_cart .content p {
-    line-height: 1.3;
-  }
-}
-@media (max-width: 390px) {
   .our_apps .sec_title {
     margin-bottom: 50px;
   }
+  .our_apps .sec_title h1 {
+    font-size: 10vw;
+  }
   .our_apps .apps_list .app_cart {
-    padding: 24px 19px;
+    padding: 7.8vw 6vw;
+  }
+  .our_apps .apps_list .app_cart .content {
+    margin-bottom: 16vw;
   }
   .our_apps .apps_list .app_cart .content h3 {
-    font-size: 25px;
+    font-size: 8.2vw;
   }
   .our_apps .apps_list .app_cart .content p {
-    font-size: 18px;
+    line-height: 1.3;
+    font-size: 5.9vw;
   }
 }
 .what_is_takograf {
@@ -2030,20 +2026,26 @@ button.swiper-pagination-bullet {
     width: 71%;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .what_is_takograf .content {
-    padding-right: 28px;
-    max-width: 97px;
+    max-width: 33%;
+    padding-right: 0;
+    margin-right: 3%;
   }
   .what_is_takograf .content h1 {
-    font-size: 18px;
+    font-size: 6vw;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .what_is_takograf .image {
-    max-width: 140px;
+    max-width: 53%;
     padding-right: 0;
   }
+  .what_is_takograf .play_btn {
+    padding: 0;
+  }
   .what_is_takograf .play_btn svg {
-    width: 42px;
+    width: 13.25vw;
     height: auto;
   }
 }
@@ -2165,6 +2167,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
+  .our_product {
+    padding: 25vw 0 42 vw;
+  }
   .our_product .features_items {
     -moz-column-gap: 60px;
          column-gap: 60px;
@@ -2180,10 +2185,14 @@ button.swiper-pagination-bullet {
     margin: 0 auto;
   }
   .our_product .features_items li .icon img {
-    height: 90px;
+    height: 19vw;
   }
   .our_product .features_items li p {
-    max-width: 72%;
+    font-size: 4.3vw;
+    max-width: 90%;
+  }
+  .our_product .features_list {
+    margin-bottom: 23vw;
   }
   .our_product .features_list li {
     width: 100%;
@@ -2197,12 +2206,6 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 390px) {
-  .our_product {
-    padding: 74px 0 120px;
-  }
-  .our_product .product {
-    margin-bottom: 30px;
-  }
   .our_product .features_list li:not(:last-child) {
     margin-bottom: 14px;
   }
@@ -2210,12 +2213,6 @@ button.swiper-pagination-bullet {
     -moz-column-gap: 0;
          column-gap: 0;
     row-gap: 30px;
-  }
-  .our_product .features_items li .icon img {
-    max-height: 62px;
-  }
-  .our_product .features_items li p {
-    font-size: 14px;
   }
 }
 .product_features {
@@ -2880,6 +2877,17 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
+  .product_features .sec_title {
+    padding-bottom: 19vw;
+  }
+  .product_features .sec_title .logo {
+    width: 31.5vw;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .product_features .sec_title h3 {
+    font-size: 4.8vw;
+  }
   .product_features .feature_items .item.item1 .content {
     padding-top: 0;
   }
@@ -2897,6 +2905,13 @@ button.swiper-pagination-bullet {
   }
   .product_features .feature_items .item {
     border-radius: 30px;
+  }
+  .product_features .feature_items .item .plus_btn {
+    right: 16px;
+    bottom: 16px;
+  }
+  .product_features .feature_items .item .plus_btn img {
+    width: 7.7vw;
   }
   .product_features .feature_items .item.item3 .image {
     max-width: 100%;
@@ -2916,7 +2931,7 @@ button.swiper-pagination-bullet {
     max-width: 65%;
   }
   .product_features .feature_items .item.item5 .chng_text {
-    height: 79px;
+    height: 11vh;
   }
   .product_features .feature_items .item.item5 .icon {
     width: 60px;
@@ -2940,10 +2955,6 @@ button.swiper-pagination-bullet {
   .product_features {
     padding: 77px 0 50px;
   }
-  .product_features .sec_title .logo {
-    max-width: 101px;
-    margin-bottom: 20px;
-  }
   .product_features .sec_title h1 {
     margin-bottom: 23px;
   }
@@ -2964,9 +2975,6 @@ button.swiper-pagination-bullet {
   }
   .product_features .feature_items .item .hidden_content p {
     font-size: 16px !important;
-  }
-  .product_features .feature_items .item .plus_btn img {
-    width: 25px;
   }
   .product_features .feature_items .item.item1, .product_features .feature_items .item.item3, .product_features .feature_items .item.item4, .product_features .feature_items .item.item6 {
     padding-top: 44px;

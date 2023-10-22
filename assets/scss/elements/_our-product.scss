@@ -118,6 +118,7 @@
 }
 @media (max-width: 576px) {
     .our_product {
+        padding: 25vw 0 42  vw;
         .features_items {
             column-gap: 60px;
             row-gap: 60px;
@@ -130,15 +131,17 @@
                 margin: 0 auto;
                 .icon {
                     img {
-                        height: 90px;
+                        height: 19vw;
                     }
                 }
                 p {
-                    max-width: 72%;
+                    font-size: 4.3vw;
+                    max-width: 90%;
                 }
             }
         }
         .features_list {
+            margin-bottom: 23vw;
             li {
                 width: 100%;
                 font-size: 8.3vw;
@@ -156,10 +159,6 @@
 }
 @media (max-width: 390px) {
     .our_product {
-        padding: 74px 0 120px;
-        .product {
-            margin-bottom: 30px;
-        }
         .features_list {
             li {
                 &:not(:last-child) {
@@ -170,16 +169,6 @@
         .features_items {
             column-gap: 0;
             row-gap: 30px;
-            li {
-                .icon {
-                    img {
-                        max-height: 62px;
-                    }
-                }
-                p {
-                    font-size: 14px;
-                }
-            }
         }
     }
 }

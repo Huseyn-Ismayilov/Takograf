@@ -99,22 +99,25 @@
         }
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
     .what_is_takograf {
         .content {
-            padding-right: 28px;
-            max-width: 97px;
+            max-width: 33%;
+            padding-right: 0;
+            margin-right: 3%;
             h1 {
-                font-size: 18px;
+                font-size: 6vw;
+                max-width: fit-content;
             }
         }
         .image {
-            max-width: 140px;
+            max-width: 53%;
             padding-right: 0;
         }
         .play_btn {
+            padding: 0;
             svg {
-                width: 42px;
+                width: 13.25vw;
                 height: auto;
             }
         }

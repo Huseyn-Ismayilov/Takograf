@@ -857,6 +857,16 @@
 
 @media (max-width: 576px) {
     .product_features {
+        .sec_title {
+            padding-bottom: 19vw;
+            .logo {
+                width: 31.5vw;
+                max-width: fit-content;
+            }
+            h3 {
+                font-size: 4.8vw;
+            }
+        }
         .feature_items {
             .item {
                 &.item1 {
@@ -886,7 +896,13 @@
         .feature_items {
             .item {
                 border-radius: 30px;
-
+                .plus_btn {
+                    right: 16px;
+                    bottom: 16px;
+                    img {
+                        width: 7.7vw;
+                    }
+                }
                 &.item3 {
                     .image {
                         max-width: 100%;
@@ -918,7 +934,7 @@
                         }
                     }
                     .chng_text {
-                        height: 79px;
+                        height: 11vh;
                     }
                     .icon {
                         width: 60px;
@@ -954,11 +970,6 @@
         padding: 77px 0 50px;
 
         .sec_title {
-            .logo {
-                max-width: 101px;
-                margin-bottom: 20px;
-            }
-
             h1 {
                 margin-bottom: 23px;
             }
@@ -981,11 +992,6 @@
                     }
                     p {
                         font-size: 16px !important;
-                    }
-                }
-                .plus_btn {
-                    img {
-                        width: 25px;
                     }
                 }
                 &.item1,
