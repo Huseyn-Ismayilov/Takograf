@@ -283,6 +283,7 @@
         padding: 21px 0;
         top: -82px;
         .site_logo {
+            margin-right: auto;
             img {
                 width: 37.8vw;
             }
@@ -300,17 +301,29 @@
             display: none;
         }
         .toggle {
-            margin-left: auto;
             margin-right: 8px;
         }
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
     .site_header {
         padding: 14px 0;
+        .try_free_btn {
+            font-size: 3.542vw;
+            padding: 1.875vw 3.542vw;
+            margin-left: auto;
+        }
         .site_logo {
+            width: 37.708vw;
             img {
-                width: 120px;
+                width: 100%;
+            }
+        }
+        .toggle {
+            width: 6.250vw;
+            svg {
+                width: 100%;
+                height: auto;
             }
         }
     }

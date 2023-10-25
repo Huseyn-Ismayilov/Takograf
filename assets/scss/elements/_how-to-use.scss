@@ -90,12 +90,30 @@
         }
     }
 }
+@media (min-width: 991px) {
+    .howToUse {
+        .items_list {
+            li {
+                .hideDesktop {
+                    > div {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 991px) {
     .howToUse {
         .items_list {
             row-gap: 30px;
             li {
                 width: 50%;
+                .hideDesktop {
+                    > img {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -112,14 +130,42 @@
             row-gap: 66px;
             li {
                 width: 100%;
-                max-width: 330px;
+                max-width: 75%;
+                min-width: 215px;
                 margin: 0 auto;
                 .details {
                     h3 {
-                        font-size: 22.461px;
+                        font-size: 4.679vw;
                     }
                 }
+                .image {
+                    height: auto;
+                    img {
+                        max-width: 70%;
+                    }
+                }
+                .inner {
+                    border-radius: 32px;
+                    height: 509px;
+                }
             }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .howToUse {
+        .sec_title {
+            h2 {
+                font-size: 8.333vw;
+            }
+            h1 {
+                padding: 0 4px;
+            }
+        }
+        &::after {
+            left: -56%;
+            top: 3%;
+            width: 167%;
         }
     }
 }

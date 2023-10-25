@@ -58,12 +58,10 @@
     .discover_more {
         padding: 95px 16px 105px;
         .sec_title {
-            max-width: 208px;
             margin-bottom: 58px;
+            max-width: 50%;
             h1 {
-                font-size: 44px;
-                line-height: 1.1;
-                letter-spacing: -1.32px;
+                font-size: 10vw;
             }
         }
         .items_list {
@@ -80,13 +78,14 @@
         }
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
     .discover_more {
         padding: 95px 5px 86px;
         .sec_title {
             margin-bottom: 38px;
+       
             h1 {
-                font-size: 28.997px;
+                font-size: 9.167vw;
             }
         }
         .items_list {
@@ -95,12 +94,12 @@
                 .icon {
                     margin-bottom: 12px;
                     img {
-                        width: 55px;
+                        width: 17.1vw;
                     }
                 }
                 .content {
                     p {
-                        font-size: 13.18px;
+                        font-size: 4.167vw;
                     }
                 }
             }

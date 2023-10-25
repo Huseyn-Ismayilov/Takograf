@@ -118,7 +118,13 @@
 }
 @media (max-width: 576px) {
     .our_product {
-        padding: 25vw 0 42  vw;
+        padding: 25vw 0 42vw;
+        .product {
+            .text {
+                margin: 0 -10px;
+                width: auto;
+            }
+        }
         .features_items {
             column-gap: 60px;
             row-gap: 60px;

@@ -49,9 +49,13 @@
                     color: var(--gray-dark);
                 }
             }
-            .image {
+            .image,
+            .video {
                 margin: 0 -5px;
                 img {
+                    width: 100%;
+                }
+                video {
                     width: 100%;
                 }
             }
