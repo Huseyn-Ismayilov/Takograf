@@ -125,7 +125,6 @@
             }
         }
         .plans_list {
-            grid-template-columns: 1fr;
             .plan_item {
                 box-shadow: unset;
                 padding: 36px;
@@ -142,6 +141,13 @@
                     font-size: 23px;
                 }
             }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .our_plans {
+        .plans_list {
+            grid-template-columns: 1fr;
         }
     }
 }

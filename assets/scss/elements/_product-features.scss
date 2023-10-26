@@ -382,6 +382,14 @@
                         max-width: 411px;
                     }
                 }
+                .plus_btn {
+                    filter: invert(100%) sepia(8%) saturate(0%) hue-rotate(166deg) brightness(107%) contrast(109%);
+                }
+                &.opened {
+                    .plus_btn {
+                        filter: none;
+                    }
+                }
             }
 
             &.item6 {
@@ -490,14 +498,15 @@
                     padding-left: 56px;
                     padding-right: 56px;
                     p {
-                        color: #002D25;
+                        color: #002d25;
                     }
                 }
-
+                .plus_btn {
+                    filter: invert(100%) sepia(8%) saturate(0%) hue-rotate(166deg) brightness(107%) contrast(109%);
+                }
                 &.opened {
                     .plus_btn {
-                        filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(26%) hue-rotate(227deg)
-                            brightness(107%) contrast(107%);
+                        filter: none;
                     }
                 }
             }
@@ -542,7 +551,7 @@
                     align-items: center;
                     justify-content: center;
                     p {
-                        color: #D6D6D6;
+                        color: #d6d6d6;
                         max-width: 411px;
                     }
                 }
@@ -678,8 +687,10 @@
                 }
 
                 .hidden_content {
-                    padding: 35px 11.042vw;
+                    padding: 35px 10.833vw !important;
                     overflow-y: auto;
+                    align-items: center;
+                    justify-content: baseline;
                     h3 {
                         font-size: 5.208vw;
                         font-weight: 600;
@@ -687,6 +698,7 @@
                     }
 
                     p {
+                        height: fit-content;
                         font-size: 5.208vw;
                         font-weight: 600;
                         color: white;
@@ -909,11 +921,13 @@
         .feature_items {
             .item {
                 &.item1 {
+                    padding-top: 13.958vw !important;
                     .content {
                         padding-top: 0;
                     }
                 }
                 &.item3 {
+                    padding-top: 13.958vw !important;
                     h3 {
                         max-width: 90%;
                     }
@@ -922,6 +936,9 @@
                         padding-top: 0;
                     }
                 }
+                &.item4 {
+                    padding-top: 13.958vw !important;
+                }
                 &.item5 {
                     .content {
                         padding-top: 20px !important;
@@ -929,6 +946,20 @@
                 }
                 &.item6 {
                     gap: 40px;
+                    padding-top: 13.958vw !important;
+                    .content {
+                        margin-bottom: 16.8vw;
+                    }
+                    .hidden_content {
+                        br {
+                            &:first-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &.item8 {
+                    padding-top: 13.958vw !important;
                 }
             }
         }
@@ -1033,20 +1064,20 @@
                         font-size: 16px !important;
                     }
                 }
-                &.item1,
-                &.item3,
-                &.item4,
-                &.item6 {
-                    padding-top: 44px;
-                }
+                // &.item1,
+                // &.item3,
+                // &.item4,
+                // &.item6 {
+                //     padding-top: 44px;
+                // }
                 &.item5 {
                     .chng_text {
                         height: 66px;
                     }
                 }
-                &.item8 {
-                    padding-top: 34px;
-                }
+                // &.item8 {
+                //     padding-top: 34px;
+                // }
                 &.item3 {
                     .image {
                         max-width: 95%;

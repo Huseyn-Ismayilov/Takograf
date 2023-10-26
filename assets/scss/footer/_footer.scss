@@ -224,13 +224,17 @@
 @media (max-width: 576px) {
     .googlePlayApp {
         .wrapper {
-            padding: 10% 6%;
+            padding: 7.292vw 6.458vw;
+            border-radius: 16px;
         }
         h1 {
-            font-size: 6.1vw;
+            font-size: 5.625vw;
         }
         .link {
-            padding: 9px 31px;
+            padding: 1.875vw 6.458vw;
+            margin-top: 0;
+            width: 45.417vw;
+            border-radius: 2.2vw;
         }
     }
 }
@@ -259,14 +263,6 @@
             img {
                 width: 45px;
             }
-        }
-    }
-    .googlePlayApp {
-        .link {
-            max-width: 145px;
-            border-radius: 5.931px;
-            padding: 7px 24px;
-            border: 1.573px solid #dbdbdb;
         }
     }
 }
