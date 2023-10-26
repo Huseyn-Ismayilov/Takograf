@@ -123,6 +123,7 @@
 }
 @media (max-width: 768px) {
     .howToUse {
+        margin-bottom: 0;
         .sec_title {
             h2 {
                 font-size: 40px;
@@ -130,8 +131,8 @@
             }
         }
         .items_list {
-            row-gap: 66px;
-            padding-bottom: 49px;
+            row-gap: 13.750vw;
+            padding-bottom: 13.750vw;
             li {
                 width: 100%;
                 max-width: 75%;

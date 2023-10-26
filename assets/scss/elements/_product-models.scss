@@ -172,6 +172,11 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .product_models {
+        padding-top: 12.500vw;
+    }
+}
 @media (max-width: 576px) {
     .product_models {
         padding-bottom: 15.625vw;
@@ -187,6 +192,21 @@
                 h3 {
                     font-size: 5.833vw;
                     font-weight: 700;
+                }
+            }
+        }
+        .content_block {
+            .content {
+                position: relative;
+                z-index: 1;
+                margin-top: -15vw;
+                h3 {
+                    font-size: 11.092vw;
+                }
+                p {
+                    font-size: 6.667vw;
+                    max-width: 79%;
+                    margin: 0 auto;
                 }
             }
         }
