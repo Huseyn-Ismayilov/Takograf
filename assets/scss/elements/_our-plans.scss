@@ -152,7 +152,7 @@
             max-width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
-            h1{
+            h1 {
                 font-size: 9.1vw;
             }
         }
@@ -161,10 +161,33 @@
             .plan_item {
                 width: 100%;
                 max-width: 90%;
+                height: auto;
                 margin: 0 auto;
+                padding: 8.958vw 8.542vw;
+                &.individual {
+                    border: 4.973px solid #80e4e9;
+                }
+                .line {
+                    margin: 3.542vw auto;
+                }
+                .type {
+                    font-size: 6.389vw;
+                    width: 37vw;
+                    height: 13.125vw;
+                    background-size: contain;
+                    margin-bottom: 7.021vw;
+                }
+                .price {
+                    font-size: 8.634vw;
+                    margin-bottom: 5vw;
+                    span {
+                        font-size: 5.699vw;
+                    }
+                }
                 ul {
                     li {
                         padding: 2px 0;
+                        font-size: 4.49vw;
                         &::before {
                             width: 14px;
                             height: 14px;
@@ -173,6 +196,8 @@
                 }
                 .btn {
                     font-size: 5vw;
+                    padding: 3.438vw 3.542vw;
+                    margin-top: 7.292vw;
                 }
             }
         }
@@ -182,39 +207,6 @@
     .our_plans {
         .sec_title {
             margin-bottom: 32px !important;
-        }
-        .plans_list {
-            .plan_item {
-                height: 326px;
-
-                padding: 27px;
-                .type {
-                    font-size: 20.211px;
-                    width: 119.76px;
-                    height: 42.496px;
-                    background-size: contain;
-                    margin-bottom: 23px;
-                    flex-shrink: 0;
-                }
-                .price {
-                    font-size: 27.312px;
-                    margin-bottom: 16px;
-                    span {
-                        font-size: 18.026px;
-                    }
-                }
-                ul {
-                    li {
-                        font-size: 14.202px;
-                    }
-                }
-                .line {
-                    margin: 9px 0;
-                }
-                .btn {
-                    padding: 11px;
-                }
-            }
         }
     }
 }
