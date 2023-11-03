@@ -35,8 +35,9 @@
 }
 @media (max-width: 991px) {
     .meet_us {
-        padding-top: 10px;
+        padding-top: 11.458vw;
         padding-bottom: 25px;
+        overflow: hidden;
         .col {
             width: 100% !important;
             &:last-child {
@@ -47,6 +48,7 @@
             text-align: center;
             padding-left: 0;
             padding-bottom: 0;
+            padding-top: 0;
             h1 {
                 font-size: 9vw;
                 letter-spacing: -1.59px;

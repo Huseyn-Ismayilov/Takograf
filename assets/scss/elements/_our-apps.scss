@@ -107,13 +107,13 @@
         .sec_title {
             margin-bottom: 78px;
             h1 {
-                font-size: 9vw;
+                font-size: 60px;
                 span {
                     font-size: 12vw;
                 }
             }
             h2 {
-                font-size: 7vw;
+                font-size: 42px;
             }
         }
         .apps_list {
@@ -149,7 +149,7 @@
             margin-left: 0;
             padding-top: 71px;
             p {
-                font-size: 7.3vw;
+                font-size: 6vw;
                 max-width: 93%;
                 margin: 0;
             }
@@ -164,10 +164,14 @@
             h1 {
                 font-size: 10vw;
             }
+            h2 {
+                font-size: 7vw;
+            }
         }
         .apps_list {
             .app_cart {
                 padding: 7.8vw 6vw;
+                border-radius: 23px;
 
                 .content {
                     margin-bottom: 16vw;
@@ -179,6 +183,11 @@
                         font-size: 5.9vw;
                     }
                 }
+            }
+        }
+        .bottom_text {
+            p {
+                font-size: 7.3vw;
             }
         }
     }

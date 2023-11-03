@@ -124,15 +124,14 @@
         justify-content: center;
         width: 100%;
         max-width: 320px;
-        background-color: white;
-        border: 4.444px solid #dbdbdb;
-        border-radius: 13.333px;
-        padding: 0 30px;
+        // background-color: white;
+        // border: 4.444px solid #dbdbdb;
+        // border-radius: 13.333px;
+        // padding: 0 30px;
         margin-top: 10px;
         margin-right: -3px;
         img {
             width: 100%;
-            max-width: 214px;
         }
     }
 }
@@ -206,18 +205,18 @@
     }
     .googlePlayApp {
         h1 {
-            font-size: 27px;
+            font-size: 5.625vw;
             letter-spacing: -0.81px;
+            max-width: 100%;
         }
         .wrapper {
-            padding: 40px 45px;
+            padding: 7.292vw 6.458vw;
             text-align: center;
             justify-content: center;
             gap: 24px;
         }
         .link {
-            padding: 9px 40px;
-            max-width: 218px;
+            width: 220px;
         }
     }
 }
@@ -226,15 +225,12 @@
         .wrapper {
             padding: 7.292vw 6.458vw;
             border-radius: 16px;
+            gap: 6.250vw;
         }
-        h1 {
-            font-size: 5.625vw;
-        }
+
         .link {
-            padding: 1.875vw 6.458vw;
-            margin-top: 0;
             width: 45.417vw;
-            border-radius: 2.2vw;
+            margin-top: 0;
         }
     }
 }

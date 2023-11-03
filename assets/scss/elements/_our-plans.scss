@@ -129,7 +129,23 @@
                 box-shadow: unset;
                 padding: 36px;
                 &.individual {
-                    border: 4.973px solid #0095e8;
+                    position: relative;
+                    box-sizing: border-box;
+                    $border: 5px;
+                    background: white;
+                    background-clip: padding-box; /* !importanté */
+                    border: solid $border transparent; /* !importanté */
+                    border-radius: 1em;
+                  
+                    &:before {
+                      content: '';
+                      position: absolute;
+                      top: 0; right: 0; bottom: 0; left: 0;
+                      z-index: -1;
+                      margin: -$border; /* !importanté */
+                      border-radius: inherit; /* !importanté */
+                      background: linear-gradient(to right, #88D5FD, #80EEE4);
+                    }
                 }
                 &.corporate {
                     border: 4.973px solid #e9eeef;
@@ -171,9 +187,6 @@
                 height: auto;
                 margin: 0 auto;
                 padding: 8.958vw 8.542vw;
-                &.individual {
-                    border: 4.973px solid #80e4e9;
-                }
                 .line {
                     margin: 3.542vw auto;
                 }
