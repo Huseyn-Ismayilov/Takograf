@@ -15,37 +15,37 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('.site_header').outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
+$(window).scroll(function (event) {
+	didScroll = true;
 });
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
+setInterval(function () {
+	if (didScroll) {
+		hasScrolled();
+		didScroll = false;
+	}
 }, 250);
 
 function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.site_header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.site_header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
+	var st = $(this).scrollTop();
+
+	// Make sure they scroll more than delta
+	if (Math.abs(lastScrollTop - st) <= delta)
+		return;
+
+	// If they scrolled down and are past the navbar, add class .nav-up.
+	// This is necessary so you never see what is "behind" the navbar.
+	if (st > lastScrollTop && st > navbarHeight) {
+		// Scroll Down
+		$('.site_header').removeClass('nav-down').addClass('nav-up');
+	} else {
+		// Scroll Up
+		if (st + $(window).height() < $(document).height()) {
+			$('.site_header').removeClass('nav-up').addClass('nav-down');
+		}
+	}
+
+	lastScrollTop = st;
 }
 
 
@@ -156,3 +156,40 @@ $('.product_features .feature_items .item .plus_btn').click(function () {
 	$(this).parent().toggleClass('opened')
 	$(this).toggleClass('opened')
 });
+
+
+
+
+var video = document.getElementById("mp4");
+var delayMillis = 4000;
+var spinnerIsHere = 1;
+video.volume = 0;
+
+var playVid = setTimeout(function () {
+	if (spinnerIsHere == 1) {
+		// Delete element DOM
+		// spinner.parentNode.removeChild(spinner);
+		spinner.style.visibility = "hidden";
+		spinnerIsHere = 0;
+	}
+	video.play();
+}, delayMillis);
+
+video.addEventListener("click", function (event) {
+	if (video.paused) {
+		if (spinnerIsHere == 1) {
+			// Delete element DOM
+			// spinner.parentNode.removeChild(spinner);
+			spinner.style.visibility = "hidden";
+			spinnerIsHere = 0;
+		}
+		clearTimeout(playVid);
+		video.play();
+	} else {
+		video.pause();
+		if (spinnerIsHere == 0) {
+			spinner.style.visibility = "visible";
+			spinnerIsHere = 1;
+		}
+	}
+}, false);
