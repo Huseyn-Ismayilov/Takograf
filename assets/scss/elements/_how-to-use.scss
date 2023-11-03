@@ -94,6 +94,9 @@
 }
 @media (min-width: 991px) {
     .howToUse {
+        .sec_title {
+
+        }
         .items_list {
             li {
                 .hideDesktop {
@@ -117,14 +120,32 @@
                 display: none;
             }
             li {
-                min-width: 40vw;
-                width: 40vw;
+                min-width: 48vw;
+                width: 48vw;
+                &:first-child {
+                    .image {
+                        height: 29vw;
+                    }
+                }
+                &:nth-child(2) {
+                    .details {
+                        h3 {
+                            max-width: 78%;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    .image {
+                        height: 30vw;
+                    }
+                }
                 .inner {
                     padding: 16px;
-                    height: 50vw;
+                    height: 56vw;
                 }
                 .details {
                     h3 {
+                        font-size: 3vw;
                         max-width: 100%;
                         margin-bottom: 10px;
                         br {
@@ -136,6 +157,7 @@
                         display: flex;
                         justify-content: center;
                         gap: 8px;
+                        white-space: nowrap;
                         &::after {
                             content: "";
                             background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.08203 13.2676L7.12915 7.22046L1.08203 1.17335' stroke='%230071E3' stroke-width='1.72775' stroke-linecap='round'/%3E%3C/svg%3E%0A");
@@ -196,24 +218,23 @@
         .items_list {
             // padding-bottom: 13.75vw;
             li {
-                min-width: 55vw;
-                width: 55vw;
                 &:first-child {
+                    .image {
+                        height: 46vw;
+                    }
                     .details {
                         h3 {
                             max-width: 92%;
                         }
                     }
                 }
-                &:nth-child(2) {
-                    .details {
-                        h3 {
-                            max-width: 90%;
-                        }
+                &:nth-child(3) {
+                    .image {
+                        height: 43vw;
                     }
                 }
                 .inner {
-                    height: 86vw;
+                    height: 92vw;
                     min-height: fit-content;
                     padding: 5.2vw 4.167vw;
                 }
@@ -229,6 +250,7 @@
                 .image {
                     height: auto;
                     height: 42vw;
+                    margin-bottom: 20px;
                 }
                 // .inner {
                 //     padding: 8.333vw 4.167vw 6.667vw;
@@ -244,15 +266,16 @@
         position: relative;
         .items_list {
             li {
-                min-width: 70vw;
-                width: 70vw;
+                min-width: 72vw;
+                width: 72vw;
                 padding: 0 15px;
-                .inner {
-                    height: 89vw;
-                }
                 .details {
                     h3 {
                         font-size: 4.679vw;
+                        margin-bottom: 0;
+                    }
+                    .link {
+                        font-size: 4.499vw;
                     }
                 }
             }

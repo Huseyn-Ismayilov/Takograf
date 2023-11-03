@@ -156,6 +156,7 @@
                 h3 {
                     span {
                         color: #157c00;
+                        display: block;
                     }
                 }
 
@@ -882,7 +883,7 @@
                     margin-top: 0 !important;
 
                     h3 {
-                        font-size: 7.92vw;
+                        font-size: 6vw;
                         letter-spacing: -0.76px;
                     }
                 }
@@ -910,6 +911,11 @@
     .product_features {
         .feature_items {
             .item {
+                .content {
+                    h3 {
+                        font-size: 7.92vw;
+                    }
+                }
                 &.item1 {
                     .content {
                         max-width: 100%;

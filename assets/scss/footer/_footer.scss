@@ -21,11 +21,9 @@
                 padding-right: 47px;
             }
         }
-        &:last-child {
-            .social_media {
-                padding-right: 35px;
-            }
-        }
+    }
+    .social_media {
+        padding-right: 35px;
     }
     .contact_info {
         max-width: 270px;
@@ -89,6 +87,7 @@
     position: relative;
     z-index: 1;
     .wrapper {
+        flex-wrap: nowrap;
         padding: 77px 87px 85px 70px;
         width: 100%;
         max-width: 1150px;
@@ -186,6 +185,9 @@
                 align-items: center;
                 justify-content: center;
             }
+            .mobileHide {
+                display: none;
+            }
             img {
                 width: 54px;
             }
@@ -204,12 +206,13 @@
         }
     }
     .googlePlayApp {
+        margin-bottom: -106px;
         h1 {
-            font-size: 5.625vw;
             letter-spacing: -0.81px;
             max-width: 100%;
         }
         .wrapper {
+            flex-wrap: wrap;
             padding: 7.292vw 6.458vw;
             text-align: center;
             justify-content: center;
@@ -222,10 +225,11 @@
 }
 @media (max-width: 576px) {
     .googlePlayApp {
+        margin-bottom: -22.083vw;
         .wrapper {
             padding: 7.292vw 6.458vw;
             border-radius: 16px;
-            gap: 6.250vw;
+            gap: 6.25vw;
             &.yellow {
                 background-image: url(../images/footer-bg-3.png);
                 background-size: cover;
@@ -233,37 +237,59 @@
                 background-color: white;
             }
         }
-
+        h1 {
+            font-size: 5.625vw;
+        }
         .link {
             width: 45.417vw;
             margin-top: 0;
         }
     }
-}
-@media (max-width: 420px) {
     .site_footer {
-        .logo {
-            width: 166px;
-        }
-        .contact_info > * {
-            font-size: 14.698px;
+        padding-top: 37.917vw;
+        > div {
+            padding: 0 3.333vw;
         }
         .col {
             &.first {
-                margin-bottom: 38px !important;
+                margin-bottom: 11.875vw !important;
+            }
+        }
+        .logo {
+            width: 52.083vw;
+            margin-bottom: 3.542vw;
+        }
+        .contact_info {
+            > * {
+                font-size: 4.646vw;
             }
         }
         .menu {
             a {
-                font-size: 16.704px;
+                font-size: 5.281vw;
+                padding: 1.458vw 2vw;
             }
         }
         .appLink {
-            width: 124px;
+            width: 37.083vw;
+            margin-left: -2.083vw;
         }
         .social_media {
+            padding-right: 0;
+            margin-top: 8.333vw;
             img {
-                width: 45px;
+                width: 11.25vw;
+            }
+        }
+        .foot_main{
+            margin-bottom: 13.333vw;
+        }
+        .foot_bottom {
+            padding-top: 0;
+            p {
+                font-size: 3.750vw;
+                max-width: 78%;
+                margin: 0 auto;
             }
         }
     }

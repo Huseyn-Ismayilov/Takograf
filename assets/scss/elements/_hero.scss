@@ -155,9 +155,9 @@
     .hero {
         background-color: white;
         color: black;
-        padding-top: 109px;
+        padding-top: 24.583vw;
         margin-top: -80px;
-        margin-bottom: 35px;
+        margin-bottom: 7.292vw;
 
         .content {
             text-align: left;
@@ -270,7 +270,7 @@
 @media (max-width: 576px) {
     .hero {
         .image {
-            margin: 0 -3.2vw;
+            margin: 0 -3.2vw 3.958vw;
         }
         h1 {
             font-size: 11.6vw;

@@ -157,3 +157,8 @@ $('.product_features .feature_items .item .plus_btn').click(function () {
 	$(this).toggleClass('opened')
 });
 
+
+
+if ($(window).width() < 991) {
+	$('.site_header .try_free_btn').html("Uygulamayı indirin")
+}
