@@ -1,6 +1,7 @@
 .product_models {
-    padding: 120px 0 216px;
+    padding: 110px 0 104px;
     overflow: hidden;
+    position: relative;
     .wrapper {
         max-width: 862px;
         margin: 0 auto;
@@ -76,6 +77,15 @@
             }
         }
     }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image: url("data:image/svg+xml,%3Csvg width='1280' height='3' viewBox='0 0 1280 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.5' x2='1280' y2='1.5' stroke='%23D9D9D9' stroke-width='3' stroke-dasharray='14 14'/%3E%3C/svg%3E%0A");
+    }
 }
 @media (min-width: 991px) {
     .product_models {
@@ -94,6 +104,8 @@
 }
 @media (max-width: 991px) {
     .product_models {
+        padding-bottom: 6.250vw;
+
         .mobileHide {
             display: none !important;
         }
@@ -179,7 +191,6 @@
 }
 @media (max-width: 576px) {
     .product_models {
-        padding-bottom: 15.625vw;
         .sec_title {
             h2 {
                 font-size: 5.625vw;

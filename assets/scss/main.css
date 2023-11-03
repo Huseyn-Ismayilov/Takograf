@@ -1154,11 +1154,11 @@ button.swiper-pagination-bullet {
   .site_header .menu {
     display: none;
   }
-  .site_header .try_free_btn {
-    display: none;
-  }
   .site_header .toggle {
     margin-right: 8px;
+  }
+  .site_header .try_free_btn {
+    font-size: 15.11px !important;
   }
 }
 @media (max-width: 576px) {
@@ -1166,7 +1166,7 @@ button.swiper-pagination-bullet {
     padding: 14px 0;
   }
   .site_header .try_free_btn {
-    font-size: 3.542vw;
+    font-size: 3.542vw !important;
     padding: 1.875vw 3.542vw;
     margin-left: auto;
   }
@@ -3024,6 +3024,7 @@ button.swiper-pagination-bullet {
     left: 22px;
     right: 22px;
     bottom: 82px;
+    transform: unset;
   }
   .product_features .feature_items .item.item4 .image .warning_bar p {
     font-size: 4.2vw;
@@ -3341,13 +3342,17 @@ button.swiper-pagination-bullet {
     margin-top: -26px;
   }
 }
+@media (max-width: 991px) {
+  .discover_more .sec_title {
+    max-width: 50%;
+  }
+}
 @media (max-width: 768px) {
   .discover_more {
     padding: 95px 16px 105px;
   }
   .discover_more .sec_title {
     margin-bottom: 58px;
-    max-width: 50%;
   }
   .discover_more .sec_title h1 {
     font-size: 10vw;
@@ -3801,23 +3806,11 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   margin-bottom: -40px;
 }
-.howToUse::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 30px;
-  width: 90%;
-  aspect-ratio: 1141/313;
-  display: block;
-  background-image: url(../images/line-arrow.svg);
-  background-position: center;
-  background-size: contain;
-  z-index: -1;
-}
 .howToUse .sec_title {
   margin: 90px auto 130px;
   width: -moz-fit-content;
   width: fit-content;
+  position: relative;
 }
 .howToUse .sec_title h2 {
   font-size: 48.799px;
@@ -3828,6 +3821,19 @@ button.swiper-pagination-bullet {
 .howToUse .sec_title h1 {
   width: 100%;
   max-width: 770px;
+}
+.howToUse .sec_title::after {
+  content: "";
+  position: absolute;
+  left: -33.5%;
+  top: -9%;
+  width: 148.5%;
+  aspect-ratio: 1141/316;
+  display: block;
+  background-image: url(../images/line-arrow.svg);
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
 }
 .howToUse .items_list {
   display: flex;
@@ -3869,6 +3875,7 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 .howToUse .items_list li .details h3 {
+  font-size: 19.52px;
   font-weight: 500;
   max-width: 77%;
   line-height: 1.4;
@@ -3892,9 +3899,52 @@ button.swiper-pagination-bullet {
 @media (max-width: 991px) {
   .howToUse .items_list {
     row-gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 -100vw;
+    padding: 20px 100vw 10.417vw;
+  }
+  .howToUse .items_list::-webkit-scrollbar {
+    display: none;
   }
   .howToUse .items_list li {
-    width: 50%;
+    min-width: 40vw;
+    width: 40vw;
+  }
+  .howToUse .items_list li .inner {
+    padding: 16px;
+    height: 50vw;
+  }
+  .howToUse .items_list li .details h3 {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .howToUse .items_list li .details h3 br {
+    display: none;
+  }
+  .howToUse .items_list li .details .link {
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .howToUse .items_list li .details .link::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.08203 13.2676L7.12915 7.22046L1.08203 1.17335' stroke='%230071E3' stroke-width='1.72775' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    width: 11px;
+    height: 18px;
+    flex-shrink: 0;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  .howToUse .items_list li .image {
+    height: 26vw;
+    flex-shrink: 0;
+  }
+  .howToUse .items_list li .image img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .howToUse .items_list li .hideDesktop > div {
     width: 100%;
@@ -3905,6 +3955,14 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 768px) {
+  .howToUse .items_list li .inner {
+    height: 60vw;
+  }
+  .howToUse .items_list li .details .link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
   .howToUse {
     margin-bottom: 0;
   }
@@ -3912,44 +3970,48 @@ button.swiper-pagination-bullet {
     font-size: 40px;
     margin-bottom: 20px;
   }
-  .howToUse .items_list {
-    row-gap: 13.75vw;
-    padding-bottom: 13.75vw;
-  }
   .howToUse .items_list li {
-    width: 100%;
-    max-width: 75%;
-    min-width: 215px;
-    margin: 0 auto;
+    min-width: 55vw;
+    width: 55vw;
   }
-  .howToUse .items_list li:last-child .image img {
-    max-width: 100%;
+  .howToUse .items_list li:first-child .details h3 {
+    max-width: 92%;
   }
-  .howToUse .items_list li .details h3 {
-    font-size: 4.679vw;
+  .howToUse .items_list li:nth-child(2) .details h3 {
+    max-width: 90%;
+  }
+  .howToUse .items_list li .inner {
+    height: 86vw;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 5.2vw 4.167vw;
   }
   .howToUse .items_list li .details .link {
-    margin-top: 16px;
-    font-size: 4.5vw;
+    font-size: 18px;
+  }
+  .howToUse .items_list li .details .link::after {
+    width: 2vw;
+    height: 3.4vw;
   }
   .howToUse .items_list li .image {
     height: auto;
-    height: 56vw;
-  }
-  .howToUse .items_list li .image img {
-    max-width: 70%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .howToUse .items_list li .inner {
-    padding: 8.333vw 4.167vw 6.667vw;
-    border-radius: 32px;
-    height: auto;
+    height: 42vw;
   }
 }
 @media (max-width: 576px) {
   .howToUse {
     position: relative;
+  }
+  .howToUse .items_list li {
+    min-width: 70vw;
+    width: 70vw;
+    padding: 0 15px;
+  }
+  .howToUse .items_list li .inner {
+    height: 89vw;
+  }
+  .howToUse .items_list li .details h3 {
+    font-size: 4.679vw;
   }
   .howToUse::before {
     content: "";
@@ -3966,15 +4028,16 @@ button.swiper-pagination-bullet {
   .howToUse .sec_title h1 {
     padding: 0 4px;
   }
-  .howToUse::after {
-    left: -56%;
-    top: 3%;
-    width: 167%;
+  .howToUse .sec_title::after {
+    left: -55%;
+    top: -24%;
+    width: 174%;
   }
 }
 .product_models {
-  padding: 120px 0 216px;
+  padding: 110px 0 104px;
   overflow: hidden;
+  position: relative;
 }
 .product_models .wrapper {
   max-width: 862px;
@@ -4045,6 +4108,15 @@ button.swiper-pagination-bullet {
 .product_models .content_block h3 span {
   color: #fbbc05;
 }
+.product_models::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg width='1280' height='3' viewBox='0 0 1280 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.5' x2='1280' y2='1.5' stroke='%23D9D9D9' stroke-width='3' stroke-dasharray='14 14'/%3E%3C/svg%3E%0A");
+}
 
 @media (min-width: 991px) {
   .product_models .content .hideDesktop {
@@ -4058,6 +4130,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 991px) {
+  .product_models {
+    padding-bottom: 6.25vw;
+  }
   .product_models .mobileHide {
     display: none !important;
   }
@@ -4139,9 +4214,6 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
-  .product_models {
-    padding-bottom: 15.625vw;
-  }
   .product_models .sec_title h2 {
     font-size: 5.625vw;
     font-weight: 600;
@@ -4166,8 +4238,11 @@ button.swiper-pagination-bullet {
   }
 }
 .tecnoBlog {
-  padding-bottom: 100px;
+  padding-top: 114px;
+  padding-bottom: 147px;
   padding-left: 20px;
+  margin-bottom: 95px;
+  position: relative;
 }
 .tecnoBlog .sec_title {
   text-align: left;
@@ -4225,7 +4300,7 @@ button.swiper-pagination-bullet {
 .tecnoBlog .accardion_item .body {
   padding: 20px 28px;
   padding-top: 23px;
-  padding-bottom: 1px;
+  padding-bottom: 34px;
   display: none;
 }
 .tecnoBlog .accardion_item .body p {
@@ -4248,9 +4323,6 @@ button.swiper-pagination-bullet {
 .tecnoBlog .accardion_item .body p a:hover {
   color: #033c92;
 }
-.tecnoBlog .accardion_item .body .list {
-  margin-bottom: 34px;
-}
 .tecnoBlog .accardion_item .body .list p {
   margin-bottom: 0;
 }
@@ -4262,12 +4334,23 @@ button.swiper-pagination-bullet {
   list-style: disc;
   letter-spacing: -0.461px;
 }
+.tecnoBlog::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg width='1280' height='3' viewBox='0 0 1280 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.5' x2='1280' y2='1.5' stroke='%23D9D9D9' stroke-width='3' stroke-dasharray='14 14'/%3E%3C/svg%3E%0A");
+}
 
 @media (max-width: 991px) {
   .tecnoBlog {
     padding-left: 0;
-    position: relative;
+    padding-top: 8.333vw;
     padding-bottom: 4.583vw;
+    margin-bottom: 10.417vw;
+    position: relative;
   }
   .tecnoBlog::after {
     content: "";

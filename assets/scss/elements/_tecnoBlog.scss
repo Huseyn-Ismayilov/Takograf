@@ -1,6 +1,9 @@
 .tecnoBlog {
-    padding-bottom: 100px;
+    padding-top: 114px;
+    padding-bottom: 147px;
     padding-left: 20px;
+    margin-bottom: 95px;
+    position: relative;
 
     .sec_title {
         text-align: left;
@@ -56,7 +59,7 @@
         .body {
             padding: 20px 28px;
             padding-top: 23px;
-            padding-bottom: 1px;
+            padding-bottom: 34px;
             display: none;
             p {
                 font-size: 23.069px;
@@ -79,7 +82,6 @@
                 }
             }
             .list {
-                margin-bottom: 34px;
                 p {
                     margin-bottom: 0;
                 }
@@ -94,12 +96,23 @@
             }
         }
     }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image: url("data:image/svg+xml,%3Csvg width='1280' height='3' viewBox='0 0 1280 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.5' x2='1280' y2='1.5' stroke='%23D9D9D9' stroke-width='3' stroke-dasharray='14 14'/%3E%3C/svg%3E%0A");
+    }
 }
 @media (max-width: 991px) {
     .tecnoBlog {
         padding-left: 0;
-        position: relative;
+        padding-top: 8.333vw;
         padding-bottom: 4.583vw;
+        margin-bottom: 10.417vw;
+        position: relative;
         &::after {
             content: "";
             position: absolute;

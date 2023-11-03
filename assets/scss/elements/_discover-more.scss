@@ -54,12 +54,19 @@
         }
     }
 }
+@media (max-width: 991px) {
+    .discover_more {
+        .sec_title {
+            max-width: 50%;
+
+        }
+    }
+}
 @media (max-width: 768px) {
     .discover_more {
         padding: 95px 16px 105px;
         .sec_title {
             margin-bottom: 58px;
-            max-width: 50%;
             h1 {
                 font-size: 10vw;
             }

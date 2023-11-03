@@ -294,11 +294,11 @@
         .menu {
             display: none;
         }
-        .try_free_btn {
-            display: none;
-        }
         .toggle {
             margin-right: 8px;
+        }
+        .try_free_btn {
+            font-size: 15.11px !important;
         }
     }
 }
@@ -306,7 +306,7 @@
     .site_header {
         padding: 14px 0;
         .try_free_btn {
-            font-size: 3.542vw;
+            font-size: 3.542vw !important;
             padding: 1.875vw 3.542vw;
             margin-left: auto;
         }

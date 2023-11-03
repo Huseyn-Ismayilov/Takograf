@@ -2,22 +2,11 @@
     position: relative;
     overflow: hidden;
     margin-bottom: -40px;
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 30px;
-        width: 90%;
-        aspect-ratio: 1141/313;
-        display: block;
-        background-image: url(../images/line-arrow.svg);
-        background-position: center;
-        background-size: contain;
-        z-index: -1;
-    }
+
     .sec_title {
         margin: 90px auto 130px;
         width: fit-content;
+        position: relative;
         h2 {
             font-size: 48.799px;
             font-weight: 600;
@@ -27,6 +16,19 @@
         h1 {
             width: 100%;
             max-width: 770px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: -33.5%;
+            top: -9%;
+            width: 148.5%;
+            aspect-ratio: 1141/316;
+            display: block;
+            background-image: url(../images/line-arrow.svg);
+            background-position: center;
+            background-size: contain;
+            z-index: -1;
         }
     }
     .items_list {
@@ -66,6 +68,7 @@
                 flex-grow: 1;
                 text-align: center;
                 h3 {
+                    font-size: 19.52px;
                     font-weight: 500;
                     max-width: 77%;
                     line-height: 1.4;
@@ -106,8 +109,52 @@
     .howToUse {
         .items_list {
             row-gap: 30px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            margin: 0 -100vw;
+            padding: 20px 100vw 10.417vw;
+            &::-webkit-scrollbar {
+                display: none;
+            }
             li {
-                width: 50%;
+                min-width: 40vw;
+                width: 40vw;
+                .inner {
+                    padding: 16px;
+                    height: 50vw;
+                }
+                .details {
+                    h3 {
+                        max-width: 100%;
+                        margin-bottom: 10px;
+                        br {
+                            display: none;
+                        }
+                    }
+                    .link {
+                        font-size: 21px;
+                        display: flex;
+                        justify-content: center;
+                        gap: 8px;
+                        &::after {
+                            content: "";
+                            background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.08203 13.2676L7.12915 7.22046L1.08203 1.17335' stroke='%230071E3' stroke-width='1.72775' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+                            background-size: contain;
+                            width: 11px;
+                            height: 18px;
+                            flex-shrink: 0;
+                            display: inline-block;
+                            margin-top: 4px;
+                        }
+                    }
+                }
+                .image {
+                    height: 26vw;
+                    flex-shrink: 0;
+                    img {
+                        object-fit: contain;
+                    }
+                }
                 .hideDesktop {
                     > div {
                         width: 100%;
@@ -123,6 +170,22 @@
 }
 @media (max-width: 768px) {
     .howToUse {
+        .items_list {
+            li{
+                .inner {
+                    height: 60vw;
+                }
+                .details{
+                    .link{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .howToUse {
         margin-bottom: 0;
         .sec_title {
             h2 {
@@ -131,42 +194,47 @@
             }
         }
         .items_list {
-            row-gap: 13.750vw;
-            padding-bottom: 13.750vw;
+            // padding-bottom: 13.75vw;
             li {
-                width: 100%;
-                max-width: 75%;
-                min-width: 215px;
-                margin: 0 auto;
-                &:last-child {
-                    .image {
-                        img{
-                            max-width: 100%;
+                min-width: 55vw;
+                width: 55vw;
+                &:first-child {
+                    .details {
+                        h3 {
+                            max-width: 92%;
                         }
                     }
                 }
-                .details {
-                    h3 {
-                        font-size: 4.679vw;
+                &:nth-child(2) {
+                    .details {
+                        h3 {
+                            max-width: 90%;
+                        }
                     }
+                }
+                .inner {
+                    height: 86vw;
+                    min-height: fit-content;
+                    padding: 5.2vw 4.167vw;
+                }
+                .details {
                     .link {
-                        margin-top: 16px;
-                        font-size: 4.500vw;
+                        font-size: 18px;
+                        &::after {
+                            width: 2vw;
+                            height: 3.4vw;
+                        }
                     }
                 }
                 .image {
                     height: auto;
-                    height: 56vw;
-                    img {
-                        max-width: 70%;
-                        object-fit: contain;
-                    }
+                    height: 42vw;
                 }
-                .inner {
-                    padding: 8.333vw 4.167vw 6.667vw;
-                    border-radius: 32px;
-                    height: auto;
-                }
+                // .inner {
+                //     padding: 8.333vw 4.167vw 6.667vw;
+                //     border-radius: 32px;
+                //     height: auto;
+                // }
             }
         }
     }
@@ -174,6 +242,21 @@
 @media (max-width: 576px) {
     .howToUse {
         position: relative;
+        .items_list {
+            li {
+                min-width: 70vw;
+                width: 70vw;
+                padding: 0 15px;
+                .inner {
+                    height: 89vw;
+                }
+                .details {
+                    h3 {
+                        font-size: 4.679vw;
+                    }
+                }
+            }
+        }
         &::before {
             content: "";
             position: absolute;
@@ -190,11 +273,11 @@
             h1 {
                 padding: 0 4px;
             }
-        }
-        &::after {
-            left: -56%;
-            top: 3%;
-            width: 167%;
+            &::after {
+                left: -55%;
+                top: -24%;
+                width: 174%;
+            }
         }
     }
 }
