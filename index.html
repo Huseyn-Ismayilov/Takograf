@@ -220,8 +220,8 @@
                                 rahat hareket edin.</p>
                         </div>
                         <div class="video" style="margin-bottom: 13px;">
-                            <video  muted loop="true" id="mp4">
-                                <source src="./assets/videos/video1.mp4" type="video/mp4">
+                            <video autoplay loop muted playsinline>
+                                <source src="./assets/videos/video1.mp4" type="video/mp4" onerror="fallback(parentNode)">
                             </video>
                         </div>
                     </div>
@@ -233,8 +233,8 @@
                                 takip edin.</p>
                         </div>
                         <div class="video">
-                            <video  muted loop="true" id="mp4">
-                                <source src="./assets/videos/video2.mp4" type="video/mp4">
+                            <video autoplay loop muted playsinline>
+                                <source src="./assets/videos/video2.mp4" type="video/mp4" onerror="fallback(parentNode)">
                             </video>
                         </div>
                     </div>
