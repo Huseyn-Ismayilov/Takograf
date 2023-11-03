@@ -226,6 +226,12 @@
             padding: 7.292vw 6.458vw;
             border-radius: 16px;
             gap: 6.250vw;
+            &.yellow {
+                background-image: url(../images/footer-bg-3.png);
+                background-size: cover;
+                background-position: center;
+                background-color: white;
+            }
         }
 
         .link {

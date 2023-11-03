@@ -269,6 +269,9 @@
 
 @media (max-width: 576px) {
     .hero {
+        .image {
+            margin: 0 -3.2vw;
+        }
         h1 {
             font-size: 11.6vw;
         }

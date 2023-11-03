@@ -654,6 +654,9 @@
         }
 
         .feature_items {
+            max-width: 633px;
+            width: 100%;
+            margin: 0 auto;
             .wrapper {
                 flex-wrap: wrap;
                 gap: 0;
@@ -689,7 +692,7 @@
 
                     p {
                         height: fit-content;
-                        font-size: 5.208vw; 
+                        font-size: 5.208vw;
                         font-weight: 500;
                         color: white;
                         line-height: 1.4;
@@ -875,7 +878,7 @@
                 }
 
                 .content {
-                    padding-left: 6.250vw !important;
+                    padding-left: 6.25vw !important;
                     margin-top: 0 !important;
 
                     h3 {
@@ -887,6 +890,21 @@
         }
     }
 }
+
+@media only screen and (max-width: 991px) and (min-width: 576px)  {
+    .product_features {
+        .feature_items {
+            .item {
+                &.item5 {
+                    .chng_text {
+                        height: 20vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
     .product_features {
