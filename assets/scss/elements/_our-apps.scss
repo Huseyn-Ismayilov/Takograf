@@ -106,6 +106,8 @@
     .our_apps {
         padding: 77px 0 74px;
         overflow: visible;
+        position: relative;
+        z-index: 3;
         .sec_title {
             margin-bottom: 78px;
             h1 {
@@ -119,7 +121,8 @@
             }
         }
         .apps_list {
-            height: 100vh;
+            aspect-ratio: 41/65;
+            overflow: hidden;
             .swiper-wrapper {
                 display: inherit;
                 position: relative;

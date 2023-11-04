@@ -175,11 +175,11 @@ else {
 var swiper = new Swiper('.our_apps .apps_list.slider', {
 	direction: 'vertical',
 	effect: 'coverflow',
-	mousewheel: true,
+	// mousewheel: true,
 	slidesPerView: 1,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true
-	}
+	// pagination: {
+	// 	el: '.swiper-pagination',
+	// 	clickable: true
+	// }
 });
 
