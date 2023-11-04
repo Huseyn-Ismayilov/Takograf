@@ -162,3 +162,24 @@ $('.product_features .feature_items .item .plus_btn').click(function () {
 if ($(window).width() < 991) {
 	$('.site_header .try_free_btn').html("Uygulamayı indirin")
 }
+
+
+
+if ($(window).width() < 991) {
+	$('.our_apps .apps_list').addClass('slider')
+}
+else {
+	$('.our_apps .apps_list').removeClass('slider')
+}
+
+var swiper = new Swiper('.our_apps .apps_list.slider', {
+	direction: 'vertical',
+	effect: 'coverflow',
+	mousewheel: true,
+	slidesPerView: 1,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true
+	}
+});
+

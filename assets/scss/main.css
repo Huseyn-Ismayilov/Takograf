@@ -1839,7 +1839,7 @@ button.swiper-pagination-bullet {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.our_apps .apps_list {
+.our_apps .apps_list .swiper-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20.44px;
@@ -1931,6 +1931,9 @@ button.swiper-pagination-bullet {
     font-size: 36px;
   }
   .our_apps .apps_list {
+    height: 100vh;
+  }
+  .our_apps .apps_list .swiper-wrapper {
     display: inherit;
     position: relative;
   }
@@ -1939,8 +1942,6 @@ button.swiper-pagination-bullet {
     max-width: 405px;
     margin: 0 auto;
     height: auto;
-    position: sticky;
-    top: 20px;
     padding: 37.89px 18.67px 20px;
     box-shadow: 0 -20px 40px 0px rgba(0, 0, 0, 0.07);
   }
