@@ -686,14 +686,14 @@
                     align-items: center;
                     justify-content: center;
                     h3 {
-                        font-size: 5.208vw;
+                        font-size: 20px;
                         font-weight: 600;
                         color: white;
                     }
 
                     p {
                         height: fit-content;
-                        font-size: 5.208vw;
+                        font-size: 25px;
                         font-weight: 500;
                         color: white;
                         line-height: 1.4;
@@ -704,7 +704,7 @@
                     padding-top: 67px;
                     .content {
                         width: 100%;
-                        max-width: 83%;
+                        max-width: 100%;
                         margin-bottom: 19.3%;
                         h3 {
                             color: #002868;
@@ -883,7 +883,7 @@
                     margin-top: 0 !important;
 
                     h3 {
-                        font-size: 6vw;
+                        font-size: 6.8vw;
                         letter-spacing: -0.76px;
                     }
                 }
@@ -911,6 +911,11 @@
     .product_features {
         .feature_items {
             .item {
+                .hidden_content {
+                    p {
+                        font-size: 5.208vw;
+                    }
+                }
                 .content {
                     h3 {
                         font-size: 7.92vw;
