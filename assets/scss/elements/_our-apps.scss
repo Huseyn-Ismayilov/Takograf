@@ -121,22 +121,27 @@
             }
         }
         .apps_list {
-            aspect-ratio: 41/65;
+            aspect-ratio: 40/69;
             overflow: hidden;
+            padding: 30px 0;
             .swiper-wrapper {
                 display: inherit;
                 position: relative;
+                // .swiper-slide {
+                //     + .swiper-slide {
+                //         margin-top: 24px;
+                //     }
+                // }
             }
             .app_cart {
                 width: 100%;
                 max-width: 405px;
                 margin: 0 auto;
+                aspect-ratio: 40/69;
                 height: auto;
                 padding: 37.89px 18.67px 20px;
                 box-shadow: 0 -20px 40px 0px rgb(0 0 0 / 7%);
-                + .app_cart {
-                    margin-top: 24px;
-                }
+
                 .content {
                     margin-bottom: 79px;
                     h3 {
