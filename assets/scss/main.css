@@ -2003,7 +2003,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 24px;
   }
   .our_apps .apps_list .app_cart:not(:first-child) .image {
-    margin: 0 -3.542vw;
+    margin: 0 -2vw;
   }
   .our_apps .apps_list .app_cart:first-child .video {
     margin-bottom: 0 !important;
