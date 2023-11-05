@@ -161,21 +161,15 @@
         .content {
             text-align: left;
         }
-
         h1 {
-            font-size: 10vw;
-            margin-bottom: 27px;
-            letter-spacing: 0;
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 32px;
+            color: black;
         }
 
-        p {
-            color: black;
-            font-size: 7vw;
-            font-weight: 600;
-            letter-spacing: -0.64px;
-            margin-bottom: 26px;
-            max-width: 70vw;
-        }
 
         .image {
             margin: 0 -16px;
@@ -265,7 +259,23 @@
         }
     }
 }
+@media (max-width:768px) {
+    .hero {
+        h1 {
+            font-size: 11.667vw;
+            margin-bottom: 27px;
+            letter-spacing: 0;
+        }
 
+        p {
+            font-size: 6.667vw;
+            font-weight: 600;
+            letter-spacing: -0.64px;
+            margin-bottom: 26px;
+            max-width: 70vw;
+        }
+    }
+}
 @media (max-width: 576px) {
     .hero {
         padding-top: 24.583vw;
@@ -312,8 +322,5 @@
         padding-top: 80px;
         margin-top: -54px;
 
-        h1 {
-            margin-bottom: 14px;
-        }
     }
 }
