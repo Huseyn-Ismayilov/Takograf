@@ -4210,6 +4210,9 @@ button.swiper-pagination-bullet {
   color: #0071e3;
   gap: 12px;
 }
+.product_models .contactUs .btn:hover {
+  background-color: rgba(0, 0, 0, 0.062);
+}
 .product_models .contactUs .btn svg {
   width: 8px;
   height: auto;
@@ -4278,6 +4281,10 @@ button.swiper-pagination-bullet {
     padding-bottom: 6.25vw;
     background-color: #fbfbfd;
   }
+  .product_models .content_block_wrap .container {
+    max-width: 100% !important;
+    padding: 0;
+  }
   .product_models .mobileHide {
     display: none !important;
   }
@@ -4294,7 +4301,6 @@ button.swiper-pagination-bullet {
   }
   .product_models .content_block {
     padding: 0;
-    margin: 0 -100px;
     margin-top: 12.5vw;
     background-color: black;
   }
@@ -4322,10 +4328,12 @@ button.swiper-pagination-bullet {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 75.87%);
   }
   .product_models .content_block .content {
-    padding: 24px 20vw;
+    padding: 24px 0;
     padding-top: 0;
     position: static;
     color: white;
+    max-width: 53%;
+    margin: 0 auto;
   }
   .product_models .content_block .content h3 {
     font-size: 7.394vw;
@@ -4399,6 +4407,7 @@ button.swiper-pagination-bullet {
     position: relative;
     z-index: 1;
     margin-top: -15vw;
+    max-width: 100%;
   }
   .product_models .content_block .content h3 {
     font-size: 11.092vw;
