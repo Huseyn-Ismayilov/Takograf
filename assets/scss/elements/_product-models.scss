@@ -142,6 +142,9 @@
     .product_models {
         padding-bottom: 6.25vw;
         background-color: #fbfbfd;
+        &::after {
+            display: none;
+        }
         .content_block_wrap {
             .container {
                 max-width: 100% !important;

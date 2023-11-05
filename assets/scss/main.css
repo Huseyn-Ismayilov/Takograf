@@ -4331,6 +4331,9 @@ button.swiper-pagination-bullet {
     padding-bottom: 6.25vw;
     background-color: #fbfbfd;
   }
+  .product_models::after {
+    display: none;
+  }
   .product_models .content_block_wrap .container {
     max-width: 100% !important;
     padding: 0;
