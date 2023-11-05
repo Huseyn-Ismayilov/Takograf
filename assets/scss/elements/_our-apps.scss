@@ -172,14 +172,24 @@
         .apps_list {
             .app_cart {
                 padding: 9.688vw 6.25vw;
-                border-radius: 6.25vw;
+                border-radius: 7.2vw;
                 &:not(:last-child) {
                     margin-bottom: 24px;
+                }
+                &:not(:first-child) {
+                    .image {
+                        margin: 0 -3.542vw;
+                    }
                 }
                 &:first-child {
                     .video {
                         margin-bottom: 0 !important;
                     }
+                }
+                &:nth-child(2),
+                &:nth-child(3),
+                &:last-child {
+                    padding-bottom: 4vw;
                 }
                 .content {
                     margin-bottom: 16vw;

@@ -1997,13 +1997,19 @@ button.swiper-pagination-bullet {
   }
   .our_apps .apps_list .app_cart {
     padding: 9.688vw 6.25vw;
-    border-radius: 6.25vw;
+    border-radius: 7.2vw;
   }
   .our_apps .apps_list .app_cart:not(:last-child) {
     margin-bottom: 24px;
   }
+  .our_apps .apps_list .app_cart:not(:first-child) .image {
+    margin: 0 -3.542vw;
+  }
   .our_apps .apps_list .app_cart:first-child .video {
     margin-bottom: 0 !important;
+  }
+  .our_apps .apps_list .app_cart:nth-child(2), .our_apps .apps_list .app_cart:nth-child(3), .our_apps .apps_list .app_cart:last-child {
+    padding-bottom: 4vw;
   }
   .our_apps .apps_list .app_cart .content {
     margin-bottom: 16vw;
