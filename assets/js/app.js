@@ -161,5 +161,5 @@ $('.product_features .feature_items .item .plus_btn').click(function () {
 
 if ($(window).width() < 991) {
 	$('.site_header .try_free_btn').html("Uygulamayı indirin")
-	$('.download_app .content p').html("Otomatik takograf pilotu. <br> Faaliyetlerinize dair tüm detaylar artık elinizin altında. Sadece size özel kusursuz bir takograf <br> uzmanı.")
+	$('.download_app .content > p').html("Otomatik takograf pilotu. <br> Faaliyetlerinize dair tüm detaylar artık elinizin altında. Sadece size özel kusursuz bir takograf <br> uzmanı.")
 }
