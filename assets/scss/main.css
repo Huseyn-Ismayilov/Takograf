@@ -923,19 +923,11 @@ button.swiper-pagination-bullet {
 .site_header.nav-down {
   top: 0;
 }
-.site_header.scroll_down {
+.site_header.nav-down {
   top: 0;
 }
-.site_header.scroll_down .menu .nav_item.active .nav_link {
-  color: white !important;
-  -webkit-text-stroke: thin;
-}
-.site_header.scroll_down .menu .nav_link {
-  color: white !important;
-}
-.site_header.scroll_down .menu .nav_link:hover {
-  color: white !important;
-  -webkit-text-stroke: thin;
+.site_header.nav-down .menu .nav_item.active .nav_link {
+  color: #007FFF !important;
 }
 .site_header.dark .menu .nav_item.active .nav_link {
   color: black !important;
@@ -971,12 +963,30 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   padding: 16.18px 20px;
   color: var(--gray);
+  position: relative;
 }
-.site_header .menu .nav_item.active .nav_link {
-  color: #0071E3;
+.site_header .menu .nav_link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  border-radius: 10px;
+  background-color: currentColor;
+  transition: 0.1s;
+  opacity: 0;
 }
-.site_header .menu .nav_item.active:hover .nav_link {
-  color: #1e87f0;
+.site_header .menu .nav_item.active .nav_link, .site_header .menu .nav_item:hover .nav_link {
+  color: #007FFF;
+}
+.site_header .menu .nav_item.active .nav_link::after, .site_header .menu .nav_item:hover .nav_link::after {
+  opacity: 1;
+  width: 14px;
+}
+.site_header .menu .nav_item.active:hover .nav_link, .site_header .menu .nav_item:hover:hover .nav_link {
+  color: rgb(22, 122, 221);
 }
 .site_header .menu .nav_item:not(.active):hover .nav_link {
   color: white;
