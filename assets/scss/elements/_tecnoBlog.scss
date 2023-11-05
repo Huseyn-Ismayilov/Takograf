@@ -113,6 +113,12 @@
         padding-bottom: 4.583vw;
         margin-bottom: 10.417vw;
         position: relative;
+        .sec_title {
+            margin-bottom: 6.875vw;
+            h1 {
+                font-size: 9.584vw;
+            }
+        }
         &::after {
             content: "";
             position: absolute;
@@ -126,12 +132,15 @@
             padding: 0 14px;
         }
         .accardion_item {
+            border-radius: 6vw;
             .head {
-                padding: 12px 18px;
-
+                padding: 2.5vw 3.75vw;
+                span {
+                    font-size: 4.454vw;
+                }
                 &::after {
-                    width: 18px;
-                    height: 19px;
+                    width: 3.75vw;
+                    height: 3.958vw;
                 }
                 &.opened {
                     &::after {
@@ -140,9 +149,16 @@
                 }
             }
             .body {
-                padding: 10px 18px;
+                padding: 2.083vw 3.75vw;
                 p {
-                    font-size: 21px;
+                    font-size: 4.375vw;
+                }
+                .list {
+                    ul {
+                        li {
+                            font-size: 4.806vw;
+                        }
+                    }
                 }
             }
         }
@@ -150,23 +166,17 @@
 }
 @media (max-width: 576px) {
     .tecnoBlog {
-        .sec_title {
-            margin-bottom: 6.875vw;
-            h1 {
-                font-size: 9.584vw;
-            }
-        }
         .accardion_item {
             &:not(:last-child) {
-                margin-bottom: 2.500vw;
+                margin-bottom: 2.5vw;
             }
             .head {
-                padding: 2.500vw 3.750vw;
+                padding: 2.5vw 3.75vw;
                 span {
                     font-size: 4.454vw;
                 }
                 &::after {
-                    width: 3.750vw;
+                    width: 3.75vw;
                     height: 3.958vw;
                 }
             }

@@ -200,6 +200,7 @@
         }
         .foot_bottom {
             p {
+                font-size: 3.75vw;
                 line-height: 121.023%;
                 margin: 0;
             }
@@ -208,6 +209,7 @@
     .googlePlayApp {
         margin-bottom: -106px;
         h1 {
+            font-size: 5.625vw;
             letter-spacing: -0.81px;
             max-width: 100%;
         }
@@ -236,7 +238,7 @@
         }
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
     .googlePlayApp {
         margin-bottom: -22.083vw;
         .wrapper {

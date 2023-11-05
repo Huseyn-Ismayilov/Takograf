@@ -93,18 +93,22 @@ h1 {
 }
 @media (min-width: 576px) {
   .container {
-    max-width: 520px;
+    max-width: 100%;
+    padding: 0 24px;
   }
   .container_lg {
-    max-width: 520px;
+    max-width: 100%;
+    padding: 0 24px;
   }
 }
 @media (min-width: 769px) {
   .container {
-    max-width: 720px;
+    max-width: 100%;
+    padding: 0 38px;
   }
   .container_lg {
-    max-width: 740px;
+    max-width: 100%;
+    padding: 0 38px;
   }
 }
 @media (min-width: 992px) {
@@ -1378,6 +1382,7 @@ button.swiper-pagination-bullet {
     margin-left: -10px;
   }
   .site_footer .foot_bottom p {
+    font-size: 3.75vw;
     line-height: 121.023%;
     margin: 0;
   }
@@ -1385,6 +1390,7 @@ button.swiper-pagination-bullet {
     margin-bottom: -106px;
   }
   .googlePlayApp h1 {
+    font-size: 5.625vw;
     letter-spacing: -0.81px;
     max-width: 100%;
   }
@@ -1410,7 +1416,7 @@ button.swiper-pagination-bullet {
     font-size: 5.625vw;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .googlePlayApp {
     margin-bottom: -22.083vw;
   }
@@ -1944,7 +1950,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     max-width: 405px;
     margin: 0 auto;
-    aspect-ratio: 30/51;
+    aspect-ratio: 405/609;
     height: auto;
     position: sticky;
     top: 63px;
@@ -2803,22 +2809,27 @@ button.swiper-pagination-bullet {
 @media (max-width: 991px) {
   .product_features {
     overflow: hidden;
-    padding: 116px 17px 86px;
+    padding: 116px 0 86px;
   }
   .product_features .sec_title {
     padding-bottom: 77px;
+    margin: 0 -3.29vw;
   }
   .product_features .sec_title .logo {
     max-width: 150px;
+    margin-bottom: 5.833vw;
   }
   .product_features .sec_title h1 {
-    font-size: 11vw;
-    margin-bottom: 36px;
+    font-size: 11.371vw;
+    margin-bottom: 7.5vw;
     line-height: 1.1;
+    letter-spacing: -0.096vw;
   }
   .product_features .sec_title p {
-    font-size: 4.7vw;
-    margin-bottom: 28px;
+    font-size: 4.792vw;
+    margin-bottom: 5.833vw;
+    letter-spacing: -0.096vw;
+    padding: 0 1vw;
   }
   .product_features .sec_title p br {
     display: none;
@@ -2833,6 +2844,7 @@ button.swiper-pagination-bullet {
     max-width: 633px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 17px;
   }
   .product_features .feature_items .wrapper {
     flex-wrap: wrap;
@@ -3452,7 +3464,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 576px) {
   .discover_more {
-    padding: 95px 2.2vw 86px;
+    padding: 95px 4.646vw 86px;
   }
   .discover_more .sec_title {
     margin-bottom: 38px;
@@ -3584,20 +3596,25 @@ button.swiper-pagination-bullet {
     text-align: left;
   }
   .our_plans .sec_title h1 {
-    font-size: 44px;
-    letter-spacing: -1.32px;
+    font-size: 9.1vw;
+  }
+  .our_plans .plans_list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
   .our_plans .plans_list .plan_item {
     box-shadow: unset;
     padding: 36px;
+    border-radius: 28px;
   }
   .our_plans .plans_list .plan_item.individual {
     position: relative;
     box-sizing: border-box;
     background: white;
     background-clip: padding-box; /* !importanté */
-    border: solid 5px transparent; /* !importanté */
-    border-radius: 1em;
+    border: solid 1.035vw transparent; /* !importanté */
   }
   .our_plans .plans_list .plan_item.individual:before {
     content: "";
@@ -3607,20 +3624,17 @@ button.swiper-pagination-bullet {
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -5px; /* !importanté */
+    margin: -1.035vw; /* !importanté */
     border-radius: inherit; /* !importanté */
-    background: linear-gradient(to right, #88D5FD, #80EEE4);
+    background-image: url(../images/border-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .our_plans .plans_list .plan_item.corporate {
     border: 4.973px solid #e9eeef;
   }
   .our_plans .plans_list .plan_item .btn {
     font-size: 23px;
-  }
-}
-@media (max-width: 768px) {
-  .our_plans .plans_list {
-    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 576px) {
@@ -3632,9 +3646,6 @@ button.swiper-pagination-bullet {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 10vw;
-  }
-  .our_plans .sec_title h1 {
-    font-size: 9.1vw;
   }
   .our_plans .plans_list {
     gap: 22px;
@@ -3743,7 +3754,7 @@ button.swiper-pagination-bullet {
   background: #f5f5f7;
   border-radius: 27.556px;
   overflow: hidden;
-  max-width: 1216px;
+  max-width: 1148px;
   margin: 0 auto;
 }
 .download_app .sec_title {
@@ -3771,8 +3782,11 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-wrap: wrap;
 }
-.download_app .row .col_5 {
-  width: 50%;
+.download_app .row .col_5:first-child {
+  width: 52%;
+}
+.download_app .row .col_5:last-child {
+  width: 48%;
 }
 .download_app .image img {
   width: 100%;
@@ -3819,9 +3833,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 991px) {
-  .download_app .image {
-    margin-left: 20px;
-  }
   .download_app .image .mobile {
     display: none;
   }
@@ -3840,7 +3851,8 @@ button.swiper-pagination-bullet {
     padding-left: 0;
   }
   .download_app .sec_title h1 {
-    font-size: 54.991px;
+    font-size: 11.4vw;
+    line-height: 1.32;
     letter-spacing: -1.375px;
   }
   .download_app .content {
@@ -3853,7 +3865,7 @@ button.swiper-pagination-bullet {
     display: none;
   }
   .download_app .content p {
-    font-size: 27.552px;
+    font-size: 5.74vw;
     letter-spacing: -0.827px;
     line-height: 1.34;
     margin-bottom: 0;
@@ -3862,7 +3874,7 @@ button.swiper-pagination-bullet {
     flex-direction: column-reverse;
   }
   .download_app .row .col_5 {
-    width: 100%;
+    width: 100% !important;
   }
   .download_app .image .desktop {
     display: none;
@@ -3871,13 +3883,6 @@ button.swiper-pagination-bullet {
 @media (max-width: 576px) {
   .download_app {
     padding: 24.583vw 6.458vw 0;
-  }
-  .download_app .sec_title h1 {
-    font-size: 11.4vw;
-    line-height: 1.32;
-  }
-  .download_app .content p {
-    font-size: 5.74vw;
   }
   .download_app .image {
     margin: 0 -3.333vw;
@@ -4312,6 +4317,7 @@ button.swiper-pagination-bullet {
   }
   .product_models .content_block .image {
     position: relative;
+    margin-bottom: -12%;
   }
   .product_models .content_block .image img {
     min-width: 130%;
@@ -4330,20 +4336,19 @@ button.swiper-pagination-bullet {
   .product_models .content_block .content {
     padding: 24px 0;
     padding-top: 0;
-    position: static;
+    position: relative;
     color: white;
-    max-width: 53%;
+    max-width: 73%;
     margin: 0 auto;
   }
   .product_models .content_block .content h3 {
-    font-size: 7.394vw;
+    font-size: 11.092vw;
     margin-bottom: 20px;
   }
   .product_models .content_block .content p {
-    font-size: 4.444vw;
-    font-weight: 500;
+    font-size: 6.667vw;
+    margin: 0 auto;
     color: #aeaeae;
-    letter-spacing: -0.64px;
   }
   .product_models .content_block .mobile_image {
     position: relative;
@@ -4533,6 +4538,12 @@ button.swiper-pagination-bullet {
     margin-bottom: 10.417vw;
     position: relative;
   }
+  .tecnoBlog .sec_title {
+    margin-bottom: 6.875vw;
+  }
+  .tecnoBlog .sec_title h1 {
+    font-size: 9.584vw;
+  }
   .tecnoBlog::after {
     content: "";
     position: absolute;
@@ -4545,30 +4556,33 @@ button.swiper-pagination-bullet {
   .tecnoBlog .container {
     padding: 0 14px;
   }
+  .tecnoBlog .accardion_item {
+    border-radius: 6vw;
+  }
   .tecnoBlog .accardion_item .head {
-    padding: 12px 18px;
+    padding: 2.5vw 3.75vw;
+  }
+  .tecnoBlog .accardion_item .head span {
+    font-size: 4.454vw;
   }
   .tecnoBlog .accardion_item .head::after {
-    width: 18px;
-    height: 19px;
+    width: 3.75vw;
+    height: 3.958vw;
   }
   .tecnoBlog .accardion_item .head.opened::after {
     margin-left: 0;
   }
   .tecnoBlog .accardion_item .body {
-    padding: 10px 18px;
+    padding: 2.083vw 3.75vw;
   }
   .tecnoBlog .accardion_item .body p {
-    font-size: 21px;
+    font-size: 4.375vw;
+  }
+  .tecnoBlog .accardion_item .body .list ul li {
+    font-size: 4.806vw;
   }
 }
 @media (max-width: 576px) {
-  .tecnoBlog .sec_title {
-    margin-bottom: 6.875vw;
-  }
-  .tecnoBlog .sec_title h1 {
-    font-size: 9.584vw;
-  }
   .tecnoBlog .accardion_item:not(:last-child) {
     margin-bottom: 2.5vw;
   }

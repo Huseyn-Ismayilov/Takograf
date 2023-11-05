@@ -120,31 +120,40 @@
         .sec_title {
             text-align: left;
             h1 {
-                font-size: 44px;
-                letter-spacing: -1.32px;
+                font-size: 9.1vw;
             }
         }
         .plans_list {
+            grid-template-columns: 1fr;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
             .plan_item {
                 box-shadow: unset;
                 padding: 36px;
+                border-radius: 28px;
                 &.individual {
                     position: relative;
                     box-sizing: border-box;
-                    $border: 5px;
+                    $border: 1.035vw;
                     background: white;
                     background-clip: padding-box; /* !importanté */
                     border: solid $border transparent; /* !importanté */
-                    border-radius: 1em;
-                  
+
                     &:before {
-                      content: '';
-                      position: absolute;
-                      top: 0; right: 0; bottom: 0; left: 0;
-                      z-index: -1;
-                      margin: -$border; /* !importanté */
-                      border-radius: inherit; /* !importanté */
-                      background: linear-gradient(to right, #88D5FD, #80EEE4);
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: -1;
+                        margin: -$border; /* !importanté */
+                        border-radius: inherit; /* !importanté */
+                        //   background: linear-gradient(to right, #88D5FD, #80EEE4);
+                        background-image: url(../images/border-image.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
                 }
                 &.corporate {
@@ -157,13 +166,13 @@
         }
     }
 }
-@media (max-width: 768px) {
-    .our_plans {
-        .plans_list {
-            grid-template-columns: 1fr;
-        }
-    }
-}
+// @media (max-width: 768px) {
+//     .our_plans {
+//         .plans_list {
+//             grid-template-columns: 1fr;
+//         }
+//     }
+// }
 @media (max-width: 576px) {
     .our_plans {
         padding-top: 10.625vw;
@@ -172,12 +181,10 @@
             max-width: 90%;
             margin: 0 auto;
             margin-bottom: 10vw;
-            h1 {
-                font-size: 9.1vw;
-            }
         }
         .plans_list {
             gap: 22px;
+
             .plan_item {
                 width: 100%;
                 max-width: 90%;

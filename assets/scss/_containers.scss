@@ -7,23 +7,27 @@
     .container,
     .container_lg {
         max-width: 100%;
-        padding: 0 3.290vw;
+        padding: 0 3.29vw;
     }
 }
 @media (min-width: 576px) {
     .container {
-        max-width: 520px;
+        max-width: 100%;
+          padding: 0 24px;
     }
     .container_lg {
-        max-width: 520px;
+        max-width: 100%;
+          padding: 0 24px;
     }
 }
 @media (min-width: 769px) {
     .container {
-        max-width: 720px;
+        max-width: 100%;
+        padding: 0 38px;
     }
     .container_lg {
-        max-width: 740px;
+        max-width: 100%;
+        padding: 0 38px;
     }
 }
 @media (min-width: 992px) {
