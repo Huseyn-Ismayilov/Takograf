@@ -25,11 +25,9 @@
         }
     }
     .apps_list {
-        .swiper-wrapper {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20.44px;
-        }
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20.44px;
         .app_cart {
             background-color: var(--gray-light);
             padding: 24.89px 18.67px 20px;
@@ -121,25 +119,17 @@
             }
         }
         .apps_list {
-            aspect-ratio: 40/69;
-            overflow: hidden;
-            .swiper-wrapper {
-                display: inherit;
-                position: relative;
-                // .swiper-slide {
-                //     + .swiper-slide {
-                //         margin-top: 24px;
-                //     }
-                // }
-            }
+            display: inherit;
+            position: relative;
             .app_cart {
                 width: 100%;
                 max-width: 405px;
                 margin: 0 auto;
                 aspect-ratio: 40/69;
                 height: auto;
+                position: sticky;
+                top: 20px;
                 padding: 37.89px 18.67px 20px;
-                box-shadow: 0 -20px 40px 0px rgb(0 0 0 / 7%);
 
                 .content {
                     margin-bottom: 79px;

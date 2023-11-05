@@ -1593,7 +1593,6 @@ button.swiper-pagination-bullet {
   .hero {
     background-color: white;
     color: black;
-    padding-top: 24.583vw;
     margin-top: -80px;
     margin-bottom: 7.292vw;
   }
@@ -1683,6 +1682,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
+  .hero {
+    padding-top: 24.583vw;
+  }
   .hero .image {
     margin: 0 -3.2vw 3.958vw;
   }
@@ -1839,7 +1841,7 @@ button.swiper-pagination-bullet {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.our_apps .apps_list .swiper-wrapper {
+.our_apps .apps_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20.44px;
@@ -1933,10 +1935,6 @@ button.swiper-pagination-bullet {
     font-size: 36px;
   }
   .our_apps .apps_list {
-    aspect-ratio: 40/69;
-    overflow: hidden;
-  }
-  .our_apps .apps_list .swiper-wrapper {
     display: inherit;
     position: relative;
   }
@@ -1946,8 +1944,9 @@ button.swiper-pagination-bullet {
     margin: 0 auto;
     aspect-ratio: 40/69;
     height: auto;
+    position: sticky;
+    top: 20px;
     padding: 37.89px 18.67px 20px;
-    box-shadow: 0 -20px 40px 0px rgba(0, 0, 0, 0.07);
   }
   .our_apps .apps_list .app_cart .content {
     margin-bottom: 79px;
