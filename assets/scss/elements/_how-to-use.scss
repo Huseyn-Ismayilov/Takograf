@@ -300,10 +300,19 @@
             h1 {
                 padding: 0 4px;
             }
+            > * {
+                position: relative;
+                z-index: 1;
+            }
             &::after {
-                left: -55%;
-                top: -24%;
-                width: 174%;
+                left: 1%;
+                top: -20%;
+                width: calc(100% + 3.29vw*2);
+                aspect-ratio: 479/235;
+                background-image: url(../images/line-arrow-mobile.svg);
+                background-repeat: no-repeat;
+                z-index: 0;
+                margin: 0 -3.29vw;
             }
         }
     }

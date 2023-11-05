@@ -1988,7 +1988,10 @@ button.swiper-pagination-bullet {
     border-radius: 6.25vw;
   }
   .our_apps .apps_list .app_cart:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
+  }
+  .our_apps .apps_list .app_cart:first-child .video {
+    margin-bottom: 0 !important;
   }
   .our_apps .apps_list .app_cart .content {
     margin-bottom: 16vw;
@@ -4129,10 +4132,19 @@ button.swiper-pagination-bullet {
   .howToUse .sec_title h1 {
     padding: 0 4px;
   }
+  .howToUse .sec_title > * {
+    position: relative;
+    z-index: 1;
+  }
   .howToUse .sec_title::after {
-    left: -55%;
-    top: -24%;
-    width: 174%;
+    left: 1%;
+    top: -20%;
+    width: calc(100% + 6.58vw);
+    aspect-ratio: 479/235;
+    background-image: url(../images/line-arrow-mobile.svg);
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin: 0 -3.29vw;
   }
 }
 .product_models {
@@ -4171,8 +4183,39 @@ button.swiper-pagination-bullet {
 .product_models .items_list .item .image img {
   width: 100%;
 }
+.product_models .contactUs {
+  text-align: center;
+  margin-top: 74px;
+}
+.product_models .contactUs .wrap {
+  width: 100%;
+  max-width: 657px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background-color: #F5F5F7;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.product_models .contactUs h3 {
+  font-size: 22.46px;
+  font-weight: 500;
+}
+.product_models .contactUs .btn {
+  padding-left: 40px;
+  font-size: 19.5px;
+  border: 1.5px solid #0071e3;
+  color: #0071e3;
+  gap: 12px;
+}
+.product_models .contactUs .btn svg {
+  width: 8px;
+  height: auto;
+}
 .product_models .content_block {
-  margin-top: 197px;
+  margin-top: 74px;
   padding: 0 25px;
 }
 .product_models .content_block .wrap {
@@ -4233,7 +4276,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 991px) {
   .product_models {
     padding-bottom: 6.25vw;
-    background-color: #FBFBFD;
+    background-color: #fbfbfd;
   }
   .product_models .mobileHide {
     display: none !important;
@@ -4312,7 +4355,12 @@ button.swiper-pagination-bullet {
     color: rgba(90, 0, 86, 0.86);
   }
   .product_models .contactUs {
-    text-align: center;
+    margin-top: 0;
+  }
+  .product_models .contactUs .wrap {
+    background-color: transparent;
+    padding: 0;
+    flex-direction: column;
   }
   .product_models .contactUs h3 {
     font-size: 4.679vw;
@@ -4330,7 +4378,6 @@ button.swiper-pagination-bullet {
   }
   .product_models .contactUs .btn svg {
     width: 1.875vw;
-    height: auto;
   }
 }
 @media (max-width: 768px) {
