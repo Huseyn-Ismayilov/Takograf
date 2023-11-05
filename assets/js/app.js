@@ -9,6 +9,58 @@
 // });
 
 
+
+// 
+function cycleImages() {
+	var $active = $('#cycler .active');
+	var $next = ($active.next().length > 0) ? $active.next() : $('#cycler div:first');
+	$next.css('z-index', 2);
+	$active.fadeOut(700, function () {
+		$active.css('z-index', 1).removeClass('active');
+		$next.css('z-index', 3).addClass('active');
+	});
+}
+
+$(document).ready(function () {
+	setInterval('cycleImages()', 2000);
+})
+
+// 
+
+function cycleImages1() {
+	var $active1 = $('#cycler1 .active');
+	var $next1 = ($active1.next().length > 0) ? $active1.next() : $('#cycler1 div:first');
+	$next1.css('z-index', 2);
+	$active1.fadeOut(700, function () {
+		$active1.css('z-index', 1).removeClass('active');
+		$next1.css('z-index', 3).addClass('active');
+	});
+}
+
+$(document).ready(function () {
+	setInterval('cycleImages1()', 2000);
+})
+
+
+function cycleImages2() {
+	var $active1 = $('#cycler2 .active');
+	var $next1 = ($active1.next().length > 0) ? $active1.next() : $('#cycler2 div:first');
+	$next1.css('z-index', 2);
+	$active1.fadeOut(700, function () {
+		$active1.css('z-index', 1).removeClass('active');
+		$next1.css('z-index', 3).addClass('active');
+	});
+}
+
+$(document).ready(function () {
+	setInterval('cycleImages2()', 1000);
+})
+
+
+
+// 
+
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -98,51 +150,6 @@ $(document).ready(function () {
 	});
 });
 
-
-function cycleImages() {
-	var $active = $('#cycler .active');
-	var $next = ($active.next().length > 0) ? $active.next() : $('#cycler div:first');
-	$next.css('z-index', 2);
-	$active.fadeOut(700, function () {
-		$active.css('z-index', 1).removeClass('active');
-		$next.css('z-index', 3).addClass('active');
-	});
-}
-
-$(document).ready(function () {
-	setInterval('cycleImages()', 2000);
-})
-
-// 
-
-function cycleImages1() {
-	var $active1 = $('#cycler1 .active');
-	var $next1 = ($active1.next().length > 0) ? $active1.next() : $('#cycler1 div:first');
-	$next1.css('z-index', 2);
-	$active1.fadeOut(700, function () {
-		$active1.css('z-index', 1).removeClass('active');
-		$next1.css('z-index', 3).addClass('active');
-	});
-}
-
-$(document).ready(function () {
-	setInterval('cycleImages1()', 2000);
-})
-
-
-function cycleImages2() {
-	var $active1 = $('#cycler2 .active');
-	var $next1 = ($active1.next().length > 0) ? $active1.next() : $('#cycler2 div:first');
-	$next1.css('z-index', 2);
-	$active1.fadeOut(700, function () {
-		$active1.css('z-index', 1).removeClass('active');
-		$next1.css('z-index', 3).addClass('active');
-	});
-}
-
-$(document).ready(function () {
-	setInterval('cycleImages2()', 1000);
-})
 
 
 

@@ -36,6 +36,8 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                background-repeat: no-repeat;
+                background-size: contain;
                 margin-bottom: 33.7px;
             }
             .price {
@@ -191,6 +193,7 @@
                 height: auto;
                 margin: 0 auto;
                 padding: 8.958vw 8.542vw;
+                border-radius: 6.625vw;
                 .line {
                     margin: 3.542vw auto;
                 }

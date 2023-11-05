@@ -45,7 +45,7 @@
             max-width: 657px;
             margin: 0 auto;
             padding: 20px 30px;
-            background-color: #F5F5F7;
+            background-color: #f5f5f7;
             border-radius: 999px;
             display: flex;
             align-items: center;
@@ -252,7 +252,7 @@
             h3 {
                 font-size: 4.679vw;
                 font-weight: 500;
-                margin-bottom: 3.438vw;
+                margin-bottom: 3.261vw;
                 span {
                     display: block;
                 }
@@ -262,8 +262,9 @@
                 color: #0071e3;
                 font-size: 4.063vw;
                 gap: 2.5vw;
-                padding: 1.458vw 6.4vw;
-                padding-left: 8.438vw;
+                padding: 1.458vw 5.3vw;
+                padding-left: 7.4vw;
+
                 svg {
                     width: 1.875vw;
                 }
@@ -299,6 +300,12 @@
                     max-width: 79%;
                     margin: 0 auto;
                 }
+            }
+        }
+        .contactUs {
+            .btn {
+                padding: 1.458vw 6.4vw;
+                padding-left: 8.438vw;
             }
         }
     }
