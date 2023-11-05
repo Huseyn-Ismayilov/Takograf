@@ -217,9 +217,22 @@
             text-align: center;
             justify-content: center;
             gap: 24px;
+            &.yellow {
+                background-image: url(../images/footer-bg-3.png);
+                background-size: cover;
+                background-position: center;
+                background-color: white;
+            }
         }
         .link {
             width: 220px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .googlePlayApp {
+        h1 {
+            font-size: 5.625vw;
         }
     }
 }
@@ -230,15 +243,6 @@
             padding: 7.292vw 6.458vw;
             border-radius: 16px;
             gap: 6.25vw;
-            &.yellow {
-                background-image: url(../images/footer-bg-3.png);
-                background-size: cover;
-                background-position: center;
-                background-color: white;
-            }
-        }
-        h1 {
-            font-size: 5.625vw;
         }
         .link {
             width: 45.417vw;
@@ -281,13 +285,13 @@
                 width: 11.25vw;
             }
         }
-        .foot_main{
+        .foot_main {
             margin-bottom: 13.333vw;
         }
         .foot_bottom {
             padding-top: 0;
             p {
-                font-size: 3.750vw;
+                font-size: 3.75vw;
                 max-width: 78%;
                 margin: 0 auto;
             }

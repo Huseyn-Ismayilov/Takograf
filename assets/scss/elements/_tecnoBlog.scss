@@ -150,7 +150,16 @@
 }
 @media (max-width: 576px) {
     .tecnoBlog {
+        .sec_title {
+            margin-bottom: 6.875vw;
+            h1 {
+                font-size: 9.584vw;
+            }
+        }
         .accardion_item {
+            &:not(:last-child) {
+                margin-bottom: 2.500vw;
+            }
             .head {
                 padding: 2.500vw 3.750vw;
                 span {
@@ -162,8 +171,12 @@
                 }
             }
             .body {
+                padding: 10px 4.063vw;
                 p {
                     font-size: 4.375vw;
+                    &:not(:last-child) {
+                        margin-bottom: 7.188vw;
+                    }
                 }
                 .list {
                     ul {

@@ -72,12 +72,15 @@
         }
         .items_list {
             grid-template-columns: 1fr;
+            gap: 0;
             li {
-                margin: 0 !important;
+                &:not(:last-child) {
+                    margin-bottom: 7.5vw;
+                }
                 .content {
+                    max-width: 86%;
                     p {
                         font-size: 20px;
-                        max-width: 360px;
                     }
                 }
             }
@@ -86,7 +89,7 @@
 }
 @media (max-width: 576px) {
     .discover_more {
-        padding: 95px 1.667vw 86px;
+        padding: 95px 2.2vw 86px;
         .sec_title {
             margin-bottom: 38px;
        
@@ -95,10 +98,12 @@
             }
         }
         .items_list {
-            gap: 32px;
             li {
+                &:not(:last-child) {
+                    margin-bottom: 10.4vw;
+                }
                 .icon {
-                    margin-bottom: 12px;
+                    margin-bottom: 4.167vw;
                     img {
                         width: 17.1vw;
                     }

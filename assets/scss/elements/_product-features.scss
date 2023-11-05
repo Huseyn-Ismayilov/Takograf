@@ -1075,7 +1075,6 @@
 
         .feature_items {
             .item {
-                border-radius: 20px;
 
                 // &.item1,
                 // &.item3,
@@ -1134,14 +1133,6 @@
 
                         img {
                             max-width: 100%;
-                        }
-                    }
-
-                    .content {
-                        max-width: 249px;
-
-                        p {
-                            font-size: 20px;
                         }
                     }
                 }

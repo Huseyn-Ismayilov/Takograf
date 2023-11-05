@@ -94,9 +94,7 @@
 }
 @media (min-width: 991px) {
     .howToUse {
-        .sec_title {
 
-        }
         .items_list {
             li {
                 .hideDesktop {
@@ -110,6 +108,10 @@
 }
 @media (max-width: 991px) {
     .howToUse {
+        background-color: #FBFBFD;
+        &::before{
+            display: none;
+        }
         .items_list {
             row-gap: 30px;
             flex-wrap: nowrap;
@@ -210,6 +212,7 @@
     .howToUse {
         margin-bottom: 0;
         .sec_title {
+            margin: 25.833vw 0 33.958vw;
             h2 {
                 font-size: 40px;
                 margin-bottom: 20px;
@@ -237,6 +240,7 @@
                     height: 92vw;
                     min-height: fit-content;
                     padding: 5.2vw 4.167vw;
+                    border-radius: 6.840vw;
                 }
                 .details {
                     .link {
