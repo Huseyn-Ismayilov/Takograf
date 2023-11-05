@@ -114,9 +114,11 @@ h1 {
 @media (min-width: 992px) {
   .container {
     max-width: 950px;
+    padding: 0;
   }
   .container_lg {
     max-width: 970px;
+    padding: 0;
   }
 }
 @media (min-width: 1130px) {
@@ -971,7 +973,10 @@ button.swiper-pagination-bullet {
   color: var(--gray);
 }
 .site_header .menu .nav_item.active .nav_link {
-  color: white;
+  color: #0071E3;
+}
+.site_header .menu .nav_item.active:hover .nav_link {
+  color: #1e87f0;
 }
 .site_header .menu .nav_item:not(.active):hover .nav_link {
   color: white;
@@ -1168,7 +1173,6 @@ button.swiper-pagination-bullet {
 @media (max-width: 576px) {
   .site_header {
     padding: 1.875vw 2px;
-    border-bottom: 0.667px solid #dfe3e8;
   }
   .site_header.nav-down {
     border-color: rgba(223, 227, 232, 0.1294117647);
@@ -1609,6 +1613,7 @@ button.swiper-pagination-bullet {
   }
   .hero h1 {
     font-size: 64px;
+    letter-spacing: -0.133vw;
     margin-bottom: 24px;
   }
   .hero p {
@@ -1688,7 +1693,6 @@ button.swiper-pagination-bullet {
   .hero h1 {
     font-size: 11.667vw;
     margin-bottom: 27px;
-    letter-spacing: 0;
   }
   .hero p {
     font-size: 6.667vw;
@@ -1757,7 +1761,7 @@ button.swiper-pagination-bullet {
 }
 .meet_us .content {
   padding-top: 48px;
-  padding-left: 16px;
+  padding-left: 30px;
 }
 .meet_us .content h1 {
   font-size: 61px;
@@ -1954,7 +1958,7 @@ button.swiper-pagination-bullet {
   }
   .our_apps .apps_list .app_cart {
     width: 100%;
-    max-width: 405px;
+    max-width: 450px;
     margin: 0 auto;
     aspect-ratio: 405/609;
     height: auto;
@@ -2835,7 +2839,7 @@ button.swiper-pagination-bullet {
     font-size: 11.371vw;
     margin-bottom: 7.5vw;
     line-height: 1.1;
-    letter-spacing: -0.096vw;
+    letter-spacing: -0.341vw;
   }
   .product_features .sec_title p {
     font-size: 4.792vw;
@@ -4227,8 +4231,10 @@ button.swiper-pagination-bullet {
 .product_models .contactUs h3 {
   font-size: 22.46px;
   font-weight: 500;
+  letter-spacing: -0.449px;
 }
 .product_models .contactUs .btn {
+  padding: 7px 23px;
   padding-left: 40px;
   font-size: 19.5px;
   border: 1.5px solid #0071e3;
@@ -4324,6 +4330,10 @@ button.swiper-pagination-bullet {
   .product_models .items_list .item:last-child {
     margin-bottom: 0;
   }
+  .product_models .items_list .item h3 {
+    font-size: 5.833vw;
+    font-weight: 700;
+  }
   .product_models .content_block {
     padding: 0;
     margin-top: 12.5vw;
@@ -4337,7 +4347,7 @@ button.swiper-pagination-bullet {
   }
   .product_models .content_block .image {
     position: relative;
-    margin-bottom: -12%;
+    margin-bottom: -17vw;
   }
   .product_models .content_block .image img {
     min-width: 130%;
@@ -4394,6 +4404,7 @@ button.swiper-pagination-bullet {
     background-color: transparent;
     padding: 0;
     flex-direction: column;
+    gap: 0;
   }
   .product_models .contactUs h3 {
     font-size: 4.679vw;
@@ -4406,8 +4417,10 @@ button.swiper-pagination-bullet {
   .product_models .contactUs .btn {
     border: 0.313vw solid #0071e3;
     color: #0071e3;
-    font-size: 4.679vw;
+    font-size: 4.063vw;
     gap: 2.5vw;
+    padding: 1.458vw 6.4vw;
+    padding-left: 8.438vw;
   }
   .product_models .contactUs .btn svg {
     width: 1.875vw;
@@ -4423,10 +4436,6 @@ button.swiper-pagination-bullet {
     font-size: 5.625vw;
     font-weight: 600;
     letter-spacing: -0.54px;
-  }
-  .product_models .items_list .item h3 {
-    font-size: 5.833vw;
-    font-weight: 700;
   }
   .product_models .content_block .content {
     position: relative;
@@ -4522,6 +4531,7 @@ button.swiper-pagination-bullet {
 }
 .tecnoBlog .accardion_item .body p span {
   color: #0050c9;
+  font-weight: 400;
 }
 .tecnoBlog .accardion_item .body p a {
   color: #0050c9;

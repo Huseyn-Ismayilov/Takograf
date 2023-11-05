@@ -78,7 +78,12 @@
         .nav_item {
             &.active {
                 .nav_link {
-                    color: white;
+                    color: #0071E3;
+                }
+                &:hover {
+                    .nav_link {
+                        color: #1e87f0;
+                    }
                 }
             }
             &:not(.active):hover {
@@ -305,7 +310,6 @@
 @media (max-width: 576px) {
     .site_header {
         padding: 1.875vw 2px;
-        border-bottom: 0.667px solid #dfe3e8;
         &.nav-down {
             border-color: #dfe3e821;
         }
