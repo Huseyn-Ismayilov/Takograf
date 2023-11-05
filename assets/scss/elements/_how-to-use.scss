@@ -17,6 +17,10 @@
             width: 100%;
             max-width: 770px;
         }
+        > * {
+            position: relative;
+            z-index: 1;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -28,7 +32,7 @@
             background-image: url(../images/line-arrow.svg);
             background-position: center;
             background-size: contain;
-            z-index: -1;
+            z-index: 0;
         }
     }
     .items_list {
@@ -194,6 +198,22 @@
 }
 @media (max-width: 768px) {
     .howToUse {
+        .sec_title {
+            > * {
+                position: relative;
+                z-index: 1;
+            }
+            &::after {
+                left: 1%;
+                top: -20%;
+                width: calc(100% + 3.29vw*2);
+                aspect-ratio: 479/235;
+                background-image: url(../images/line-arrow-mobile.svg);
+                background-repeat: no-repeat;
+                z-index: 0;
+                margin: 0 -3.29vw;
+            }
+        }
         .items_list {
             li{
                 .inner {
@@ -293,6 +313,7 @@
             height: 1px;
             background-image: url("data:image/svg+xml,%3Csvg width='479' height='2' viewBox='0 0 479 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-1' y1='1' x2='479' y2='0.999958' stroke='%23BDBDBD' stroke-width='2' stroke-dasharray='11 11'/%3E%3C/svg%3E%0A");
         }
+
         .sec_title {
             h2 {
                 font-size: 8.333vw;
@@ -300,20 +321,7 @@
             h1 {
                 padding: 0 4px;
             }
-            > * {
-                position: relative;
-                z-index: 1;
-            }
-            &::after {
-                left: 1%;
-                top: -20%;
-                width: calc(100% + 3.29vw*2);
-                aspect-ratio: 479/235;
-                background-image: url(../images/line-arrow-mobile.svg);
-                background-repeat: no-repeat;
-                z-index: 0;
-                margin: 0 -3.29vw;
-            }
+
         }
     }
 }
