@@ -264,14 +264,14 @@
     .hero {
         h1 {
             font-size: 11.667vw;
-            margin-bottom: 27px;
+            margin-bottom: 6.458vw;
         }
 
         p {
             font-size: 6.667vw;
             font-weight: 600;
             letter-spacing: -0.64px;
-            margin-bottom: 26px;
+            margin-bottom: 5vw;
             max-width: 70vw;
         }
     }
@@ -279,6 +279,7 @@
 @media (max-width: 576px) {
     .hero {
         padding-top: 24.583vw;
+        margin-top: -12.708vw;
 
         .image {
             margin: 0 -3.2vw 3.958vw;
@@ -315,12 +316,5 @@
             }
 
         }
-    }
-}
-@media (max-width: 390px) {
-    .hero {
-        padding-top: 80px;
-        margin-top: -54px;
-
     }
 }
