@@ -4129,6 +4129,10 @@ button.swiper-pagination-bullet {
     z-index: 0;
     margin: 0 -3.29vw;
   }
+  .howToUse .items_list {
+    margin: 0 -38px;
+    padding: 0 38px;
+  }
   .howToUse .items_list li .inner {
     min-height: 60vw;
   }
@@ -4143,6 +4147,10 @@ button.swiper-pagination-bullet {
   .howToUse .sec_title h2 {
     font-size: 40px;
     margin-bottom: 20px;
+  }
+  .howToUse .items_list {
+    margin: 0 -3.29px;
+    padding: 0 3.29px;
   }
   .howToUse .items_list li:first-child .image {
     height: 46vw;

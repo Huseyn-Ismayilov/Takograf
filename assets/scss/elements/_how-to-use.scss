@@ -245,6 +245,8 @@
             }
         }
         .items_list {
+            margin: 0 -38px;
+            padding: 0 38px;
             li {
                 .inner {
                     min-height: 60vw;
@@ -265,6 +267,8 @@
         }
         .items_list {
             // padding-bottom: 13.75vw;
+            margin: 0 -3.29px;
+            padding: 0 3.29px;
             li {
                 &:first-child {
                     .image {
