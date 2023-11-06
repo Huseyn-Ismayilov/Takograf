@@ -634,7 +634,7 @@
 
             h1 {
                 font-size: 11.371vw;
-                margin-bottom: 7.500vw;
+                margin-bottom: 7.5vw;
                 line-height: 1.1;
                 letter-spacing: -0.341vw;
                 // br {
@@ -945,7 +945,7 @@
 
 @media (max-width: 576px) {
     .product_features {
-        padding: 24.167vw 0 26.250vw;
+        padding: 24.167vw 0 26.25vw;
         .sec_title {
             padding-bottom: 19vw;
             .logo {
@@ -1047,12 +1047,18 @@
                         height: 19vw;
                     }
                     .icon {
+                        width: 10.833vw;
+                        aspect-ratio: 1/1;
+                        height: auto;
+                    }
+                }
+                &.item5.item7 {
+                    .icon {
                         width: 15.208vw;
                         aspect-ratio: 1/1;
                         height: auto;
                     }
                 }
-
                 &.item6 {
                     .image {
                         margin-right: 0;
