@@ -3165,8 +3165,9 @@ button.swiper-pagination-bullet {
     height: 19vw;
   }
   .product_features .feature_items .item.item5 .icon {
-    width: 60px;
-    height: 60px;
+    width: 15.208vw;
+    aspect-ratio: 1/1;
+    height: auto;
   }
   .product_features .feature_items .item.item6 .image {
     margin-right: 0;
