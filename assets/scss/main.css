@@ -3996,12 +3996,14 @@ button.swiper-pagination-bullet {
   font-size: 19.52px;
   font-weight: 500;
   line-height: 1.4;
+  letter-spacing: -0.39px;
   margin: 0 auto;
 }
 .howToUse .items_list li .details .link {
   margin-top: auto;
   font-size: 19.52px;
   font-weight: 400;
+  letter-spacing: -0.39px;
   color: var(--blue);
 }
 .howToUse .items_list li .details .link:hover {
@@ -4030,8 +4032,8 @@ button.swiper-pagination-bullet {
     row-gap: 30px;
     flex-wrap: nowrap;
     overflow-x: auto;
-    margin: 0 -100vw;
-    padding: 20px 100vw 10.417vw;
+    margin: 0 -40px;
+    padding: 20px 40px 10.417vw;
   }
   .howToUse .items_list::-webkit-scrollbar {
     display: none;
@@ -4206,17 +4208,18 @@ button.swiper-pagination-bullet {
 }
 .product_models .sec_title {
   text-align: center;
-  max-width: 636px;
+  max-width: 552px;
   margin: 0 auto;
-  padding-bottom: 83px;
+  padding-bottom: 90px;
 }
 .product_models .sec_title .icon {
   display: inline-block;
+  margin-bottom: 30px;
 }
 .product_models .sec_title h2 {
-  font-size: 33.716px;
+  font-size: 24px;
   font-weight: 500;
-  letter-spacing: -0.674px;
+  letter-spacing: -0.48px;
 }
 .product_models .items_list {
   display: grid;
@@ -4545,12 +4548,12 @@ button.swiper-pagination-bullet {
   display: none;
 }
 .tecnoBlog .accardion_item .body p {
-  font-size: 23.069px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.461px;
 }
 .tecnoBlog .accardion_item .body p:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 .tecnoBlog .accardion_item .body p strong {
   font-weight: 700;
@@ -4572,7 +4575,8 @@ button.swiper-pagination-bullet {
   padding-left: 34px;
 }
 .tecnoBlog .accardion_item .body .list ul li {
-  font-size: 23.069px;
+  font-size: 18px;
+  font-weight: 500;
   list-style: disc;
   letter-spacing: -0.461px;
 }
