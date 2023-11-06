@@ -4150,7 +4150,7 @@ button.swiper-pagination-bullet {
   }
   .howToUse .items_list {
     margin: 0 -3.29px;
-    padding: 0 3.29px;
+    padding: 20px 3.29px;
   }
   .howToUse .items_list li:first-child .image {
     height: 46vw;
