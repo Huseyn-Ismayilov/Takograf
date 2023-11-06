@@ -4037,6 +4037,8 @@ button.swiper-pagination-bullet {
     overflow-x: auto;
     margin: 0 -40px;
     padding: 20px 40px 10.417vw;
+    padding-top: 3vw !important;
+    padding-bottom: 5vw !important;
   }
   .howToUse .items_list::-webkit-scrollbar {
     display: none;
