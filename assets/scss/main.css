@@ -2729,7 +2729,8 @@ button.swiper-pagination-bullet {
   margin-bottom: 12px;
 }
 .product_features .feature_items .item.item7 .icon img {
-  width: 34px;
+  width: 34px !important;
+  height: auto;
 }
 .product_features .feature_items .item.item7 .icon > * {
   transition: 0s;
@@ -4105,6 +4106,7 @@ button.swiper-pagination-bullet {
   .howToUse .items_list li .image img {
     -o-object-fit: contain;
        object-fit: contain;
+    max-height: 100%;
   }
   .howToUse .items_list li .hideDesktop > div {
     width: 100%;
