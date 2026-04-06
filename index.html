@@ -1786,11 +1786,46 @@
             </div>
         </div>
     </footer>
+    <!-- <button id="translate-toggle-btn" onclick="openBanner()" style="display:none;">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12z"/>
+  </svg>
+  Translate
+</button>
+    <div id="translate-banner">
+  <div class="tb-header">
+    <svg width="16" height="16" viewBox="0 0 24 24">
+      <path d="M12.87 15.07l-2.54-2.51..."/>
+    </svg>
+    <span>Bu sayfa Türkçe</span>
+    <button class="tb-close" onclick="closeBanner()">×</button>
+  </div>
+  <p class="tb-desc">Bu sayfayı <strong>İngilizce</strong>'ye çevirmek ister misiniz?</p>
+  <div class="tb-actions">
+    <button class="tb-btn-primary" onclick="doTranslate()">Çevir</button>
+    <button class="tb-btn-secondary" onclick="closeBanner()">Türkçe kalsın</button>
+  </div>
+ <div id="google_translate_element" style="position:absolute; left:-9999px;"></div>
+
+</div> -->
+
+<!-- <script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'tr',
+    autoDisplay: false  // Google'ın kendi popup'ını kapat
+  }, 'google_translate_element');
+}
+</script> -->
+<script>
+function translateWithDeepl(targetLang) {
+  var pageUrl = encodeURIComponent(window.location.href);
+  window.location.href = 'https://www.deepl.com/translator#tr/' + targetLang + '/' + pageUrl;
+}
+</script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
-
-
 </body>
 
 </html>

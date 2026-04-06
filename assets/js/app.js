@@ -242,3 +242,67 @@ function initSlider(trackSelector) {
 
 initSlider('.track-1');
 initSlider('.track-2');
+
+
+
+// Translate site
+const translations = {
+  tr: { title: "Bu sayfa Türkçe", desc: "Türkçe olarak görüntülüyorsunuz.", translate: "Çevir", keep: "Türkçe kalsın" },
+  en: { title: "This page is in Turkish", desc: "Would you like to translate it to <strong>English</strong>?", translate: "Translate", keep: "Keep Turkish" },
+  fr: { title: "Cette page est en turc", desc: "Voulez-vous la traduire en <strong>français</strong> ?", translate: "Traduire", keep: "Garder en turc" },
+  de: { title: "Diese Seite ist auf Türkisch", desc: "Möchten Sie sie auf <strong>Deutsch</strong> übersetzen?", translate: "Übersetzen", keep: "Türkisch behalten" },
+  es: { title: "Esta página está en turco", desc: "¿Desea traducirla al <strong>español</strong>?", translate: "Traducir", keep: "Mantener turco" },
+  ar: { title: "هذه الصفحة باللغة التركية", desc: "هل تريد ترجمتها إلى <strong>العربية</strong>؟", translate: "ترجمة", keep: "الإبقاء بالتركية" },
+  ru: { title: "Эта страница на турецком", desc: "Хотите перевести на <strong>русский</strong>?", translate: "Перевести", keep: "Оставить турецкий" }
+};
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'tr',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+
+function closeBanner() {
+  $('#translate-banner').hide();
+}
+
+function doTranslate() {
+  var lang = navigator.language.split('-')[0];
+  var targetLang = (lang !== 'tr') ? lang : 'en';
+
+  var $btn = $('.tb-btn-primary');
+  var originalText = $btn.text();
+  $btn.prop('disabled', true).html('<span class="tb-spinner"></span> ' + originalText);
+
+  // Cookie set et ve sayfayı yenile — Google bunu okuyup çevirir
+  document.cookie = 'googtrans=/tr/' + targetLang + '; path=/';
+  document.cookie = 'googtrans=/tr/' + targetLang + '; path=/; domain=.' + location.hostname;
+
+  setTimeout(function() {
+    location.reload();
+  }, 800); // spinner'ın görünmesi için kısa bekle
+}
+$(document).ready(function() {
+  var lang = navigator.language.split('-')[0];
+
+  if (lang === 'tr') {
+    $('#translate-banner').hide();
+    return;
+  }
+
+  var t = translations[lang] || translations['en'];
+
+  $('.tb-header span').text(t.title);
+  $('.tb-desc').html(t.desc);
+  $('.tb-btn-primary').text(t.translate);
+  $('.tb-btn-secondary').text(t.keep);
+});
+function closeBanner() {
+  $('#translate-banner').hide();
+  $('#translate-toggle-btn').show(); // sağ üstte buton çıksın
+}
+function openBanner() {
+  $('#translate-banner').show();
+  $('#translate-toggle-btn').hide();
+}

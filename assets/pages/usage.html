@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../scss/main.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -136,7 +137,8 @@
                                 <img src="../images/step2.png" alt="">
                             </div>
                             <div class="details">
-                                <h3>Cihazı takografın ön <br> kısmında yer alan veri <br class="mobileHide"> indirme soketine takın.</h3>
+                                <h3>Cihazı takografın ön <br> kısmında yer alan veri <br class="mobileHide"> indirme
+                                    soketine takın.</h3>
                                 <a href="" class="link">Bluetooth cihazını satın alın</a>
                             </div>
                         </div>
@@ -147,7 +149,8 @@
                                 <img src="../images/step3.png" alt="">
                             </div>
                             <div class="details">
-                                <h3>Bluetooth cihazı ile mobil <br> cihazınızı eşleştirin ve <br> kullanmaya başlayın.</h3>
+                                <h3>Bluetooth cihazı ile mobil <br> cihazınızı eşleştirin ve <br> kullanmaya başlayın.
+                                </h3>
                                 <a href="" class="link">Videoyu izleyin</a>
                             </div>
                         </div>
@@ -163,7 +166,8 @@
                             <img src="../images/icon-6.png" alt="">
                         </div>
                         <div class="mobileHide">
-                            <h2>Kendi takograf modelinizin bluetooth girişini aşağıdaki listeden görebilirsiniz. <br> Soket
+                            <h2>Kendi takograf modelinizin bluetooth girişini aşağıdaki listeden görebilirsiniz. <br>
+                                Soket
                                 kapağını
                                 kaldırın ve bluetooth cihazını takın.
                             </h2>
@@ -211,16 +215,36 @@
                             <div class="title">
                                 <h3>Stoneridge (SE5000)</h3>
                             </div>
-                            <div class="image">
+                            <div class="image relative">
                                 <img src="../images/product-04.png" alt="">
+                                <div class="absolute flex items-end md:hidden" style="bottom: -6vw;
+    right: 24vw;">
+                                    <span class="font-bold text-[4.7vw] text-[#FF2B2B]">remove the cover</span>
+                                    <svg class="w-[10vw] !mb-[1vw] !ml-[2vw]" viewBox="0 0 35 42" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.2343 0.627025L33.8426 15.7135C34.9308 17.0156 34.005 18.996 32.308 18.996L26.0348 18.996C24.0793 37.2496 8.62684 41.0395 0.869625 41.4419C-0.227894 41.4988 -0.290077 40.4832 0.704353 40.0153C7.28701 36.9182 14.0663 28.3814 14.0663 18.996L7.47808 18.996C5.78108 18.996 4.85522 17.0156 5.94346 15.7135L18.5518 0.627022C19.2505 -0.209038 20.5355 -0.209034 21.2343 0.627025Z"
+                                            fill="#FF2B2B" />
+                                    </svg>
+                                </div>
                             </div>
                         </li>
                         <li class="item">
                             <div class="title">
                                 <h3 style="margin-right: -5px; white-space: nowrap;">Stoneridge (SE5000 connect)</h3>
                             </div>
-                            <div class="image">
+                            <div class="image relative">
                                 <img src="../images/product-05.png" alt="">
+                                 <div class="absolute flex items-end md:hidden" style="bottom: -5vw;
+    right: 20vw;">
+                                    <span class="font-bold text-[4.7vw] text-[#FF2B2B]">remove the cover</span>
+                                    <svg class="w-[10vw] !mb-[1vw] !ml-[2vw]" viewBox="0 0 35 42" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.2343 0.627025L33.8426 15.7135C34.9308 17.0156 34.005 18.996 32.308 18.996L26.0348 18.996C24.0793 37.2496 8.62684 41.0395 0.869625 41.4419C-0.227894 41.4988 -0.290077 40.4832 0.704353 40.0153C7.28701 36.9182 14.0663 28.3814 14.0663 18.996L7.47808 18.996C5.78108 18.996 4.85522 17.0156 5.94346 15.7135L18.5518 0.627022C19.2505 -0.209038 20.5355 -0.209034 21.2343 0.627025Z"
+                                            fill="#FF2B2B" />
+                                    </svg>
+                                </div>
                             </div>
                         </li>
                         <li class="item">
@@ -856,6 +880,14 @@
             </div>
         </div>
     </footer>
+<script>
+function translateWithDeepl(targetLang) {
+  var pageUrl = encodeURIComponent(window.location.href);
+  window.location.href = 'https://www.deepl.com/translator#tr/' + targetLang + '/' + pageUrl;
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/app.js"></script>
