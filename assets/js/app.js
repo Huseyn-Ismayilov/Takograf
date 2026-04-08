@@ -42,22 +42,66 @@ function cycleImages1() {
 $(document).ready(function () {
   setInterval("cycleImages1()", 2000);
 });
+// 
 
-function cycleImages2() {
-  var $active1 = $("#cycler2 .active");
-  var $next1 =
-    $active1.next().length > 0 ? $active1.next() : $("#cycler2 div:first");
-  $next1.css("z-index", 2);
-  $active1.fadeOut(700, function () {
-    $active1.css("z-index", 1).removeClass("active");
-    $next1.css("z-index", 3).addClass("active");
-  });
-}
+// function cycleImages2() {
+//   var $active0 = $("#cycler2 .active");
+//   var $next0 = $active0.next().length > 0 ? $active0.next() : $("#cycler2 div:first");
 
+//   $active0.removeClass("active").addClass("exit");
+//   $next0.addClass("active");
+
+//   setTimeout(function () {
+//     $active0.removeClass("exit");
+//     $active0.css("z-index", 1);
+//     $next0.css("z-index", 3);
+//   }, 1000); // transition süresiyle eşleşmeli
+// } 
+// $(document).ready(function () {
+//   setInterval("cycleImages2()", 2000);
+// });
 $(document).ready(function () {
-  setInterval("cycleImages2()", 1000);
-});
+  const total = 3;
+  const labels = ["label-ferry", "label-train", "label-out"];
+  let current = 0;
 
+  setInterval(function () {
+    const $currentImg = $("#cycler2 .type" + (current + 1));
+    const $currentLabel = $(".label." + labels[current]);
+
+    current = (current + 1) % total;
+
+    const $nextImg = $("#cycler2 .type" + (current + 1));
+    const $nextLabel = $(".label." + labels[current]);
+
+    // 1. transition kapalı, next'i aşağıya yerleştir
+    $nextImg[0].style.transition = "none";
+    $nextImg[0].style.transform = "translateY(100%)";
+
+    // 2. iki frame bekle — tarayıcı kesin uygulasın
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        // 3. transition'ı aç
+        $nextImg[0].style.transition = "";
+        $nextImg[0].style.transform = "";
+
+        // 4. animasyonları başlat
+        $currentImg[0].style.transform = "translateY(-100%)";
+        $currentLabel.removeClass("active");
+
+        $nextImg.addClass("active");
+        $nextLabel.addClass("active");
+
+        // 5. temizlik
+        setTimeout(function () {
+          $currentImg.removeClass("active");
+          $currentImg[0].style.transform = "";
+        }, 650);
+      });
+    });
+
+  }, 1500);
+});
 //
 
 // Hide Header on on scroll down
