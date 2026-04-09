@@ -210,9 +210,9 @@ if ($(window).width() < 991) {
 // Start
 
 const planets = [
-  { id: "p1", r: 0.44, angle: 0, orbit: "inner" },
-  { id: "p2", r: 0.44, angle: 70, orbit: "inner" },
-  { id: "p3", r: 0.44, angle: 200, orbit: "inner" },
+  { id: "p1", r: 0.36, angle: 0, orbit: "inner" },
+  { id: "p2", r: 0.36, angle: 70, orbit: "inner" },
+  { id: "p3", r: 0.36, angle: 160, orbit: "inner" },
   { id: "p4", r: 0.7, angle: 0, orbit: "outer" },
   { id: "p5", r: 0.7, angle: 90, orbit: "outer" },
   { id: "p6", r: 0.7, angle: 200, orbit: "outer" },

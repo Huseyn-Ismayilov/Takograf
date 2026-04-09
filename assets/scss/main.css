@@ -1894,6 +1894,15 @@ swiper-container .swiper-notification {
   }
 }
 @media (max-width: 576px) {
+  .googlePlayApp .wrapper.purple {
+    background-image: url(../images/footer-bg-4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+.hero_bottom .items_list .item:nth-child(2) {
+  display: none;
+}
   .hero .image {
     margin: 0 -3.2vw 3.958vw;
   }
@@ -2131,7 +2140,7 @@ swiper-container .swiper-notification {
 
 @media (max-width: 991px) {
   .our_apps {
-    padding: 3vw 0 74px;
+    padding: 3vw 0 12vw;
     overflow: visible;
     position: relative;
     z-index: 3;
@@ -3399,7 +3408,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .product_features {
-    padding: 18vw 0 19.25vw;
+    padding: 20vw 0 19.25vw;
   }
   .product_features .sec_title .logo {
     margin-bottom: -7.167vw;
@@ -3740,7 +3749,7 @@ swiper-container .swiper-notification {
     font-size: 7.083vw;
   }
   .access_points .content #select_country {
-    max-width: 72.2%;
+    max-width: 82.2%;
     height: 10.5vw;
     font-size: 4.792vw;
     background-size: 2.5vw;
@@ -5100,7 +5109,9 @@ swiper-container .swiper-notification {
 } /*# sourceMappingURL=main.css.map */
 
 section.features0 {
-  margin: 23vw 0 18vw;
+  margin: 16vw 0 18vw;
+  padding-top: 9vw;
+  background: linear-gradient(to bottom, #f6f7f9, white);
 }
 section.features0 li {
   margin-bottom: 12vw;
@@ -5200,6 +5211,9 @@ section.theBestPlan .svg_icon {
 /*  */
 
 .circle_wrap {
+
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5229,7 +5243,7 @@ section.theBestPlan .svg_icon {
 }
 
 .circle_wrap .r1 {
-  width: 80vw;
+  width: 70vw;
 }
 .circle_wrap .r2 {
   width: 125vw;
@@ -5238,7 +5252,7 @@ section.theBestPlan .svg_icon {
 
 .circle_wrap .planet {
   position: absolute;
-  width: 14.3vw;
+  width: 18vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
   display: flex;
