@@ -200,12 +200,12 @@ $(".product_features .feature_items .item .plus_btn").click(function () {
   $(this).toggleClass("opened");
 });
 
-if ($(window).width() < 991) {
-  $(".site_header .try_free_btn").html("Uygulamayı indirin");
-  $(".download_app .content > p").html(
-    "Otomatik takograf pilotu. <br> Faaliyetlerinize dair tüm detaylar artık elinizin altında. Sadece size özel kusursuz bir takograf <br> uzmanı.",
-  );
-}
+// if ($(window).width() < 991) {
+//   $(".site_header .try_free_btn").html("Uygulamayı indirin");
+//   $(".download_app .content > p").html(
+//     "Otomatik takograf pilotu. <br> Faaliyetlerinize dair tüm detaylar artık elinizin altında. Sadece size özel kusursuz bir takograf <br> uzmanı.",
+//   );
+// }
 
 // Start
 
@@ -266,7 +266,7 @@ function initSlider(trackSelector) {
   if (!track) return;
 
   let pos = 0;
-  const speed = trackSelector.includes('track-1') ? 0.5 : 0.3;
+  const speed = trackSelector.includes('track-1') ? 0.5 : trackSelector.includes('track-3') ? 1.6 : 0.3;
 
   function getHalfWidth() {
     return track.scrollWidth / 2;
@@ -286,7 +286,7 @@ function initSlider(trackSelector) {
 
 initSlider('.track-1');
 initSlider('.track-2');
-
+initSlider('.track-3');
 
 
 // Translate site
