@@ -2292,6 +2292,7 @@ swiper-container .swiper-notification {
     padding: 6.688vw 6.25vw;
     border-radius: 7.2vw;
     min-width: 84vw;
+    margin: 0 auto;
   }
   .our_apps .apps_list .app_cart:not(:last-child) {
     margin-bottom: 24px;
@@ -5772,7 +5773,7 @@ section.theBestPlan .svg_icon {
   margin: 0 auto;
 }
 
-.our_apps .apps_list {
+/* .our_apps .apps_list {
   height: 829px;
   overflow: hidden;
-}
+} */
