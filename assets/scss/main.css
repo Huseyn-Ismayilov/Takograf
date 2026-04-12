@@ -2809,7 +2809,7 @@ swiper-container .swiper-notification {
   display: block;
 }
 .product_features .feature_items .item.item2 .content {
-  padding: 0 13vw !important;
+  padding: 0 60px !important;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -3124,6 +3124,10 @@ swiper-container .swiper-notification {
   .product_features .feature_items .item.item7 .icon > * {
     width: 15.208vw;
     height: 15.208vw;
+  }
+  .product_features .feature_items .item.item2 .content {
+  padding: 0 13vw !important; 
+
   }
 }
 @media (min-width: 576px) {
