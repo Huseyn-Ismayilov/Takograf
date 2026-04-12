@@ -32,7 +32,7 @@ body {
 }
 @media (max-width: 991px) {
   .black_shadow_lg {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   }
 }
 @media (max-width: 768px) {
@@ -1356,7 +1356,7 @@ swiper-container .swiper-notification {
   padding-right: 51px;
 }
 .site_footer .col:nth-child(3) .menu {
-  padding-right: 47px;
+  padding-right: 14vw;
 }
 .site_footer .social_media {
   padding-right: 35px;
@@ -1369,7 +1369,7 @@ swiper-container .swiper-notification {
   font-weight: 400;
   line-height: 118.023%;
   display: block;
-  margin-bottom: 7.5px;
+  margin-bottom: 2vw;
 }
 .site_footer .contact_info .link {
   color: var(--yellow);
@@ -1471,7 +1471,7 @@ swiper-container .swiper-notification {
   align-items: center;
   justify-content: space-between;
   gap: 3vw;
-  margin-bottom: 10vw;
+  margin-bottom: 9vw;
 }
 .site_footer .brands img {
   height: 20vw;
@@ -1518,12 +1518,12 @@ swiper-container .swiper-notification {
     font-size: 22.302px;
   }
   .site_footer .col {
-    width: 50%;
+    /* width: 50%; */
     margin: 0 !important;
   }
   .site_footer .col.first {
     width: 100%;
-    margin-bottom: 57px !important;
+    margin-bottom: 7.8vw !important;
   }
   .site_footer .col.last {
     width: 100%;
@@ -1587,7 +1587,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 768px) {
   .googlePlayApp h1 {
-    font-size: 5.625vw;
+    font-size: 5.325vw;
   }
 }
 @media (max-width: 991px) {
@@ -1595,7 +1595,7 @@ swiper-container .swiper-notification {
     margin-bottom: -22.083vw;
   }
   .googlePlayApp .wrapper {
-    padding: 7.292vw 6.458vw;
+    padding: 8.292vw 6.458vw;
     border-radius: 3.481vw;
     gap: 6.25vw;
   }
@@ -1609,9 +1609,6 @@ swiper-container .swiper-notification {
   .site_footer > div {
     padding: 0 3.333vw;
   }
-  .site_footer .col.first {
-    margin-bottom: 11.875vw !important;
-  }
   .site_footer .logo {
     width: 52.083vw;
     margin-bottom: 3.542vw;
@@ -1624,21 +1621,22 @@ swiper-container .swiper-notification {
   }
   .site_footer .menu a {
     font-size: 5.281vw;
-    padding: 1.458vw 2vw;
+    padding: 2.2vw 2vw;
   }
   .site_footer .appLink {
-    width: 37.083vw;
+    width: 39.083vw;
     margin-left: -2.083vw;
+    margin-top: 3vw;
   }
   .site_footer .social_media {
     padding-right: 0;
-    margin-top: 8.333vw;
+    margin-top: 6.333vw;
   }
   .site_footer .social_media img {
     width: 11.25vw;
   }
   .site_footer .foot_main {
-    margin-bottom: 13.333vw;
+    margin-bottom: 2.333vw;
   }
   .site_footer .foot_bottom {
     padding-top: 0;
@@ -1924,7 +1922,7 @@ swiper-container .swiper-notification {
   }
 
   .hero .content {
-    margin-bottom: 7vw;
+    margin-bottom: 9vw;
   }
 }
 @media (max-width: 576px) {
@@ -1942,6 +1940,8 @@ swiper-container .swiper-notification {
   }
   .hero h1 {
     font-size: 11.6vw;
+    line-height: 1.15;
+    margin-bottom: 2.2vw;
   }
   .hero .try_free_btn {
     font-size: 4.8vw;
@@ -1970,9 +1970,11 @@ swiper-container .swiper-notification {
 } */
   .hero_bottom .items_list h3 {
     font-size: 10.417vw;
+    line-height: 1;
+            margin-bottom: 1vw;
   }
   .hero_bottom .items_list p {
-    font-size: 3.5vw;
+    font-size: 4vw;
     line-height: 1.3;
     letter-spacing: 0.1px;
     padding-top: 3px;
@@ -2016,7 +2018,7 @@ swiper-container .swiper-notification {
 
 @media (max-width: 991px) {
   .meet_us {
-    padding-top: 19.7vw;
+    padding-top: 17.7vw;
     padding-bottom: 10px;
     overflow: hidden;
   }
@@ -2052,14 +2054,16 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .meet_us .content p {
+    font-weight: 700;
     font-size: 9vw;
-    letter-spacing: -0.58px;
+    letter-spacing: -0.3vw;
+    margin-bottom: 8.3vw;
   }
   .meet_us .content h1 {
     font-size: 11.4vw;
   }
   .meet_us .content p {
-    max-width: 100%;
+    max-width: 96%;
   }
 }
 @media (max-width: 390px) {
@@ -2186,7 +2190,7 @@ swiper-container .swiper-notification {
 
 @media (max-width: 991px) {
   .our_apps {
-    padding: 3vw 0 12vw;
+    padding: 5vw 0 29vw;
     overflow: visible;
     position: relative;
     z-index: 3;
@@ -2198,7 +2202,7 @@ swiper-container .swiper-notification {
     font-size: 16vw;
   }
   .our_apps .sec_title h1 span {
-    font-size: 22vw;
+    font-size: 21vw;
   }
   .our_apps .sec_title h2 {
     font-size: 36px;
@@ -2256,7 +2260,7 @@ swiper-container .swiper-notification {
     overflow: hidden;
   } */
   .our_apps .sec_title h2 {
-    font-size: 8vw;
+    font-size: 7.8vw;
     margin-top: -3vw;
     background: linear-gradient(90deg, #006bd6 18%, #0015ad 45%, #830599 75%);
     background-clip: text;
@@ -2282,10 +2286,10 @@ swiper-container .swiper-notification {
     display: none;
   }
   .our_apps .bottom_text {
-    padding-top: 38vw;
+    padding-top: 30vw;
   }
   .our_apps .apps_list .app_cart {
-    padding: 9.688vw 6.25vw;
+    padding: 6.688vw 6.25vw;
     border-radius: 7.2vw;
     min-width: 84vw;
   }
@@ -2307,11 +2311,12 @@ swiper-container .swiper-notification {
     margin-bottom: 16vw;
   }
   .our_apps .apps_list .app_cart .content h3 {
-    font-size: 9.094vw;
+    font-size: 8.4vw;
+    margin-bottom: 3vw;
   }
   .our_apps .apps_list .app_cart .content p {
-    line-height: 1.3;
-    font-size: 6.584vw;
+    line-height: 1.1;
+    font-size: 6.2vw;
   }
   .our_apps .apps_list .app_cart:nth-child(2) {
     padding-bottom: 4.792vw;
@@ -2321,8 +2326,10 @@ swiper-container .swiper-notification {
     width: calc(100% + 20px);
   }
   .our_apps .bottom_text p {
-    font-size: 7.6vw;
+    font-size: 8vw;
     max-width: 98%;
+    line-height: 1.22;
+    letter-spacing: -0.15vw;
   }
 }
 .what_is_takograf {
@@ -2575,20 +2582,21 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .our_product {
-    padding: 94vw 0 42vw;
+    padding: 93vw 0 40vw;
     margin-top: -40vw;
+    overflow: hidden;
   }
   .our_product .product {
-    margin-bottom: 13vw;
+    margin-bottom: 16vw;
   }
   .our_product .product .text {
     margin: 0 -10px;
     width: auto;
   }
   .our_product .features_items {
-    -moz-column-gap: 60px;
-    column-gap: 60px;
-    row-gap: 7vw;
+    -moz-column-gap: 11vw;
+    column-gap: 11vw;
+    row-gap: 9vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* max-width: 290px; */
@@ -2606,11 +2614,21 @@ swiper-container .swiper-notification {
     width: fit-content;
     margin: 0 auto;
   }
+  .our_product .features_items li:nth-child(3) .icon img {
+    max-height: 17vw;
+  }
+  .our_product .features_items li:nth-child(3) .icon {
+    margin-bottom: 3vw;
+    margin-top: 1vw;
+    margin-right: 2vw;
+  }
   .our_product .features_items li .icon img {
     height: 19vw;
+    max-height: inherit;
   }
   .our_product .features_items li p {
     font-size: 4.15vw;
+    line-height: 1.1;
     font-weight: 500;
     color: #aeaeae;
     max-width: 90%;
@@ -2619,7 +2637,7 @@ swiper-container .swiper-notification {
     margin-bottom: 2vw;
   }
   .our_product .features_list {
-    margin-bottom: 25vw;
+    margin-bottom: 23vw;
   }
   .our_product .features_list li {
     width: 100%;
@@ -2635,8 +2653,8 @@ swiper-container .swiper-notification {
     color: #5d6e96;
   }
   .our_product .features_items li:first-child {
-    margin-top: 9vw;
-    margin-bottom: 7vw;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
   }
 }
 @media (min-width: 576px) {
@@ -2783,14 +2801,14 @@ swiper-container .swiper-notification {
 .product_features .feature_items .item.item2 {
   text-align: center;
   align-items: center;
-  background-color: #c3f5d2;
+  /* background-color: #c3f5d2; */
 }
 .product_features .feature_items .item.item2 h3 span {
   color: #157c00;
   display: block;
 }
 .product_features .feature_items .item.item2 .content {
-  padding: 0 60px !important;
+  padding: 0 13vw !important;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -2800,7 +2818,7 @@ swiper-container .swiper-notification {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #c3f5d2;
+  /* background-color: #c3f5d2; */
   display: flex;
   align-items: center;
   z-index: 1;
@@ -3104,6 +3122,7 @@ swiper-container .swiper-notification {
 @media (max-width: 576px) {
   .product_features .feature_items .item.item7 .icon > * {
     width: 15.208vw;
+    height: 15.208vw;
   }
 }
 @media (min-width: 576px) {
@@ -3223,7 +3242,7 @@ swiper-container .swiper-notification {
   }
   .product_features .sec_title h1 {
     font-size: 11.371vw;
-    margin-bottom: 7.5vw;
+    margin-bottom: 6.5vw;
     line-height: 1.1;
     letter-spacing: -0.341vw;
   }
@@ -3385,7 +3404,7 @@ swiper-container .swiper-notification {
     max-width: 100% !important;
   }
   .product_features .feature_items .item.item5 {
-    padding: 31vw 0 !important;
+    padding: 30vw 0 29vw !important;
   }
   .product_features .feature_items .item.item5 .content {
     max-width: 60% !important;
@@ -3403,14 +3422,14 @@ swiper-container .swiper-notification {
     margin-bottom: 40px;
   }
   .product_features .feature_items .item.item6 .content h3 {
-    margin-bottom: 6vw;
+    margin-bottom: 7vw;
   }
   .product_features .feature_items .item.item6 .content h3 span {
     display: block;
   }
   .product_features .feature_items .item.item6 .content p {
-    font-size: 5.4vw;
-    max-width: 67%;
+    font-size: 5.35vw;
+    max-width: 56%;
   }
   .product_features .feature_items .item.item6 .image {
     width: 100%;
@@ -3418,6 +3437,15 @@ swiper-container .swiper-notification {
     margin-bottom: 0;
     margin-right: 0;
     padding: 0 5%;
+  }
+  .product_features .feature_items .item.item7 .icon > div:nth-child(1) img {
+    width: 7vw !important;
+  }
+  .product_features .feature_items .item.item7 .icon > div:nth-child(2) img {
+    width: 7vw !important;
+  }
+  .product_features .feature_items .item.item7 .icon > div:nth-child(3) img {
+    width: 9.6vw !important;
   }
   .product_features .feature_items .item.item6 .image img {
     max-width: 100%;
@@ -3442,11 +3470,11 @@ swiper-container .swiper-notification {
   }
   .product_features .feature_items .item .content h3 {
     font-size: 6.8vw;
-    letter-spacing: -0.76px;
+    letter-spacing: -0.2vw;
   }
   .product_features .feature_items .item.item9 {
-    padding-top: 15vw;
-    padding-bottom: 12vw;
+    padding-top: 13vw;
+    padding-bottom: 14vw;
   }
   .product_features .feature_items .item.item9 h3 {
     max-width: 70vw;
@@ -3476,7 +3504,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .product_features {
-    padding: 20vw 0 19.25vw;
+    padding: 22vw 0 22vw;
   }
   .product_features .sec_title .logo {
     margin-bottom: -7.167vw;
@@ -3488,9 +3516,10 @@ swiper-container .swiper-notification {
     font-size: 5.792vw;
   }
   .product_features .sec_title .logo {
-    width: 31.5vw;
+    width: 34vw;
     max-width: -moz-fit-content;
     max-width: fit-content;
+    margin-bottom: -9vw;
   }
   .product_features .feature_items .item.item6 .content p {
     color: #7f3d6d;
@@ -3511,7 +3540,7 @@ swiper-container .swiper-notification {
     padding-top: 0;
   }
   .product_features .feature_items .item.item3 {
-    padding-top: 13.958vw !important;
+    padding-top: 15vw !important;
   }
   .product_features .feature_items .item.item3 h3 {
     max-width: 90%;
@@ -3520,11 +3549,11 @@ swiper-container .swiper-notification {
     padding-top: 0;
   }
   .product_features .feature_items .item.item4 {
-    padding-top: 13.958vw !important;
+    padding-top: 15vw !important;
   }
   .product_features .feature_items .item.item6 {
     gap: 40px;
-    padding-top: 14.958vw !important;
+    padding-top: 16vw !important;
   }
   .product_features .feature_items .item.item6 .content {
     margin-bottom: 14.8vw;
@@ -3555,13 +3584,19 @@ swiper-container .swiper-notification {
     max-width: 90%;
   }
   .product_features .feature_items .item.item4 .image .warning_bar {
-    left: 4vw;
-    right: 4.5vw;
-    bottom: 16vw;
+    left: 5vw;
+    right: 5vw;
+    bottom: 17vw;
+    gap: 3vw;
     transform: unset;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .product_features .feature_items .item.item4 .image .warning_bar img {
+    width: 9vw;
   }
   .product_features .feature_items .item.item4 .image .warning_bar p {
-    font-size: 4.2vw;
+    font-size: 4.3vw;
     line-height: 1.3;
 
     -webkit-line-clamp: 2;
@@ -3575,15 +3610,16 @@ swiper-container .swiper-notification {
   }
   .product_features .feature_items .item.item5 .content h3 {
     width: 100%;
-    max-width: 65%;
+    max-width: 72% !important;
   }
   .product_features .feature_items .item.item5 .chng_text {
     height: 19vw;
   }
   .product_features .feature_items .item.item5 .icon {
-    width: 10.833vw;
+    width: 11.833vw;
     aspect-ratio: 1/1;
     height: auto;
+    margin-left: 1vw;
   }
   .product_features .feature_items .item.item5.item7 .icon {
     width: 15.208vw;
@@ -3797,6 +3833,7 @@ swiper-container .swiper-notification {
     max-width: 324px;
     background-position-y: 13px;
     color: var(--gray-dark);
+    background-image: url(../images/select-arrow-down.svg);
   }
   .access_points .image {
     padding: 0;
@@ -3815,13 +3852,16 @@ swiper-container .swiper-notification {
   }
   .access_points .content h3 {
     font-size: 7.083vw;
+    margin-bottom: 6vw;
+    letter-spacing: 0.07vw;
   }
   .access_points .content #select_country {
     max-width: 82.2%;
     height: 10.5vw;
     font-size: 4.792vw;
-    background-size: 2.5vw;
+    background-size: 5vw;
     background-position-y: 50%;
+    letter-spacing: -0.03vw;
   }
 }
 .discover_more {
@@ -3898,7 +3938,7 @@ swiper-container .swiper-notification {
     gap: 0;
   }
   .discover_more .items_list li:not(:last-child) {
-    margin-bottom: 7.5vw;
+    margin-bottom: 7vw;
   }
   .discover_more .items_list li .content {
     max-width: 86%;
@@ -3909,19 +3949,20 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .discover_more {
-    padding: 20vw 3.646vw 15vw;
+    padding: 19vw 4.646vw 15vw;
   }
   .discover_more .sec_title {
-    margin-bottom: 21vw;
+    margin-bottom: 22vw;
   }
   .discover_more .items_list li .content {
     max-width: 100%;
   }
   .discover_more .sec_title h1 {
     font-size: 9.167vw;
+    line-height: 1.1;
   }
   .discover_more .items_list li:not(:last-child) {
-    margin-bottom: 10.4vw;
+    margin-bottom: 9vw;
   }
   .discover_more .items_list li .icon {
     margin-bottom: 4.167vw;
@@ -4048,7 +4089,7 @@ swiper-container .swiper-notification {
     text-align: left;
   }
   .our_plans .sec_title h1 {
-    font-size: 9.1vw;
+    font-size: 9.4vw;
   }
   .our_plans .plans_list {
     grid-template-columns: 1fr;
@@ -4102,7 +4143,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .our_plans {
-    padding-top: 22vw;
+    padding-top: 19.5vw;
   }
   .our_plans .sec_title {
     width: 100%;
@@ -4125,15 +4166,39 @@ swiper-container .swiper-notification {
   }
   .our_plans .plans_list .plan_item {
     width: 100%;
-    max-width: 90%;
+    max-width: 94%;
     height: auto;
     margin: 0 auto;
-    padding: 8.958vw 8.542vw;
-    border-radius: 6.625vw;
+    padding: 7.958vw 8.542vw;
+    border-radius: 7vw;
+  }
+   .our_plans .plans_list .plan_item.corporate   {
+            padding: 10vw 8.542vw;
+   }
+  .our_plans .plans_list .plan_item.indcorporateividual .line {
+    margin: 5vw auto 4.3vw;
   }
   .our_plans .plans_list .plan_item .line {
-    margin: 3.542vw auto;
+    margin: 4.8vw auto;
   }
+  .our_plans .plans_list .plan_item.corporate .line {
+            margin: 4.8vw auto 4.2vw;
+  }
+   .our_plans .plans_list .plan_item .price  {
+    display: flex;
+    /* gap: 1vw; */
+   }
+  .our_plans .plans_list .plan_item .price .currency_icon {
+  align-items: flex-start;
+        line-height: 1;
+        font-size: 4.8vw;
+        margin-right: 2vw;
+        margin-top: 1.3vw;
+        font-weight: 600;
+  }
+   .our_plans .plans_list .plan_item .price .mo {
+    margin-top: 1vw;
+   }
   .our_plans .plans_list .plan_item .type {
     font-size: 6.389vw;
     width: 37vw;
@@ -4143,7 +4208,8 @@ swiper-container .swiper-notification {
   }
   .our_plans .plans_list .plan_item .price {
     font-size: 8.634vw;
-    margin-bottom: 0;
+    margin-bottom: -1vw;
+    margin-right: 4vw;
   }
   .our_plans .plans_list .plan_item .price span {
     font-weight: 400;
@@ -4169,8 +4235,9 @@ swiper-container .swiper-notification {
   }
   .our_plans .plans_list .plan_item .btn {
     font-size: 5vw;
+    font-weight: 600;
     padding: 3.438vw 3.542vw;
-    margin-top: 10.292vw;
+    margin-top: 10.5vw;
     background-color: #136e00;
     border-radius: 3vw;
   }
@@ -4233,7 +4300,9 @@ swiper-container .swiper-notification {
 @media (max-width: 576px) {
   .references {
     background: none;
+        padding: 40px 0;
   }
+  
   .references .list_items {
     display: none;
   }
@@ -4280,7 +4349,7 @@ swiper-container .swiper-notification {
 .download_app .sec_title h1 span {
   font-family: "Courgette", cursive;
   font-weight: 100;
-  background: linear-gradient(100deg, #830599 0%, #006aba 50.62%, #009ef6 100%);
+  background: linear-gradient(100deg, #830599 12%, #006aba 50.62%, #009ef6 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -4354,15 +4423,16 @@ swiper-container .swiper-notification {
   }
   .download_app .sec_title {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 6vw;
     padding-left: 0;
     max-width: 99%;
   }
   .download_app .sec_title h1 {
-    font-size: 11.4vw;
-    line-height: 1.1;
-    letter-spacing: -1.375px;
+    font-size: 10.4vw;
+    line-height: 1.2;
+    letter-spacing: -0.2vw;
   }
+  
   .download_app .content {
     margin-left: 0;
     margin-top: 0;
@@ -4390,20 +4460,21 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .download_app {
-    padding: 24.583vw 6.458vw 0;
+    padding: 38vw 6.458vw 0;
   }
   .download_app .image {
     margin: 0 -3.333vw;
   }
   .download_app .sec_title h1 span {
     font-family: "KG Always";
+    letter-spacing: normal;
   }
   .download .content p {
     color: #5f5f63;
   }
   .download_app .content p {
-     color: #5F5F63;
-     font-weight: 600;
+    color: #5f5f63;
+    font-weight: 600;
   }
 }
 .howToUse {
@@ -5197,12 +5268,12 @@ swiper-container .swiper-notification {
 } /*# sourceMappingURL=main.css.map */
 
 section.features0 {
-  margin: 16vw 0 18vw;
-  padding-top: 9vw;
+  margin: 20vw 0 -2vw;
+  padding-top: 12vw;
   background: linear-gradient(to bottom, #f6f7f9, white);
 }
 section.features0 li {
-  margin-bottom: 12vw;
+  margin-bottom: 11vw;
 }
 section.features0 h3 {
   background: linear-gradient(90deg, #0015ad 10%, #001087 45%, #830599 75%);
@@ -5221,7 +5292,7 @@ section.features0 .icon {
 }
 section.features0 svg {
   height: auto;
-  width: 10vw;
+  width: 11vw;
   display: inline;
 }
 section.theBestPlan {
@@ -5239,14 +5310,15 @@ section.theBestPlan .svg_icon {
   flex-wrap: nowrap;
   gap: 4vw;
   margin: 0 -3.29vw;
-  padding: 0 3.29vw;
+  padding: 0 10vw;
 }
 .theBestPlan .items::-webkit-scrollbar {
   display: none;
 }
 .theBestPlan .items li {
-  min-width: 87vw;
-  padding: 7vw;
+  min-width: 81vw;
+  padding: 7vw 5vw;
+  padding-right: 0;
   border-radius: 3vw;
 }
 .theBestPlan .items li p {
@@ -5259,11 +5331,11 @@ section.theBestPlan .svg_icon {
 }
 .theBestPlan .items li span {
   display: block;
-  font-size: 4vw;
-  margin-bottom: 2vw;
+  font-size: 4.3vw;
+  margin-bottom: 1.3vw;
 }
 .join_us {
-  margin-top: 14vw;
+  margin-top: 11vw;
 }
 .join_us h2 {
   font-size: 11.1vw;
@@ -5344,7 +5416,7 @@ section.theBestPlan .svg_icon {
 
 .circle_wrap .planet {
   position: absolute;
-  width: 18vw;
+  width: 20vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
   display: flex;
@@ -5423,7 +5495,7 @@ section.theBestPlan .svg_icon {
 } */
 
 .brand-slider .brand-item {
-  width: 40vw;
+  width: 47vw;
   white-space: nowrap;
   /* padding: 0.6rem 1.8rem; */
   /* border: 1px solid rgba(0,0,0,0.1); */
@@ -5433,7 +5505,9 @@ section.theBestPlan .svg_icon {
   /* background: #fff; */
   flex-shrink: 0;
 }
-
+/* .brand-slider .track-2 .brand-item {
+  width: 35vw;
+} */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
@@ -5592,12 +5666,7 @@ section.theBestPlan .svg_icon {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    ellipse at center,
-    #c8f5d8 0%,
-    #a8e8c0 40%,
-    #8ddbb0 100%
-  );
+  background: #9fffbc7a;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -5609,13 +5678,22 @@ section.theBestPlan .svg_icon {
   height: 500px;
   border-radius: 50%;
   background: radial-gradient(circle, #ffffffb3 3%, #b4f1c7 100%);
+  /* background: radial-gradient(circle, #b4f1c7 3%, #ffffffb3 100%); */
   /* animation: ripple 4s ease-out infinite; */
   animation: ripple 4.5s linear infinite;
   transform: scale(0);
   /* opacity: 0; */
-  box-shadow: 0 0 12px rgb(0 0 0 / 4%);
+  /* box-shadow: 0 0 22px rgb(245 245 245 / 95%); */
 }
-
+.circle_center {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 40%;
+  aspect-ratio: 1/1;
+  width: 300px;
+  /* background: radial-gradient(circle, #b4f1c7 3%, #ffffffb3 100%); */
+}
 .circle:nth-child(1) {
   animation-delay: 0s;
 }
@@ -5635,7 +5713,7 @@ section.theBestPlan .svg_icon {
     opacity: 0.9;
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.6);
     opacity: 0;
   }
 }
@@ -5686,4 +5764,15 @@ section.theBestPlan .svg_icon {
   .our_plans .plans_list .plan_item.corporate .btn {
     margin-top: 5.292vw;
   }
+}
+.brand_slider001 h4 {
+  line-height: 1.2;
+  font-size: 10.2vw;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.our_apps .apps_list {
+  height: 829px;
+  overflow: hidden;
 }
