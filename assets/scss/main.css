@@ -1879,7 +1879,7 @@ swiper-container .swiper-notification {
   }
   .hero_bottom .container {
     padding: 7vw 0;
-    border-radius: 4vw;
+    border-radius: 5vw;
     overflow: hidden;
   }
   .hero_bottom {
@@ -1896,7 +1896,9 @@ swiper-container .swiper-notification {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(152deg, #550045 0%, #0014a1 100%);
+    top: -70%;
+    left: -70%;
+    background: linear-gradient(300deg, #550045 0%, #0014a1 100%);
     opacity: 0.75;
   }
   .hero {
@@ -1963,7 +1965,7 @@ swiper-container .swiper-notification {
     inset: 0;
     border: 0.9vw solid rgba(255, 255, 255, 0.5);
     z-index: 10;
-    border-radius: 4vw;
+    border-radius: 5vw;
   }
   /* .hero_bottom .container::after {
   inset: -0.9vw;
@@ -5302,11 +5304,11 @@ section.features0 svg {
 }
 section.theBestPlan {
   background: linear-gradient(to bottom, #f6f7f9, white);
-  padding: 12vw 0;
+  padding: 13vw 0 12vw;
 }
 section.theBestPlan .svg_icon {
   width: 9vw;
-  margin: 0 -1px;
+  margin: 0 1vw;
   margin-top: 2vw;
 }
 .theBestPlan .items {
@@ -5777,7 +5779,7 @@ section.theBestPlan .svg_icon {
   margin: 0 auto;
 }
 
-/* .our_apps .apps_list {
+.our_apps .apps_list {
   height: 829px;
   overflow: hidden;
-} */
+}
