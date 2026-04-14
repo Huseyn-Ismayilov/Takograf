@@ -1355,9 +1355,7 @@ swiper-container .swiper-notification {
 .site_footer .col:nth-child(2) .menu {
   padding-right: 51px;
 }
-.site_footer .col:nth-child(3) .menu {
-  padding-right: 14vw;
-}
+
 .site_footer .social_media {
   padding-right: 35px;
 }
@@ -1369,7 +1367,7 @@ swiper-container .swiper-notification {
   font-weight: 400;
   line-height: 118.023%;
   display: block;
-  margin-bottom: 2vw;
+  margin-bottom: 1.6vw;
 }
 .site_footer .contact_info .link {
   color: var(--yellow);
@@ -1504,6 +1502,9 @@ swiper-container .swiper-notification {
   }
 }
 @media (max-width: 991px) {
+  .site_footer .col:nth-child(3) .menu {
+  padding-right: 14.6vw;
+}
   .googlePlayApp .googleImg {
     display: none;
   }
@@ -1565,7 +1566,7 @@ swiper-container .swiper-notification {
   }
   .googlePlayApp h1 {
     font-size: 5.625vw;
-    letter-spacing: -0.81px;
+    letter-spacing: -0.15vw;
     max-width: 100%;
   }
   .googlePlayApp .wrapper {
@@ -1595,7 +1596,6 @@ swiper-container .swiper-notification {
     margin-bottom: -22.083vw;
   }
   .googlePlayApp .wrapper {
-    padding: 8.292vw 6.458vw;
     border-radius: 3.481vw;
     gap: 6.25vw;
   }
@@ -1617,11 +1617,12 @@ swiper-container .swiper-notification {
     max-width: 100%;
   }
   .site_footer .contact_info > * {
-    font-size: 4.646vw;
+    font-size: 4.846vw;
   }
   .site_footer .menu a {
     font-size: 5.281vw;
-    padding: 2.2vw 2vw;
+    padding: 2.3vw 2vw;
+            letter-spacing: -0.05vw;
   }
   .site_footer .appLink {
     width: 39.083vw;
@@ -1630,7 +1631,7 @@ swiper-container .swiper-notification {
   }
   .site_footer .social_media {
     padding-right: 0;
-    margin-top: 6.333vw;
+    margin-top: 5.333vw;
   }
   .site_footer .social_media img {
     width: 11.25vw;
@@ -1924,7 +1925,7 @@ swiper-container .swiper-notification {
   }
 
   .hero .content {
-    margin-bottom: 9vw;
+    margin-bottom: 8vw;
   }
 }
 @media (max-width: 576px) {
@@ -1938,7 +1939,7 @@ swiper-container .swiper-notification {
     display: none;
   }
   .hero .image {
-    margin: 0 -3.2vw 3.958vw;
+    margin: 0 -3.2vw 2.958vw;
   }
   .hero h1 {
     font-size: 11.6vw;
@@ -2192,7 +2193,7 @@ swiper-container .swiper-notification {
 
 @media (max-width: 991px) {
   .our_apps {
-    padding: 5vw 0 29vw;
+    padding: 6vw 0 29vw;
     overflow: visible;
     position: relative;
     z-index: 3;
@@ -2204,7 +2205,7 @@ swiper-container .swiper-notification {
     font-size: 16vw;
   }
   .our_apps .sec_title h1 span {
-    font-size: 21vw;
+    font-size: 20vw;
   }
   .our_apps .sec_title h2 {
     font-size: 36px;
@@ -2253,7 +2254,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .our_apps .sec_title {
-    margin-bottom: 50px;
+    margin-bottom: 7vw;
   }
   /* .our_apps .sec_title h1 {
     font-size: 10vw;
@@ -2263,7 +2264,7 @@ swiper-container .swiper-notification {
   } */
   .our_apps .sec_title h2 {
     font-size: 7.8vw;
-    margin-top: -3vw;
+    margin-top: -2vw;
     background: linear-gradient(90deg, #006bd6 18%, #0015ad 45%, #830599 75%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -2288,7 +2289,7 @@ swiper-container .swiper-notification {
     display: none;
   }
   .our_apps .bottom_text {
-    padding-top: 30vw;
+    padding-top: 29vw;
   }
   .our_apps .apps_list .app_cart {
     padding: 6.688vw 6.25vw;
@@ -2331,7 +2332,7 @@ swiper-container .swiper-notification {
   .our_apps .bottom_text p {
     font-size: 8vw;
     max-width: 98%;
-    line-height: 1.22;
+    line-height: 1.20;
     letter-spacing: -0.15vw;
   }
 }
@@ -2590,7 +2591,7 @@ swiper-container .swiper-notification {
     overflow: hidden;
   }
   .our_product .product {
-    margin-bottom: 16vw;
+    margin-bottom: 12vw;
   }
   .our_product .product .text {
     margin: 0 -10px;
@@ -2610,7 +2611,7 @@ swiper-container .swiper-notification {
     border-radius: 11vw;
   }
   .our_product .features_list li:not(:last-child) {
-    margin-bottom: 8vw;
+    margin-bottom: 9vw;
   }
   .our_product .features_items li {
     width: -moz-fit-content;
@@ -2626,7 +2627,7 @@ swiper-container .swiper-notification {
     margin-right: 2vw;
   }
   .our_product .features_items li .icon img {
-    height: 19vw;
+    height: 18vw;
     max-height: inherit;
   }
   .our_product .features_items li p {
@@ -3272,7 +3273,7 @@ swiper-container .swiper-notification {
     max-width: 633px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 17px;
+    padding: 0 3vw;
   }
   .product_features .feature_items .wrapper {
     flex-wrap: wrap;
@@ -3285,7 +3286,7 @@ swiper-container .swiper-notification {
     width: 100%;
     height: -moz-fit-content !important;
     height: fit-content !important;
-    margin-bottom: 24px;
+    margin-bottom: 5.65vw;
     align-items: flex-start !important;
     flex-direction: column;
   }
@@ -3317,7 +3318,7 @@ swiper-container .swiper-notification {
   .product_features .feature_items .item.item1 .content {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 19.3%;
+    margin-bottom: 14.3vw;
   }
   .product_features .feature_items .item.item1 .content h3 {
     color: #002868;
@@ -3338,7 +3339,7 @@ swiper-container .swiper-notification {
   .product_features .feature_items .item.item2 {
     padding-top: 67px;
     justify-content: center;
-    padding: 50% 0 !important;
+    padding: 49.6% 0 !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
   }
@@ -3359,7 +3360,7 @@ swiper-container .swiper-notification {
   .product_features .feature_items .item.item3 .content {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 13vw;
+    margin-bottom: 11vw;
   }
   .product_features .feature_items .item.item3 .content h3 {
     max-width: 100%;
@@ -3411,7 +3412,10 @@ swiper-container .swiper-notification {
     max-width: 100% !important;
   }
   .product_features .feature_items .item.item5 {
-    padding: 30vw 0 29vw !important;
+    padding: 28.4vw 0 29vw !important;
+  }
+  .product_features .feature_items .item.item7 {
+     padding: 29.4vw 0 30vw !important;
   }
   .product_features .feature_items .item.item5 .content {
     max-width: 60% !important;
@@ -3465,7 +3469,7 @@ swiper-container .swiper-notification {
     margin-bottom: 9.5%;
   }
   .product_features .feature_items .item.item8 .image {
-    width: 45%;
+    width: 46%;
     margin: 0 auto;
   }
   .product_features .feature_items .item .desktop {
@@ -3480,8 +3484,8 @@ swiper-container .swiper-notification {
     letter-spacing: -0.2vw;
   }
   .product_features .feature_items .item.item9 {
-    padding-top: 13vw;
-    padding-bottom: 14vw;
+    padding-top: 14vw;
+    padding-bottom: 12vw;
   }
   .product_features .feature_items .item.item9 h3 {
     max-width: 70vw;
@@ -3511,7 +3515,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .product_features {
-    padding: 22vw 0 22vw;
+    padding: 22vw 0 16vw;
   }
   .product_features .sec_title .logo {
     margin-bottom: -7.167vw;
@@ -3547,7 +3551,7 @@ swiper-container .swiper-notification {
     padding-top: 0;
   }
   .product_features .feature_items .item.item3 {
-    padding-top: 15vw !important;
+    padding-top: 14vw !important;
   }
   .product_features .feature_items .item.item3 h3 {
     max-width: 90%;
@@ -3556,20 +3560,20 @@ swiper-container .swiper-notification {
     padding-top: 0;
   }
   .product_features .feature_items .item.item4 {
-    padding-top: 15vw !important;
+    padding-top: 14vw !important;
   }
   .product_features .feature_items .item.item6 {
     gap: 40px;
-    padding-top: 16vw !important;
+    padding-top: 14vw !important;
   }
   .product_features .feature_items .item.item6 .content {
-    margin-bottom: 14.8vw;
+    margin-bottom: 10.8vw;
   }
   .product_features .feature_items .item.item6 .hidden_content br:first-child {
     display: none;
   }
   .product_features .feature_items .item.item8 {
-    padding-top: 13.958vw !important;
+    padding-top: 10vw !important;
   }
   .product_features .feature_items .item.item8 .image {
     margin-right: 17.708vw;
@@ -3593,7 +3597,7 @@ swiper-container .swiper-notification {
   .product_features .feature_items .item.item4 .image .warning_bar {
     left: 5vw;
     right: 5vw;
-    bottom: 17vw;
+    bottom: 18vw;
     gap: 3vw;
     transform: unset;
     padding-left: 4vw;
@@ -3956,7 +3960,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .discover_more {
-    padding: 19vw 4.646vw 15vw;
+    padding: 16vw 4.646vw 15vw;
   }
   .discover_more .sec_title {
     margin-bottom: 22vw;
@@ -3969,7 +3973,7 @@ swiper-container .swiper-notification {
     line-height: 1.1;
   }
   .discover_more .items_list li:not(:last-child) {
-    margin-bottom: 9vw;
+    margin-bottom: 10.5vw;
   }
   .discover_more .items_list li .icon {
     margin-bottom: 4.167vw;
@@ -4150,13 +4154,14 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .our_plans {
-    padding-top: 19.5vw;
+    padding-top: 18vw;
+    padding-bottom: 8vw;
   }
   .our_plans .sec_title {
     width: 100%;
     /* max-width: 90%; */
     margin: 0 auto;
-    margin-bottom: 8vw;
+    margin-bottom: 9vw;
     text-align: center;
   }
   .our_plans .sec_title h1 {
@@ -4173,20 +4178,23 @@ swiper-container .swiper-notification {
   }
   .our_plans .plans_list .plan_item {
     width: 100%;
-    max-width: 94%;
+    max-width: 88%;
     height: auto;
     margin: 0 auto;
-    padding: 7.958vw 8.542vw;
+    padding: 7.958vw 7.542vw;
     border-radius: 7vw;
   }
+  .our_plans .plans_list .plan_item.individual {
+        padding: 8.958vw 7.958vw 7.542vw;
+  }
    .our_plans .plans_list .plan_item.corporate   {
-            padding: 10vw 8.542vw;
+            padding: 8vw 7.542vw;
    }
   .our_plans .plans_list .plan_item.indcorporateividual .line {
     margin: 5vw auto 4.3vw;
   }
   .our_plans .plans_list .plan_item .line {
-    margin: 4.8vw auto;
+    margin: 4.8vw auto 4.8vw;
   }
   .our_plans .plans_list .plan_item.corporate .line {
             margin: 4.8vw auto 4.2vw;
@@ -4215,7 +4223,7 @@ swiper-container .swiper-notification {
   }
   .our_plans .plans_list .plan_item .price {
     font-size: 8.634vw;
-    margin-bottom: -1vw;
+    margin-bottom: -2vw;
     margin-right: 4vw;
   }
   .our_plans .plans_list .plan_item .price span {
@@ -4227,30 +4235,30 @@ swiper-container .swiper-notification {
   }
 
   .our_plans .plans_list .plan_item ul li {
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
   }
   .our_plans .plans_list .plan_item .price span {
     font-size: 5.699vw;
   }
   .our_plans .plans_list .plan_item ul li {
     padding: 2px 0;
-    font-size: 4.49vw;
+    font-size: 4.8vw;
   }
   .our_plans .plans_list .plan_item ul li::before {
-    width: 20px;
-    height: 20px;
+    width: 4vw;
+    height: 4vw;
   }
   .our_plans .plans_list .plan_item .btn {
     font-size: 5vw;
     font-weight: 600;
     padding: 3.438vw 3.542vw;
-    margin-top: 10.5vw;
+    margin-top: 11.5vw;
     background-color: #136e00;
     border-radius: 3vw;
   }
   .our_plans .plans_list .plan_item .line {
-    height: 6px;
-    width: 30px;
+    height: 4px;
+    width: 20px;
   }
   .our_plans .plans_list .plan_item.individual:before {
     background-image: url(../images/borderImg.png);
@@ -4307,7 +4315,7 @@ swiper-container .swiper-notification {
 @media (max-width: 576px) {
   .references {
     background: none;
-        padding: 40px 0;
+        padding: 9vw 0;
   }
   
   .references .list_items {
@@ -4320,9 +4328,6 @@ swiper-container .swiper-notification {
   }
 }
 @media (max-width: 420px) {
-  .references {
-    padding: 20px 0;
-  }
   .references .list_items {
     gap: 18px;
   }
@@ -4450,9 +4455,9 @@ swiper-container .swiper-notification {
     display: none;
   }
   .download_app .content p {
-    font-size: 5vw;
-    letter-spacing: -0.827px;
-    line-height: 1.34;
+    font-size: 5.09vw;
+    letter-spacing: -0.2vw;
+    line-height: 1.28;
     margin-bottom: 0;
   }
   .download_app .row {
@@ -4467,7 +4472,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .download_app {
-    padding: 38vw 6.458vw 0;
+    padding: 32vw 6.458vw 0;
   }
   .download_app .image {
     margin: 0 -3.333vw;
@@ -5275,7 +5280,7 @@ swiper-container .swiper-notification {
 } /*# sourceMappingURL=main.css.map */
 
 section.features0 {
-  margin: 20vw 0 -2vw;
+  margin: 19vw 0 -2vw;
   padding-top: 12vw;
   background: linear-gradient(to bottom, #f6f7f9, white);
 }
@@ -5295,7 +5300,7 @@ section.features0 h3 {
   }
 }
 section.features0 .icon {
-  margin-bottom: 4vw;
+  margin-bottom: 3.5vw;
 }
 section.features0 svg {
   height: auto;
@@ -5304,10 +5309,10 @@ section.features0 svg {
 }
 section.theBestPlan {
   background: linear-gradient(to bottom, #f6f7f9, white);
-  padding: 13vw 0 12vw;
+  padding: 12.6vw 0 10vw;
 }
 section.theBestPlan .svg_icon {
-  width: 9vw;
+  width: 8.6vw;
   margin: 0 1vw;
   margin-top: 2vw;
 }
@@ -5330,6 +5335,7 @@ section.theBestPlan .svg_icon {
 }
 .theBestPlan .items li p {
   font-size: 4.3vw;
+  line-height: 1.2;
   font-weight: 500;
   margin-bottom: 6vw;
 }
@@ -5766,10 +5772,10 @@ section.theBestPlan .svg_icon {
 
 @media (max-width: 576px) {
   .our_plans .plans_list .plan_item.corporate ul li {
-    margin-bottom: 1vw;
+    margin-bottom: 0.3vw;
   }
   .our_plans .plans_list .plan_item.corporate .btn {
-    margin-top: 5.292vw;
+    margin-top: 6.8vw;
   }
 }
 .brand_slider001 h4 {
@@ -5780,6 +5786,6 @@ section.theBestPlan .svg_icon {
 }
 
 .our_apps .apps_list {
-  height: 829px;
+  height: 634px;
   overflow: hidden;
 }
