@@ -2054,6 +2054,9 @@ swiper-container .swiper-notification {
     padding-left: 0;
     letter-spacing: -0.58px;
   }
+  .meet_us .content p span {
+    transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
 }
 @media (max-width: 576px) {
   .meet_us .content p {
@@ -2068,6 +2071,10 @@ swiper-container .swiper-notification {
   .meet_us .content p {
     max-width: 96%;
   }
+    /* .meet_us .content p span {
+    transition: .2s;
+
+    } */
 }
 @media (max-width: 390px) {
   .meet_us .content h1 {
@@ -2179,18 +2186,24 @@ swiper-container .swiper-notification {
   margin: 0 auto;
 }
 .our_apps .bottom_text p .gradient1 {
-  background: linear-gradient(315deg, #0044f0 0%, #8900cd 100%);
+  background: linear-gradient(86deg, #0044f0 0%, #8900cd 100%);
 }
 
 .our_apps .bottom_text p .gradient2 {
   background: linear-gradient(311deg, #d122ae 15%, #d72f3c 45%, #e05b00 100%);
 }
+
+.our_apps .bottom_text p .gradient {
+  -webkit-background-clip: text;
+}
+@media (min-width: 991px) {
 .our_apps .bottom_text p .gradient {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+}
 @media (max-width: 991px) {
   .our_apps {
     padding: 6vw 0 29vw;
@@ -2330,7 +2343,7 @@ swiper-container .swiper-notification {
     width: calc(100% + 20px);
   }
   .our_apps .bottom_text p {
-    font-size: 8vw;
+    font-size: 8.8472vw;
     max-width: 98%;
     line-height: 1.20;
     letter-spacing: -0.15vw;
@@ -3002,7 +3015,7 @@ swiper-container .swiper-notification {
   color: black;
   height: 98px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .product_features .feature_items .item.item5 .chng_text .type3 {
   color: #ffe500;
@@ -3621,7 +3634,7 @@ swiper-container .swiper-notification {
   }
   .product_features .feature_items .item.item5 .content h3 {
     width: 100%;
-    max-width: 72% !important;
+    max-width: 96% !important;
   }
   .product_features .feature_items .item.item5 .chng_text {
     height: 19vw;
@@ -4472,7 +4485,7 @@ swiper-container .swiper-notification {
 }
 @media (max-width: 576px) {
   .download_app {
-    padding: 32vw 6.458vw 0;
+    padding: 35vw 6.458vw 0;
   }
   .download_app .image {
     margin: 0 -3.333vw;
@@ -5356,6 +5369,9 @@ section.theBestPlan .svg_icon {
   margin-top: 10vw;
   transform: translateX(3vw);
 }
+.join_us h2 span {
+  transition: .2s;
+}
 .join_us .relative {
   width: 44%;
   flex-shrink: 0;
@@ -5785,7 +5801,7 @@ section.theBestPlan .svg_icon {
   margin: 0 auto;
 }
 
-.our_apps .apps_list {
+/* .our_apps .apps_list {
   height: 634px;
   overflow: hidden;
-}
+} */

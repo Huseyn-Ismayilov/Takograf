@@ -11,7 +11,8 @@
 //
 function cycleImages() {
   var $active = $("#cycler .active");
-  var $next = $active.next().length > 0 ? $active.next() : $("#cycler div:first");
+  var $next =
+    $active.next().length > 0 ? $active.next() : $("#cycler div:first");
 
   $active.removeClass("active").addClass("exit");
   $next.addClass("active");
@@ -21,7 +22,7 @@ function cycleImages() {
     $active.css("z-index", 1);
     $next.css("z-index", 3);
   }, 1000); // transition süresiyle eşleşmeli
-} 
+}
 $(document).ready(function () {
   setInterval("cycleImages()", 2000);
 });
@@ -42,7 +43,7 @@ function cycleImages1() {
 $(document).ready(function () {
   setInterval("cycleImages1()", 2000);
 });
-// 
+//
 
 // function cycleImages2() {
 //   var $active0 = $("#cycler2 .active");
@@ -56,7 +57,7 @@ $(document).ready(function () {
 //     $active0.css("z-index", 1);
 //     $next0.css("z-index", 3);
 //   }, 1000); // transition süresiyle eşleşmeli
-// } 
+// }
 // $(document).ready(function () {
 //   setInterval("cycleImages2()", 2000);
 // });
@@ -99,7 +100,6 @@ $(document).ready(function () {
         }, 650);
       });
     });
-
   }, 1500);
 });
 //
@@ -256,9 +256,6 @@ function step(ts) {
 requestAnimationFrame(step);
 // End
 
-
-
-
 // Start
 
 function initSlider(trackSelector) {
@@ -266,7 +263,11 @@ function initSlider(trackSelector) {
   if (!track) return;
 
   let pos = 0;
-  const speed = trackSelector.includes('track-1') ? 0.5 : trackSelector.includes('track-3') ? 1.6 : 0.3;
+  const speed = trackSelector.includes("track-1")
+    ? 0.5
+    : trackSelector.includes("track-3")
+      ? 1.6
+      : 0.3;
 
   function getHalfWidth() {
     return track.scrollWidth / 2;
@@ -284,69 +285,207 @@ function initSlider(trackSelector) {
   requestAnimationFrame(tick);
 }
 
-initSlider('.track-1');
-initSlider('.track-2');
-initSlider('.track-3');
-
+initSlider(".track-1");
+initSlider(".track-2");
+initSlider(".track-3");
 
 // Translate site
 const translations = {
-  tr: { title: "Bu sayfa Türkçe", desc: "Türkçe olarak görüntülüyorsunuz.", translate: "Çevir", keep: "Türkçe kalsın" },
-  en: { title: "This page is in Turkish", desc: "Would you like to translate it to <strong>English</strong>?", translate: "Translate", keep: "Keep Turkish" },
-  fr: { title: "Cette page est en turc", desc: "Voulez-vous la traduire en <strong>français</strong> ?", translate: "Traduire", keep: "Garder en turc" },
-  de: { title: "Diese Seite ist auf Türkisch", desc: "Möchten Sie sie auf <strong>Deutsch</strong> übersetzen?", translate: "Übersetzen", keep: "Türkisch behalten" },
-  es: { title: "Esta página está en turco", desc: "¿Desea traducirla al <strong>español</strong>?", translate: "Traducir", keep: "Mantener turco" },
-  ar: { title: "هذه الصفحة باللغة التركية", desc: "هل تريد ترجمتها إلى <strong>العربية</strong>؟", translate: "ترجمة", keep: "الإبقاء بالتركية" },
-  ru: { title: "Эта страница на турецком", desc: "Хотите перевести на <strong>русский</strong>?", translate: "Перевести", keep: "Оставить турецкий" }
+  tr: {
+    title: "Bu sayfa Türkçe",
+    desc: "Türkçe olarak görüntülüyorsunuz.",
+    translate: "Çevir",
+    keep: "Türkçe kalsın",
+  },
+  en: {
+    title: "This page is in Turkish",
+    desc: "Would you like to translate it to <strong>English</strong>?",
+    translate: "Translate",
+    keep: "Keep Turkish",
+  },
+  fr: {
+    title: "Cette page est en turc",
+    desc: "Voulez-vous la traduire en <strong>français</strong> ?",
+    translate: "Traduire",
+    keep: "Garder en turc",
+  },
+  de: {
+    title: "Diese Seite ist auf Türkisch",
+    desc: "Möchten Sie sie auf <strong>Deutsch</strong> übersetzen?",
+    translate: "Übersetzen",
+    keep: "Türkisch behalten",
+  },
+  es: {
+    title: "Esta página está en turco",
+    desc: "¿Desea traducirla al <strong>español</strong>?",
+    translate: "Traducir",
+    keep: "Mantener turco",
+  },
+  ar: {
+    title: "هذه الصفحة باللغة التركية",
+    desc: "هل تريد ترجمتها إلى <strong>العربية</strong>؟",
+    translate: "ترجمة",
+    keep: "الإبقاء بالتركية",
+  },
+  ru: {
+    title: "Эта страница на турецком",
+    desc: "Хотите перевести на <strong>русский</strong>?",
+    translate: "Перевести",
+    keep: "Оставить турецкий",
+  },
 };
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'tr',
-    autoDisplay: false
-  }, 'google_translate_element');
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: "tr",
+      autoDisplay: false,
+    },
+    "google_translate_element",
+  );
 }
 
 function closeBanner() {
-  $('#translate-banner').hide();
+  $("#translate-banner").hide();
 }
 
 function doTranslate() {
-  var lang = navigator.language.split('-')[0];
-  var targetLang = (lang !== 'tr') ? lang : 'en';
+  var lang = navigator.language.split("-")[0];
+  var targetLang = lang !== "tr" ? lang : "en";
 
-  var $btn = $('.tb-btn-primary');
+  var $btn = $(".tb-btn-primary");
   var originalText = $btn.text();
-  $btn.prop('disabled', true).html('<span class="tb-spinner"></span> ' + originalText);
+  $btn
+    .prop("disabled", true)
+    .html('<span class="tb-spinner"></span> ' + originalText);
 
   // Cookie set et ve sayfayı yenile — Google bunu okuyup çevirir
-  document.cookie = 'googtrans=/tr/' + targetLang + '; path=/';
-  document.cookie = 'googtrans=/tr/' + targetLang + '; path=/; domain=.' + location.hostname;
+  document.cookie = "googtrans=/tr/" + targetLang + "; path=/";
+  document.cookie =
+    "googtrans=/tr/" + targetLang + "; path=/; domain=." + location.hostname;
 
-  setTimeout(function() {
+  setTimeout(function () {
     location.reload();
   }, 800); // spinner'ın görünmesi için kısa bekle
 }
-$(document).ready(function() {
-  var lang = navigator.language.split('-')[0];
+$(document).ready(function () {
+  var lang = navigator.language.split("-")[0];
 
-  if (lang === 'tr') {
-    $('#translate-banner').hide();
+  if (lang === "tr") {
+    $("#translate-banner").hide();
     return;
   }
 
-  var t = translations[lang] || translations['en'];
+  var t = translations[lang] || translations["en"];
 
-  $('.tb-header span').text(t.title);
-  $('.tb-desc').html(t.desc);
-  $('.tb-btn-primary').text(t.translate);
-  $('.tb-btn-secondary').text(t.keep);
+  $(".tb-header span").text(t.title);
+  $(".tb-desc").html(t.desc);
+  $(".tb-btn-primary").text(t.translate);
+  $(".tb-btn-secondary").text(t.keep);
 });
 function closeBanner() {
-  $('#translate-banner').hide();
-  $('#translate-toggle-btn').show(); // sağ üstte buton çıksın
+  $("#translate-banner").hide();
+  $("#translate-toggle-btn").show(); // sağ üstte buton çıksın
 }
 function openBanner() {
-  $('#translate-banner').show();
-  $('#translate-toggle-btn').hide();
+  $("#translate-banner").show();
+  $("#translate-toggle-btn").hide();
 }
+
+// Text animation
+$(function () {
+
+  function isMobile() {
+    return window.innerWidth <= 991;
+  }
+
+  /* ── metni kelimelere ayır ── */
+  function initWr() {
+    if (!isMobile()) return;
+
+    $(".wr").each(function () {
+      var $el = $(this);
+      if ($el.data("wr-done")) return;
+      $el.data("wr-done", true);
+
+      var cs = getComputedStyle(this);
+      var from = cs.getPropertyValue("--from").trim();
+      var to = cs.getPropertyValue("--to").trim();
+      var isGradient = $el.hasClass("gradient");
+
+      var parts = $el.text().trim().split(/(\s+)/);
+      var html = "";
+
+      parts.forEach(function (token) {
+        if (/^\s+$/.test(token)) {
+          html += token;
+        } else {
+          if (isGradient) {
+            html += `<span class="w" style="color:${from}">${token}</span>`;
+          } else {
+            html += `<span class="w" style="color:${from}">${token}</span>`;
+          }
+        }
+      });
+
+      $el.html(html);
+    });
+  }
+
+  /* ── scroll ── */
+  function update() {
+    if (!isMobile()) return; // 🔥 desktopta çalışmasın
+
+    var scrollY = window.scrollY;
+    var wh = window.innerHeight;
+
+    $(".wr").each(function () {
+      var $el = $(this);
+      var cs = getComputedStyle(this);
+      var from = cs.getPropertyValue("--from").trim();
+      var to = cs.getPropertyValue("--to").trim();
+      var speed = parseFloat($el.data("speed") || 400);
+      var isGradient = $el.hasClass("gradient");
+
+      var rect = this.getBoundingClientRect();
+      var start = scrollY + rect.top + rect.height * 0.3 - wh * 0.6;
+      var end = start + speed;
+
+      var words = $el.find(".w");
+      var total = words.length;
+
+      var progress = Math.min(Math.max((scrollY - start) / (end - start), 0), 1);
+      var revealed = Math.round(progress * total);
+
+      words.each(function (i) {
+
+        if (!isGradient) {
+          this.style.color = (i < revealed) ? to : from;
+          return;
+        }
+
+        if (i < revealed) {
+          this.style.background = `linear-gradient(315deg, ${from}, ${to})`;
+          this.style.webkitBackgroundClip = "text";
+          this.style.webkitTextFillColor = "transparent";
+          this.style.color = "";
+        } else {
+          this.style.background = "";
+          this.style.webkitBackgroundClip = "";
+          this.style.webkitTextFillColor = "";
+          this.style.color = from;
+        }
+
+      });
+    });
+  }
+
+  initWr();
+  update();
+
+  $(window).on("scroll resize", function () {
+    initWr();
+    update();
+  });
+
+});
