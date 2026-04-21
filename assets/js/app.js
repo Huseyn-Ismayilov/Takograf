@@ -394,7 +394,6 @@ function openBanner() {
 
 // Text animation
 $(function () {
-
   function isMobile() {
     return window.innerWidth <= 991;
   }
@@ -434,48 +433,60 @@ $(function () {
 
   /* ── scroll ── */
   function update() {
-    if (!isMobile()) return; // 🔥 desktopta çalışmasın
-
     var scrollY = window.scrollY;
     var wh = window.innerHeight;
 
-    $(".wr").each(function () {
-      var $el = $(this);
-      var cs = getComputedStyle(this);
-      var from = cs.getPropertyValue("--from").trim();
-      var to = cs.getPropertyValue("--to").trim();
-      var speed = parseFloat($el.data("speed") || 400);
-      var isGradient = $el.hasClass("gradient");
+    $(".wr_wrap").each(function () {
+      var $wrap = $(this);
 
       var rect = this.getBoundingClientRect();
-      var start = scrollY + rect.top + rect.height * 0.3 - wh * 0.6;
-      var end = start + speed;
+      var start = scrollY + rect.top - wh * 0.9;
+      var end = scrollY + rect.bottom - wh * 0.4;
 
-      var words = $el.find(".w");
-      var total = words.length;
+      var progress = Math.min(
+        Math.max((scrollY - start) / (end - start), 0),
+        1,
+      );
 
-      var progress = Math.min(Math.max((scrollY - start) / (end - start), 0), 1);
-      var revealed = Math.round(progress * total);
+      var wrs = $wrap.find(".wr");
 
-      words.each(function (i) {
+      wrs.each(function (wrIndex) {
+        var $wr = $(this);
+        var cs = getComputedStyle(this);
 
-        if (!isGradient) {
-          this.style.color = (i < revealed) ? to : from;
-          return;
-        }
+        var from = cs.getPropertyValue("--from").trim();
+        var to = cs.getPropertyValue("--to").trim();
+        var isGradient = $wr.hasClass("gradient");
+        var speed = parseFloat($wr.data("speed") || 300);
 
-        if (i < revealed) {
-          this.style.background = `linear-gradient(315deg, ${from}, ${to})`;
-          this.style.webkitBackgroundClip = "text";
-          this.style.webkitTextFillColor = "transparent";
-          this.style.color = "";
-        } else {
-          this.style.background = "";
-          this.style.webkitBackgroundClip = "";
-          this.style.webkitTextFillColor = "";
-          this.style.color = from;
-        }
+        var words = $wr.find(".w");
 
+        var total = words.length;
+
+        var localProgress = Math.min(
+          Math.max(progress * wrs.length - wrIndex, 0),
+          1,
+        );
+
+        var revealed = Math.round(localProgress * total);
+
+        words.each(function (i) {
+          if (!isGradient) {
+            this.style.color = i < revealed ? to : from;
+            return;
+          }
+
+          if (i < revealed) {
+            this.style.background = `linear-gradient(315deg, ${from}, ${to})`;
+            this.style.webkitBackgroundClip = "text";
+            this.style.webkitTextFillColor = "transparent";
+          } else {
+            this.style.background = "";
+            this.style.webkitBackgroundClip = "";
+            this.style.webkitTextFillColor = "";
+            this.style.color = from;
+          }
+        });
       });
     });
   }
@@ -487,5 +498,4 @@ $(function () {
     initWr();
     update();
   });
-
 });
