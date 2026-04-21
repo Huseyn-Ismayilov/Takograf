@@ -221,8 +221,8 @@ const planets = [
 
 const els = planets.map((p) => ({ ...p, el: $("#" + p.id) }));
 
-let speedInner = 0.1;
-let speedOuter = 0.29;
+let speedInner = 0.3;
+let speedOuter = 0.4;
 // let speedInner = 0.0;
 // let speedOuter = 0.0;
 let last = null;
